@@ -28,7 +28,8 @@ baseUrl: '/mos-docs-staging/',
       {
         docs: {
           sidebarPath: './sidebars.js',
-          editUrl: 'https://github.com/ich777/mos-docs/edit/main/',
+          routeBasePath: 'docs',
+          editUrl: 'https://github.com/J000K3R/mos-docs-staging/edit/main/',
         },
         blog: {
           showReadingTime: true,
