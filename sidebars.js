@@ -11,6 +11,7 @@ const sidebars = {
       items: [
         { type: 'doc', id: 'Quick-Start/WebUI-Overview', label: 'WebUI Overview' },
         { type: 'doc', id: 'Quick-Start/Start-Network-Configuration', label: 'Start Network Configuration' },
+        { type: 'doc', id: 'Quick-Start/Create-Storage-Pool', label: 'Create a Storage Pool' },
       ],
     },
   ],
