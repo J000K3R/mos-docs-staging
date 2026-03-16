@@ -4,7 +4,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'MOS-Docs',
-  tagline: 'Modular Operating System for Servers and Homelabs - MOS-Docs',
+  tagline: 'Modular Operating System for Servers and Homelabs',
   favicon: 'https://mos-official.net/assets/mos-black_square.png',
 
   future: {
