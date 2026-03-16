@@ -19,23 +19,7 @@ function HomepageHeader() {
         />
         <h1 className="hero__title">{siteConfig.title}</h1>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <div className={styles.buttons}>
-          <Link
-            className="button button--secondary button--lg"
-            to="/docs/intro">
-            Overview
-          </Link>
-          <Link
-            className="button button--primary button--lg margin-left--sm"
-            href="https://github.com/ich777/mos-docs/blob/master/Quick%20Start/WebUI%20Overview.md">
-            Quick Start
-          </Link>
-          <Link
-            className="button button--secondary button--lg margin-left--sm"
-            to="/docs/intro">
-            Documentation
-          </Link>
-        </div>
+        {/* Buttons entfernt */}
       </div>
     </header>
   );
