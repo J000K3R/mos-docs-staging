@@ -10,6 +10,7 @@ const sidebars = {
       label: 'Getting Started',
       items: [
         { type: 'doc', id: 'Quick-Start/WebUI-Overview', label: 'WebUI Overview' },
+        { type: 'doc', id: 'Quick-Start/Start-Network-Configuration', label: 'Start Network Configuration' },
       ],
     },
   ],
