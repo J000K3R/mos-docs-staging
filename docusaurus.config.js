@@ -11,8 +11,8 @@ const config = {
     v4: true,
   },
 
-  url: 'https://docs.mos-official.net',
-  baseUrl: '/',
+url: 'https://J000K3R.github.io',
+baseUrl: '/mos-docs-staging/',
   organizationName: 'ich777',
   projectName: 'mos-docs',
   onBrokenLinks: 'warn',
