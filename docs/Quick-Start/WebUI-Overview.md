@@ -15,7 +15,7 @@ The MOS web interface provides a centralized management dashboard for monitoring
 
 ---
 
-![WebUI Overview](/img/webui-overview.png)
+![WebUI Overview](/img/MOS_Dashboard.png)
 
 ---
 
