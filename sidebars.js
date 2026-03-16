@@ -1,17 +1,15 @@
+/** @type {import('@docusaurus/plugin-content-docs').SidebarsConfig} */
 const sidebars = {
   tutorialSidebar: [
     {
       type: 'doc',
       id: 'intro',
-      label: 'Welcome to MOS',
+      label: 'Welcome to MOS', // overrides default title
     },
     {
       type: 'category',
       label: 'Getting Started',
-      items: [
-        // TODO: Füge Dokumente hinzu, sobald sie erstellt sind
-        // { type: 'doc', id: 'Quick-Start/WebUI-Overview', label: 'WebUI Overview' },
-      ],
+      items: [], // ← empty for now — you’ll add documents later
     },
   ],
 };
