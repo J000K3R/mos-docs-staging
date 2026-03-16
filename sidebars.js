@@ -1,15 +1,16 @@
-/** @type {import('@docusaurus/plugin-content-docs').SidebarsConfig} */
 const sidebars = {
   tutorialSidebar: [
     {
       type: 'doc',
       id: 'intro',
-      label: 'Welcome to MOS', // overrides default title
+      label: 'Welcome to MOS',
     },
     {
       type: 'category',
       label: 'Getting Started',
-      items: [], // ← empty for now — you’ll add documents later
+      items: [
+        { type: 'doc', id: 'Quick-Start/WebUI-Overview', label: 'WebUI Overview' },
+      ],
     },
   ],
 };
