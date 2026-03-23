@@ -1,6 +1,5 @@
-Apply
 ---
-sidebar_label: Create a Storage Pool
+sidebar_label: 🗄️ Create a Storage Pool
 sidebar_position: 3
 ---
 
