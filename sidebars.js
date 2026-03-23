@@ -30,6 +30,7 @@ const sidebars = {
       label: '🚀 System Startup',
       items: [
         { type: 'doc', id: 'System-Startup/Pre-Start-Script', label: 'Pre-Start Script' },
+        { type: 'doc', id: 'System-Startup/Post-Start-Script', label: 'Post-Start Script' },
       ],
     },
   ],
