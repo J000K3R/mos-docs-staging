@@ -1,5 +1,5 @@
 ---
-sidebar_label: WebUI Overview
+sidebar_label: 🖥️ WebUI Overview
 sidebar_position: 1
 ---
 
