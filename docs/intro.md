@@ -4,9 +4,6 @@ sidebar_position: 1
 
 # Welcome to MOS
 
-![Logo Black](/img/mos_black.png)
-![Logo White](/img/mos_white.png)
-
 **MOS** (Modular Operating System) is a lightweight, web-based management system for servers and homelabs — built on **Devuan Linux**.
 
 It's designed for **small, energy-efficient home servers**, delivering a modern interface with maximum functionality and zero bloat.
