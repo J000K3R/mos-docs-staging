@@ -1,3 +1,8 @@
+---
+sidebar_label: 🖥️ Create the First VM
+sidebar_position: 6
+---
+
 # 🖥️ Create the First VM
 
 MOS supports running full virtual machines (VMs) using KVM/QEMU.  
