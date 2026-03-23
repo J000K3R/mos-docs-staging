@@ -21,33 +21,23 @@ baseUrl: '/mos-docs-staging/',
     defaultLocale: 'en',
     locales: ['en'],
   },
-
-  presets: [
-    [
-      'classic',
-      {
-        docs: {
-          sidebarPath: './sidebars.js',
-          routeBasePath: 'docs',
-          editUrl: 'https://github.com/J000K3R/mos-docs-staging/edit/main/',
-        },
-        blog: {
-          showReadingTime: true,
-          feedOptions: {
-            type: ['rss', 'atom'],
-            xslt: true,
-          },
-          editUrl: 'https://github.com/ich777/mos-docs/edit/main/',
-          onInlineTags: 'warn',
-          onInlineAuthors: 'warn',
-          onUntruncatedBlogPosts: 'warn',
-        },
-        theme: {
-          customCss: './src/css/custom.css',
-        },
+  
+presets: [
+  [
+    'classic',
+    {
+      docs: {
+        sidebarPath: './sidebars.js',
+        routeBasePath: 'docs',
+        editUrl: 'https://github.com/J000K3R/mos-docs-staging/edit/main/',
       },
-    ],
+      blog: false, // Deaktiviert den Blog komplett
+      theme: {
+        customCss: './src/css/custom.css',
+      },
+    },
   ],
+],
 
   themeConfig: {
     image: 'img/mos-social-card.jpg',
