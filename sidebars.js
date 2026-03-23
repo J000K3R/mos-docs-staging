@@ -7,7 +7,12 @@ const sidebars = {
     },
     {
       type: 'category',
-      label: 'Getting Started',
+      label: '📦 Installation',
+      items: [
+        { type: 'doc', id: 'Installation/Create-Bootable-Media', label: 'Create Bootable Media' },
+    {
+      type: 'category',
+      label: '🧭 Getting Started',
       items: [
         { type: 'doc', id: 'Quick-Start/WebUI-Overview', label: 'WebUI Overview' },
         { type: 'doc', id: 'Quick-Start/Start-Network-Configuration', label: 'Start Network Configuration' },
@@ -15,6 +20,7 @@ const sidebars = {
         { type: 'doc', id: 'Quick-Start/Start-the-First-Container', label: 'Start the First Container' },
         { type: 'doc', id: 'Quick-Start/Create-the-First-Shares', label: 'Start the First Container' },
         { type: 'doc', id: 'Quick-Start/Create-the-First-VM', label: 'Start the First Container' },
+      
       ],
     },
   ],
