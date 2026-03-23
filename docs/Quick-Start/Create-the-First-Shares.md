@@ -1,3 +1,8 @@
+---
+sidebar_label: 📂 Create the First Shares
+sidebar_position: 5
+---
+
 # 📂 Create the First Shares
 
 Shares define how directories on a storage pool are exposed to users and services.  
