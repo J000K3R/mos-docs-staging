@@ -39,13 +39,14 @@ const sidebars = {
       label: '⚙️ System Management',
       items: [
         {
-          type: 'category',           // ← Subkategorie
+          type: 'category',
           label: '💻 System Configuration',
           items: [
-        { type: 'doc', id: 'System-Management/System-Configuration/System-Settings', label: 'Pre-Start Script' },
+            { type: 'doc', id: 'System-Management/System-Configuration/System-Settings', label: 'System Settings' },
+          ],
+        },
       ],
     },
   ],
 };
-
 export default sidebars;
