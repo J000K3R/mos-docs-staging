@@ -10,6 +10,8 @@ const sidebars = {
       label: '📦 Installation',
       items: [
         { type: 'doc', id: 'Installation/Create-Bootable-Media', label: 'Create Bootable Media' },
+      ],
+    },
     {
       type: 'category',
       label: '🧭 Getting Started',
