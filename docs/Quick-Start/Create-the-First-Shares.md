@@ -13,7 +13,7 @@ They are typically used for:
 - 🎬 Media libraries
 - 💾 Backups
 
-![MOS Shares](/img/MOS_Shares.png)
+![MOS Shares](/img/share/MOS_Shares.png)
 
 Navigate to:
 
@@ -23,7 +23,7 @@ Navigate to:
 
 ## ⚙️ Share Configuration Fields
 
-![Share Configuration Fields](/img/Share_Configuration_Fields.png)
+![Share Configuration Fields](/img/share/Share_Configuration_Fields.png)
 
 ---
 
@@ -153,7 +153,7 @@ Each share shows:
 - 📁 Directory path
 - 🗄️ Associated pool
 
-![Managing Existing Shares](/img/Managing_Existing_Shares.png)
+![Managing Existing Shares](/img/share/Managing_Existing_Shares.png)
 
 ---
 
@@ -166,7 +166,7 @@ Each share provides a context menu with the following actions:
 | ✏️ **Edit** | Modify share configuration and permissions |
 | 🗑️ **Delete** | Remove the share |
 
-![Share Actions](/img/Share_Actions.png)
+![Share Actions](/img/share/Share_Actions.png)
 
 When deleting a share, an additional option is available:
 
@@ -177,7 +177,7 @@ When deleting a share, an additional option is available:
 > [!CAUTION]
 > **This action cannot be undone.** All data in the share directory will be permanently lost.
 
-![Share Delete](/img/Share_Delete.png)
+![Share Delete](/img/share/Share_Delete.png)
 
 ---
 
