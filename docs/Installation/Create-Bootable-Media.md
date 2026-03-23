@@ -1,3 +1,8 @@
+---
+sidebar_label: 🔧 Create Bootable Media
+sidebar_position: 1
+---
+
 # 🔧 Create Bootable Media
 
 The installation process is intentionally kept simple.
