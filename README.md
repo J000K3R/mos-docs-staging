@@ -1,41 +1,58 @@
-# Website
+# MOS Docs – Staging Environment
 
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+This repository serves as a **staging environment for our Docusaurus-based documentation**.
 
-## Installation
+It allows MOS members to preview, test, and review documentation changes before they are published to the live environment.
 
-```bash
-yarn
+---
+
+## 🎯 Purpose
+
+The staging environment is designed to:
+
+* Preview new content and changes
+* Validate layout, structure, and formatting
+* Gather feedback from MOS members
+* Catch issues early
+* Prepare clean and stable releases
+
+⚠️ **Important:** Changes made here are **not automatically published** to the live documentation.
+
+---
+
+## 📁 Project Structure
+
+```
+.
+├── docs/           # Documentation pages
+├── blog/           # Blog (if used)
+├── src/            # Custom components / theme overrides
+├── static/         # Static assets (images, etc.)
+├── docusaurus.config.js
+└── sidebars.js
 ```
 
-## Local Development
+---
 
-```bash
-yarn start
-```
+## 🧠 Notes
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+* Navigation is managed via `sidebars.js`
+* Global configuration is in `docusaurus.config.js`
+* Store images and assets in `static/`
+* Documentation content is written in Markdown under `docs/`
 
-## Build
+---
 
-```bash
-yarn build
-```
+## 📌 Goal
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
+This staging environment ensures that MOS Docs are:
 
-## Deployment
+* Well-structured
+* Visually consistent
+* Technically accurate
 
-Using SSH:
+before going live.
 
-```bash
-USE_SSH=true yarn deploy
-```
+---
 
-Not using SSH:
-
-```bash
-GIT_USER=<Your GitHub username> yarn deploy
-```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+Happy testing 🚀
