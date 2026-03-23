@@ -20,9 +20,8 @@ const sidebars = {
         { type: 'doc', id: 'Quick-Start/Start-Network-Configuration', label: 'Start Network Configuration' },
         { type: 'doc', id: 'Quick-Start/Create-Storage-Pool', label: 'Create a Storage Pool' },
         { type: 'doc', id: 'Quick-Start/Start-the-First-Container', label: 'Start the First Container' },
-        { type: 'doc', id: 'Quick-Start/Create-the-First-Shares', label: 'Start the First Container' },
-        { type: 'doc', id: 'Quick-Start/Create-the-First-VM', label: 'Start the First Container' },
-      
+        { type: 'doc', id: 'Quick-Start/Create-the-First-Shares', label: 'Create the First Shares' },
+        { type: 'doc', id: 'Quick-Start/Create-the-First-VM', label: 'Create the First VM' },
       ],
     },
   ],
