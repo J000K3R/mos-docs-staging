@@ -25,7 +25,7 @@ Navigate to:
 
 > **Docker → Docker Service**
 
-![Docker Service Configuration](/img/Docker_Service_Configuration.png)
+![Docker Service Configuration](/img/docker/Docker_Service_Configuration.png)
 
 ---
 
@@ -110,7 +110,7 @@ Defines the delay (in seconds) before Docker starts during system boot.
 > [!NOTE]
 > Useful when storage pools or network interfaces need additional time to become available.
 
-![Docker Wait Times](/img/Docker_Wait_Times.png)
+![Docker Wait Times](/img/docker/Docker_Wait_Times.png)
 
 ---
 
@@ -144,7 +144,7 @@ This page lists all configured containers and provides an overview of:
 - 🔗 Network mode
 - ▶️ Autostart status
 
-![Docker Overview](/img/Docker_Overview.png)
+![Docker Overview](/img/docker/Docker_Overview.png)
 
 ---
 
@@ -179,7 +179,7 @@ A stack represents a group of containers that belong together and are managed as
 **Example:**
 - `immich-compose` *(4/4 started)*
 
-![Docker Compose Stack](/img/Docker_Compose_Stack.png)
+![Docker Compose Stack](/img/docker/Docker_Compose_Stack.png)
 
 The stack header shows:
 - 🏷️ Stack name
@@ -199,7 +199,7 @@ Each container within a stack:
 
 This allows visibility into complex applications while keeping the overview clean.
 
-![Docker Compose Stack Expand](/img/Docker_Compose_Stack_Expand.png)
+![Docker Compose Stack Expand](/img/docker/Docker_Compose_Stack_Expand.png)
 
 ---
 
@@ -235,7 +235,7 @@ The action menu *(three-dot button)* provides additional Docker management featu
 | 🔍 **Check for Updates** | Manually check for available image updates |
 | ⬆️ **Update All** | Update all containers at once |
 
-![Docker Action Menu](/img/Docker_Action_Menu.png)
+![Docker Action Menu](/img/docker/Docker_Action_Menu.png)
 
 ---
 
@@ -258,7 +258,7 @@ Each individual container provides a context menu with management actions.
 > [!NOTE]
 > These actions apply only to the **selected container**.
 
-![Docker Container Context Menu](/img/Docker_Container_Context_Menu.png)
+![Docker Container Context Menu](/img/docker/Docker_Container_Context_Menu.png)
 
 ---
 
