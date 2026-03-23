@@ -10,6 +10,7 @@ const sidebars = {
       label: '📦 Installation',
       items: [
         { type: 'doc', id: 'Installation/Create-Bootable-Media', label: 'Create Bootable Media' },
+        { type: 'doc', id: 'Installation/Testing-MOS-in-a-Virtual-Machine', label: 'Testing MOS in a Virtual Machine' },
       ],
     },
     {
