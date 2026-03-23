@@ -1,5 +1,5 @@
 ---
-sidebar_label: Start Network Configuration
+sidebar_label: 🌐 Network Configuration
 sidebar_position: 2
 ---
 
