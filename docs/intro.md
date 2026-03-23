@@ -94,8 +94,8 @@ MOS documentation is organized by topic:
 
 | Category | Topics |
 |----------|--------|
-| 🛠️ **Installation** | Create bootable media, VM testing, releases |
-| 🧭 **Quick Start** | WebUI, network, storage, containers, VMs |
+| 📦 **Installation** | Create bootable media, VM testing, releases |
+| 🧭 **Getting Start** | WebUI, network, storage, containers, VMs |
 | ⚙️ **System Management** | Settings, cron, logs, MOS HUB, notify |
 | 🌐 **Network** | Interfaces, bonds, routing, firewall |
 | 💾 **Storage** | Pools, filesystems, shares, snapshots |
@@ -109,31 +109,29 @@ MOS documentation is organized by topic:
 ## 📦 Related Repositories
 
 ### 📚 MOS Documentation
-- 📖 **[MOS Docs](https://github.com/J000K3R/mos-docs-staging)**
+- **[MOS Docs](https://github.com/J000K3R/mos-docs-staging)**
 
 ### 🎨 Frontend and API
-- 🎨 **[MOS Frontend](https://github.com/ich777/mos-frontend)**
-- 🔌 **[MOS API](https://github.com/ich777/mos-api)**
+- **[MOS Frontend](https://github.com/ich777/mos-frontend)**
+- **[MOS API](https://github.com/ich777/mos-api)**
 
 ### 💾 Base OS
-- 💾 **[MOS Kernel](https://github.com/ich777/mos-kernel)**
-- 💾 **[MOS rootfs](https://github.com/ich777/mos-rootfs)**
+- **[MOS Kernel](https://github.com/ich777/mos-kernel)**
+- **[MOS rootfs](https://github.com/ich777/mos-rootfs)**
 
 ### 🐳 Base Packages
-- 🐳 **[MOS Docker](https://github.com/ich777/mos-moby)**
-- 📦 **[MOS LXC](https://github.com/ich777/mos-lxc)**
-- 🖥️ **[MOS QEMU](https://github.com/ich777/mos-qemu)**
+- **[MOS Docker](https://github.com/ich777/mos-moby)**
+- **[MOS LXC](https://github.com/ich777/mos-lxc)**
+- **[MOS QEMU](https://github.com/ich777/mos-qemu)**
 
 ### 🔧 MOS Specific Packages
-- 🔔 **[MOS Notify](https://github.com/ich777/mos-notify)**
-- 🧩 **[MOS image-sha](https://github.com/ich777/mos-image-sha)**
-- 💾 **[MOS mergerfs](https://github.com/ich777/mos-mergerfs)**
-- 💾 **[MOS SnapRAID](https://github.com/ich777/mos-snapraid)**
-- 🐶 **[MOS docker-watchdog](https://github.com/ich777/mos-docker-watchdog)**
+- **[MOS Notify](https://github.com/ich777/mos-notify)**
+- **[MOS image-sha](https://github.com/ich777/mos-image-sha)**
+- **[MOS SnapRAID](https://github.com/ich777/mos-snapraid)**
+- **[MOS docker-watchdog](https://github.com/ich777/mos-docker-watchdog)**
 
 ### 💾 MOS Misc Custom Repositories
-- 💾 **[MOS Boot Files](https://github.com/ich777/mos-boot-files)**
-- 💾 **[MOS GRUB](https://github.com/ich777/mos-grub)**
+- **[MOS GRUB](https://github.com/ich777/mos-grub)**
 
 ---
 
