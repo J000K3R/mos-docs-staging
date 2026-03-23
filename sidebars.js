@@ -34,6 +34,17 @@ const sidebars = {
         { type: 'doc', id: 'System-Startup/Pool-Mount-Scripts', label: 'Pool Mount Scripts' },
       ],
     },
+    {
+      type: 'category',
+      label: '⚙️ System Management',
+      items: [
+        {
+          type: 'category',           // ← Subkategorie
+          label: '💻 System Configuration',
+          items: [
+        { type: 'doc', id: 'System-Management/System-Configuration/System-Settings', label: 'Pre-Start Script' },
+      ],
+    },
   ],
 };
 
