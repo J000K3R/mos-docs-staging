@@ -25,6 +25,13 @@ const sidebars = {
         { type: 'doc', id: 'Quick-Start/Create-the-First-VM', label: 'Create the First VM' },
       ],
     },
+    {
+      type: 'category',
+      label: '🚀 System Startup',
+      items: [
+        { type: 'doc', id: 'System-Startup/Pre-Start-Script', label: 'Pre-Start Script' },
+      ],
+    },
   ],
 };
 
