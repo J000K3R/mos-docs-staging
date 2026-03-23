@@ -43,6 +43,7 @@ const sidebars = {
           label: '💻 System Configuration',
           items: [
             { type: 'doc', id: 'System-Management/System-Configuration/System-Settings', label: 'System Settings' },
+            { type: 'doc', id: 'System-Management/System-Configuration/Cron-Jobs', label: 'System Settings' },
           ],
         },
       ],
