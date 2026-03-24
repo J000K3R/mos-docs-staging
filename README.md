@@ -4,6 +4,8 @@ This repository serves as a **staging environment for our Docusaurus-based docum
 
 It allows MOS members to preview, test, and review documentation changes before they are published to the live environment.
 
+Test Website: https://j000k3r.github.io/mos-docs-staging/
+
 ---
 
 ## 🎯 Purpose
