@@ -11,8 +11,8 @@ const config = {
     v4: true,
   },
 
-url: 'https://J000K3R.github.io',
-baseUrl: '/mos-docs-staging/',
+  url: 'https://J000K3R.github.io',
+  baseUrl: '/mos-docs-staging/',
   organizationName: 'ich777',
   projectName: 'mos-docs',
   onBrokenLinks: 'warn',
@@ -21,25 +21,38 @@ baseUrl: '/mos-docs-staging/',
     defaultLocale: 'en',
     locales: ['en'],
   },
-  
-presets: [
-  [
-    'classic',
-    {
-      docs: {
-        sidebarPath: './sidebars.js',
-        routeBasePath: 'docs',
-        editUrl: 'https://github.com/J000K3R/mos-docs-staging/edit/main/',
-        showLastUpdateTime: true,
-        showLastUpdateAuthor: true,
+
+  // ✅ Local Search Plugin
+  plugins: [
+    [
+      '@cmfcmf/docusaurus-search-local',
+      {
+        language: 'en',
+        indexDocs: true,
+        indexPages: false,
+        docsRouteBasePath: '/docs',
       },
-      blog: false, // Deaktiviert den Blog komplett
-      theme: {
-        customCss: './src/css/custom.css',
-      },
-    },
+    ],
   ],
-],
+
+  presets: [
+    [
+      'classic',
+      {
+        docs: {
+          sidebarPath: './sidebars.js',
+          routeBasePath: 'docs',
+          editUrl: 'https://github.com/J000K3R/mos-docs-staging/edit/main/',
+          showLastUpdateTime: true,
+          showLastUpdateAuthor: true,
+        },
+        blog: false,
+        theme: {
+          customCss: './src/css/custom.css',
+        },
+      },
+    ],
+  ],
 
   themeConfig: {
     image: 'img/mos-social-card.jpg',
@@ -124,7 +137,6 @@ presets: [
     },
   },
 
-  // Inline-CSS für Hero-Header (garantiert funktioniert)
   scripts: [
     {
       src: 'data:text/css;base64,' + btoa(`
