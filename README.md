@@ -56,4 +56,11 @@ before going live.
 
 ---
 
+## 📄 Legal
+
+- [License](./LICENSE)
+- [Third-Party Licenses](./THIRD-PARTY.md)
+
+---
+
 Happy testing 🚀
