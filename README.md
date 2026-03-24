@@ -27,7 +27,6 @@ The staging environment is designed to:
 ```
 .
 ├── docs/           # Documentation pages
-├── blog/           # Blog (if used)
 ├── src/            # Custom components / theme overrides
 ├── static/         # Static assets (images, etc.)
 ├── docusaurus.config.js
