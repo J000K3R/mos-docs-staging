@@ -57,6 +57,7 @@ const sidebars = {
       items: [
         { type: 'doc', id: 'Virtualization/Docker-Service', label: 'Docker Service' },
         { type: 'doc', id: 'Virtualization/LXC-Service', label: 'LXC Service' },
+        { type: 'doc', id: 'Virtualization/VM-Service', label: 'VM Service' },
       ],
     },
   ],
