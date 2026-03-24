@@ -223,4 +223,3 @@ Proper use of cron jobs ensures a reliable and self-maintaining system.
 ---
 
 _Parts of this documentation were created with the assistance of AI tools. All AI-generated content has undergone review, but it may still contain inaccuracies, omissions, or outdated information._
-```
