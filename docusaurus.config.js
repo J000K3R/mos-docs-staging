@@ -22,18 +22,16 @@ const config = {
     locales: ['en'],
   },
 
-  // ✅ Local Search Plugin
-  plugins: [
-    [
-      '@cmfcmf/docusaurus-search-local',
-      {
-        language: 'en',
-        indexDocs: true,
-        indexPages: false,
-        docsRouteBasePath: '/docs',
-      },
-    ],
+plugins: [
+  [
+    '@cmfcmf/docusaurus-search-local',
+    {
+      language: 'en',
+      indexDocs: true,
+      indexPages: false,
+    },
   ],
+],
 
   presets: [
     [
