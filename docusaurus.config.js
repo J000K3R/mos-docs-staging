@@ -30,6 +30,8 @@ presets: [
         sidebarPath: './sidebars.js',
         routeBasePath: 'docs',
         editUrl: 'https://github.com/J000K3R/mos-docs-staging/edit/main/',
+        showLastUpdateTime: true,
+        showLastUpdateAuthor: true,
       },
       blog: false, // Deaktiviert den Blog komplett
       theme: {
