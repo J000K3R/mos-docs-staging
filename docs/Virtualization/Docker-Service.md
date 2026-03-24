@@ -16,7 +16,7 @@ Changes in this section affect all Docker containers running on the system.
 
 Example:
 
-<img width="2544" height="1227" alt="image" src="https://github.com/user-attachments/assets/9f62ce08-2f02-4321-8851-a6d60ad9ef3a" />
+![Docker Service](/img/virtualization/Docker_Service.png)
 
 ---
 
