@@ -28,7 +28,8 @@ plugins: [
     {
       language: 'en',
       indexDocs: true,
-      indexPages: false,
+      indexPages: true,
+      indexBlog: false,
     },
   ],
 ],
