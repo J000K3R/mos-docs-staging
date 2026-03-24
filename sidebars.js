@@ -45,6 +45,7 @@ const sidebars = {
             { type: 'doc', id: 'System-Management/System-Configuration/System-Settings', label: 'System Settings' },
             { type: 'doc', id: 'System-Management/System-Configuration/Cron-Jobs', label: 'System Settings' },
             { type: 'doc', id: 'System-Management/System-Configuration/Logs', label: 'System Settings' },
+            { type: 'doc', id: 'System-Management/System-Configuration/MOS-Hub', label: 'System Settings' },
           ],
         },
       ],
