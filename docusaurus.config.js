@@ -12,7 +12,7 @@ const config = {
   },
 
   url: 'https://J000K3R.github.io',
-  baseUrl: '/mos-docs-staging/',
+  baseUrl: '/mos-docs-staging-alpha/',
   organizationName: 'ich777',
   projectName: 'mos-docs',
   onBrokenLinks: 'warn',
@@ -22,17 +22,7 @@ const config = {
     locales: ['en'],
   },
 
-plugins: [
-  [
-    '@cmfcmf/docusaurus-search-local',
-    {
-      language: 'en',
-      indexDocs: true,
-      indexPages: true,
-      indexBlog: false,
-    },
-  ],
-],
+  plugins: [],
 
   presets: [
     [

@@ -26,7 +26,7 @@ Ready to try MOS? Here's how to begin:
 |-------|-------------|
 | [WebUI Overview](/docs/Quick-Start/WebUI-Overview) | Learn how to navigate the MOS interface |
 | [Network Configuration](/docs/Quick-Start/Start-Network-Configuration) | Set up your network interfaces (DHCP or static) |
-| [Storage Pool Setup](/docs/Quick-Start/Create-a-Storage-Pool) | Create your first storage pool with mergerfs and SnapRAID |
+| [Storage Pool Setup](/docs/Quick-Start/Create-Storage-Pool) | Create your first storage pool with mergerfs and SnapRAID |
 | [First Container](/docs/Quick-Start/Start-the-First-Container) | Deploy your first Docker container |
 
 ---
