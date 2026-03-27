@@ -47,6 +47,7 @@ const sidebars = {
             { type: 'doc', id: 'System-Management/System-Configuration/Logs', label: 'Logs' },
             { type: 'doc', id: 'System-Management/System-Configuration/MOS-Hub', label: 'MOS-Hub' },
             { type: 'doc', id: 'System-Management/System-Configuration/Notify', label: 'Notify' },
+            { type: 'doc', id: 'System-Management/System-Configuration/Token', label: 'Token' },
           ],
         },
       ],
