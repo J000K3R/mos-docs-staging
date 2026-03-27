@@ -21,7 +21,7 @@ This section defines how the system connects to the network and how services suc
 
 Example:
 
-![Network Interfaces](/img/network/Network_Interfaces.png.png)
+![Network Interfaces](/img/network/Network_Interfaces.png)
 
 ---
 
