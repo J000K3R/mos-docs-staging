@@ -57,6 +57,22 @@ const sidebars = {
     },
     {
       type: 'category',
+      label: '👤 User Management',
+      items: [
+        { type: 'doc', id: 'User-Management/Users', label: 'Users' },
+      ],
+    },
+    {
+      type: 'category',
+      label: '🚀 System Startup',
+      items: [
+        { type: 'doc', id: 'System-Startup/Pre-Start-Script', label: 'Pre-Start Script' },
+        { type: 'doc', id: 'System-Startup/Post-Start-Script', label: 'Post-Start Script' },
+        { type: 'doc', id: 'System-Startup/Pool-Mount-Scripts', label: 'Pool Mount Scripts' },
+      ],
+    },
+    {
+      type: 'category',
       label: '🗂️ Virtualization',
       items: [
         { type: 'doc', id: 'Virtualization/Docker-Service', label: 'Docker Service' },
