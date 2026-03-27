@@ -59,6 +59,12 @@ const sidebars = {
         { type: 'doc', id: 'Virtualization/LXC-Service', label: 'LXC Service' },
         { type: 'doc', id: 'Virtualization/VM-Service', label: 'VM Service' },
       ],
+    {
+      type: 'category',
+      label: '🌐 Network',
+      items: [
+        { type: 'doc', id: 'Network/Network-Configuration', label: 'Network Configuration' },
+      ],
     },
   ],
 };
