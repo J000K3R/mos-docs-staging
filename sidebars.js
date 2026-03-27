@@ -40,6 +40,7 @@ const sidebars = {
       items: [
         { type: 'doc', id: 'System-Management/Boot', label: 'Boot' },
         { type: 'doc', id: 'System-Management/Drivers', label: 'Drivers' },
+        { type: 'doc', id: 'System-Management/Sensors', label: 'Sensors' },
         {
           type: 'category',
           label: '💻 System Configuration',
