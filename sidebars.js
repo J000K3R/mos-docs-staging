@@ -87,6 +87,13 @@ const sidebars = {
         { type: 'doc', id: 'Network/Network-Configuration', label: 'Network Configuration' },
       ],
     },
+    {
+      type: 'category',
+      label: '🔌 API',
+      items: [
+        { type: 'doc', id: 'API/API', label: 'API' },
+      ],
+    },
   ],
 };
 export default sidebars;
