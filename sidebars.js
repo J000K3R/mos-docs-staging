@@ -40,7 +40,6 @@ const sidebars = {
       items: [
         { type: 'doc', id: 'System-Management/Boot', label: 'Boot' },
         { type: 'doc', id: 'System-Management/Drivers', label: 'Drivers' },
-        { type: 'doc', id: 'System-Management/Sensors', label: 'Sensors' },
         {
           type: 'category',
           label: '💻 System Configuration',
@@ -50,6 +49,7 @@ const sidebars = {
             { type: 'doc', id: 'System-Management/System-Configuration/Logs', label: 'Logs' },
             { type: 'doc', id: 'System-Management/System-Configuration/MOS-Hub', label: 'MOS-Hub' },
             { type: 'doc', id: 'System-Management/System-Configuration/Notify', label: 'Notify' },
+            { type: 'doc', id: 'System-Management/System-Configuration/Sensors', label: 'Sensors' },
             { type: 'doc', id: 'System-Management/System-Configuration/Token', label: 'Token' },
           ],
         },
