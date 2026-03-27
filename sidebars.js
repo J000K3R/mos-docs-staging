@@ -38,6 +38,8 @@ const sidebars = {
       type: 'category',
       label: '⚙️ System Management',
       items: [
+        { type: 'doc', id: 'System-Management/Boot', label: 'Boot' },
+        { type: 'doc', id: 'System-Management/Drivers', label: 'Drivers' },
         {
           type: 'category',
           label: '💻 System Configuration',
