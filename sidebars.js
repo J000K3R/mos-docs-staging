@@ -102,6 +102,15 @@ const sidebars = {
         { type: 'doc', id: 'MOS-Hub/MOS-Plugin-Development-Guide', label: 'MOS Plugin Development Guide' },
       ],
     },
+    {
+      type: 'category',
+      label: '📖 Advanced Usage',
+      items: [
+        { type: 'doc', id: 'Advanced Usage/Docker-Local-Host-Access-Shim', label: 'Docker Local Host Access' },
+        { type: 'doc', id: 'Advanced Usage/Disable-MD5-Verification', label: 'Disable MD5 Verification' },
+        { type: 'doc', id: 'Advanced Usage/Early-Boot-Script', label: 'Early Boot Script' },
+      ],
+    },
   ],
 };
 export default sidebars;
