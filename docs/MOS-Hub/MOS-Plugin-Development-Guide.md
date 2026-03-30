@@ -1,6 +1,6 @@
 ---
 sidebar_label: 📦 MOS Plugin Development Guide
-sidebar_position: 1
+sidebar_position: 2
 ---
 
 # 📦 MOS Plugin Repository

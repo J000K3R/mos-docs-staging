@@ -96,8 +96,9 @@ const sidebars = {
     },
     {
       type: 'category',
-      label: '📦 MOS Hub',
+      label: '🏬 MOS Hub',
       items: [
+        { type: 'doc', id: 'MOS-Hub/Creating-Your-Own-MOS-Hub-Repository', label: 'Creating Your Own MOS Hub Repository' },
         { type: 'doc', id: 'MOS-Hub/MOS-Plugin-Development-Guide', label: 'MOS Plugin Development Guide' },
       ],
     },
