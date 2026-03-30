@@ -64,8 +64,8 @@ plugins: [
       title: 'MOS-Docs',
       logo: {
         alt: 'MOS Logo',
-        src: 'img/mos-black.png',
-        srcDark: 'img/mos-white.png',
+        src: 'img/mos_black.png',
+        srcDark: 'img/mos_white.png',
       },
       items: [
         {
