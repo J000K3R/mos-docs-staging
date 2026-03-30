@@ -5,7 +5,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 const config = {
   title: 'MOS-Docs',
   tagline: 'Modular Operating System for Servers and Homelabs',
-  favicon: 'https://mos-official.net/assets/mos-black_square.png',
+  favicon: 'img/favicon.ico',
 
   future: {
     v4: true,
@@ -64,8 +64,8 @@ plugins: [
       title: 'MOS-Docs',
       logo: {
         alt: 'MOS Logo',
-        src: '/img/mos-black.png',
-        srcDark: '/img/mos-white.png',
+        src: 'img/mos-black.png',
+        srcDark: 'img/mos-white.png',
       },
       items: [
         {
@@ -84,6 +84,10 @@ plugins: [
             {
               label: 'Overview',
               href: '/',
+            },
+            {
+              label: 'MOS Website',
+              href: 'https://mos-official.net',
             },
           ],
         },
