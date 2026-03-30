@@ -64,18 +64,12 @@ plugins: [
       title: 'MOS-Docs',
       logo: {
         alt: 'MOS Logo',
-        src: 'https://raw.githubusercontent.com/ich777/mos-docs/master/images/mos-black.png',
-        srcDark: 'https://raw.githubusercontent.com/ich777/mos-docs/master/images/mos-white.png',
+        src: '/img/mos-black.png',
+        srcDark: '/img/mos-white.png',
       },
       items: [
         {
-          type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
-          position: 'left',
-          label: 'Documentation',
-        },
-        {
-          href: 'https://github.com/ich777/mos-docs',
+          href: 'https://github.com/ich777/mos-releases',
           label: 'GitHub',
           position: 'right',
         },
@@ -90,10 +84,6 @@ plugins: [
             {
               label: 'Overview',
               href: '/',
-            },
-            {
-              label: 'Documentation',
-              href: '/docs/intro',
             },
           ],
         },
