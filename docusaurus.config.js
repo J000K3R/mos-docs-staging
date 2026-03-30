@@ -40,7 +40,7 @@ plugins: [
       {
         docs: {
           sidebarPath: './sidebars.js',
-          routeBasePath: 'docs',
+          routeBasePath: '/',
           editUrl: 'https://github.com/J000K3R/mos-docs-staging/edit/main/',
           showLastUpdateTime: true,
           showLastUpdateAuthor: true,

@@ -1,8 +1,8 @@
 ---
-sidebar_position: 1
+slug: /
 ---
 
-# Welcome to MOS
+# Welcome to MOS-Docs
 
 **MOS** (Modular Operating System) is a lightweight, web-based management system for servers and homelabs — built on **Devuan Linux**.
 
