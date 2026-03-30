@@ -119,11 +119,11 @@ plugins: [
           items: [
             {
               label: 'GitHub',
-              href: 'https://github.com/ich777/mos',
+              href: 'https://github.com/ich777/mos-releases',
             },
             {
               label: 'GitHub Issue',
-              href: 'https://github.com/ich777/mos/releases',
+              href: 'https://github.com/ich777/mos-releases/issues',
             },
           ],
         },
