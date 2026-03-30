@@ -94,6 +94,13 @@ const sidebars = {
         { type: 'doc', id: 'API/API', label: 'API' },
       ],
     },
+    {
+      type: 'category',
+      label: '📦 MOS Hub',
+      items: [
+        { type: 'doc', id: 'MOS-Hub/MOS-Plugin-Development-Guide', label: 'MOS Plugin Development Guide' },
+      ],
+    },
   ],
 };
 export default sidebars;
