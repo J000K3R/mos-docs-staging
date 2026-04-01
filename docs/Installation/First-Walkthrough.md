@@ -121,6 +121,23 @@ The Network Interfaces page allows you to configure:
 - **IPv4 DHCP** — Toggle automatic IP assignment via DHCP
 - **Enable IPv6** — Toggle IPv6 support
 
+---
+
+## ⚠️ Network Configuration Safety
+
+When applying network changes, MOS protects you from accidental lockouts.
+
+After applying a new network configuration:
+
+- MOS starts a **60 second confirmation timer**
+- You must click **Accept** to confirm the new configuration
+
+If the configuration is **not confirmed within 60 seconds**:
+
+- The previous network configuration will be **automatically restored**
+
+This prevents losing access to the WebUI due to incorrect network settings.
+
 For detailed network configuration options, including static IP assignment, VLANs, and advanced settings, refer to the [Network Configuration](../Network/Network-Configuration.md) documentation.
 
 ---
