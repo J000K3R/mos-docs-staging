@@ -3,7 +3,7 @@ sidebar_label: System Settings
 sidebar_position: 2
 ---
 
-# System
+# ⚙️ System
 
 The **System** menu provides core configuration options that control system identity, localization, power behavior, notifications, time synchronization, and network proxy settings.
 
@@ -19,7 +19,7 @@ Example:
 
 ---
 
-## General System Settings
+## 🖥️ General System Settings
 
 ### Hostname
 
@@ -102,7 +102,7 @@ Controls whether command and system history is preserved across reboots.
 
 ---
 
-## Display Settings
+## 🖥️ Display Settings
 
 ### Powersave
 
@@ -131,7 +131,7 @@ Defines the inactivity timeout for the user interface.
 
 ---
 
-## Notification Sounds
+## 🔊 Notification Sounds
 
 Controls system notification sounds.
 
@@ -150,7 +150,7 @@ Controls system notification sounds.
 
 ---
 
-## NTP (Time Synchronization)
+## 🕐 NTP (Time Synchronization)
 
 ### NTP Enabled
 - Enable / Disable
@@ -185,7 +185,7 @@ Defines the NTP servers used for time synchronization.
 
 ---
 
-## Proxy Settings
+## 🌐 Proxy Settings
 
 Defines global proxy configuration for outbound network traffic.
 
@@ -218,7 +218,85 @@ Defines addresses or domains that bypass the proxy.
 
 ---
 
-## Summary
+## 💾 Swapfile
+
+### Enable Swapfile
+
+Controls whether the system uses a swap file for additional virtual memory.
+
+**Notes:**
+- Provides additional memory when physical RAM is exhausted
+- Useful for systems with limited RAM
+
+### Swapfile Path
+
+Defines the location of the swap file on the filesystem.
+
+### Swapfile Size
+
+Defines the size of the swap file.
+
+### Swapfile Priority
+
+Defines the priority of the swap file relative to other swap devices.
+
+**Default:**
+- `-2`
+
+---
+
+## ⚡ Zswap
+
+### Zswap Enabled
+
+Enables or disables the zswap compressed caching feature.
+
+**Notes:**
+- Compresses memory pages before swapping to disk
+- Can improve performance on systems with swap
+
+### Shrinker Enabled
+
+Controls whether the zswap shrinker is active.
+
+### Zswap Max Pool Percent
+
+Defines the maximum percentage of memory that can be used for the zswap pool.
+
+**Default:**
+- `20`
+
+### Zswap Compressor
+
+Defines the compression algorithm used by zswap.
+
+**Default:**
+- `zstd`
+
+### Zswap Accept Threshold Percent
+
+Defines the threshold percentage for accepting pages into zswap.
+
+**Default:**
+- `90`
+
+---
+
+## 📦 Binfmt
+
+### Enable Binfmt
+
+Enables or disables support for additional binary formats through binfmt_misc.
+
+**Notes:**
+- Allows execution of non-native binary formats
+- Used for compatibility layers and emulation
+
+### Binfmt Architectures
+
+Defines which additional architectures are supported through binfmt.
+
+---
 
 The System menu centralizes essential configuration options that affect the entire OS.
 
