@@ -20,7 +20,7 @@ Once the system is fully booted, the initial setup wizard is accessible through 
 
 ---
 
-### 1. 🔐 Root Password
+## 1. 🔐 Root Password
 
 The first step is to set the root password. This password is used for SSH and console access to the server.
 
@@ -39,7 +39,7 @@ Click **Next** to proceed to the next step.
 
 ---
 
-### 2. 🌐 Web Login & Settings
+## 2. 🌐 Web Login & Settings
 
 The second step configures the WebUI administrator account and display preferences.
 
@@ -63,7 +63,7 @@ Click **Finish** to complete the initial setup.
 
 ---
 
-### 3. 🔑 Login
+## 3. 🔑 Login
 
 After completing the setup wizard, you are redirected to the MOS Portal login screen.
 
@@ -82,7 +82,7 @@ Click **Login** to access the MOS WebUI.
 
 ---
 
-### 4. 📊 Dashboard
+## 4. 📊 Dashboard
 
 After logging in, you are taken to the MOS Dashboard which provides an overview of your system.
 
@@ -99,7 +99,7 @@ The Dashboard displays the following information:
 
 ---
 
-### 5. 🌐 Network Configuration
+## 5. 🌐 Network Configuration
 
 One of the first settings to configure is the network interface. Click the menu icon (three horizontal lines) in the top-left corner to open the sidebar navigation.
 
@@ -125,11 +125,11 @@ For detailed network configuration options, including static IP assignment, VLAN
 
 ---
 
-### 6. ⚙️ System Settings
+## 6. ⚙️ System Settings
 
 The System Settings page contains essential system configuration options. Navigate to **Settings → System Configuration → System** to access these settings.
 
-#### 6.1 🖥️ General Settings
+### 6.1 🖥️ General Settings
 
 ![System Settings - General](/img/first-walkthrough/System_Settings_General.png)
 
@@ -144,7 +144,7 @@ Configure basic system parameters:
 - **Web UI HTTP Port** — The port for the WebUI (default: `80`)
 - **Network Interfaces** — Select which network interface to use for the WebUI
 
-#### 6.2 🔊 Display & Notification Sound
+### 6.2 🔊 Display & Notification Sound
 
 ![System Settings - Display](/img/first-walkthrough/System_Settings_Display.png)
 
@@ -164,7 +164,7 @@ Configure display and notification behavior:
 - **Sound on shutdown** — Play sound when system shuts down
 - **Sound on startup** — Play sound when system starts
 
-#### 6.3 💾 Memory & Binary Format Settings
+### 6.3 💾 Memory & Binary Format Settings
 
 ![System Settings - Memory](/img/first-walkthrough/System_Settings_Memory.png)
 
@@ -187,7 +187,7 @@ Configure memory management and binary format support:
 - **Enable Binfmt** — Support for additional binary formats
 - **Binfmt Architectures** — Supported additional architectures
 
-#### 6.4 🕐 Time & Proxy Settings
+### 6.4 🕐 Time & Proxy Settings
 
 ![System Settings - Time & Proxy](/img/first-walkthrough/System_Settings_Time_Proxy.png)
 
@@ -209,7 +209,7 @@ For detailed information about all system settings, refer to the [System Setting
 
 ---
 
-### 7. 🛍️ MOS Hub
+## 7. 🛍️ MOS Hub
 
 The MOS Hub is an integrated application hub similar to an app store for MOS. It provides access to plugins, Docker templates, and Docker Compose templates that can be deployed directly from the WebUI.
 
@@ -227,7 +227,7 @@ For detailed information about the MOS Hub, including how to deploy applications
 
 ---
 
-### 8. � Install to Disk
+## 8. 💾 Install to Disk
 
 If you installed MOS from a USB stick and want to permanently install it to an internal disk, use the **Install to Disk** option. Navigate to **Settings → Hardware → Boot** to access the boot configuration.
 
@@ -254,7 +254,7 @@ For detailed information, refer to the [Boot](../System-Management/Boot.md) docu
 
 ---
 
-### 9. �🔄 System Update
+## 9. 🔄 System Update
 
 The System Update option allows you to update the MOS firmware to a newer version. Navigate to **Settings → System → Update system** to access the update dialog.
 
