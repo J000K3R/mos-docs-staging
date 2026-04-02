@@ -78,13 +78,21 @@ html[data-theme='dark'] .footer {
 
 /* ── Links ── */
 a {
-  color: var(--ifm-color-primary);
+  color: #1d4ed8;
   text-decoration: none;
 }
 
 a:hover {
-  color: var(--ifm-color-primary-dark);
+  color: #1e40af;
   text-decoration: underline;
+}
+
+html[data-theme='dark'] a {
+  color: #60a5fa;
+}
+
+html[data-theme='dark'] a:hover {
+  color: #93c5fd;
 }
 
 /* ── Buttons ── */
