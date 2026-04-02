@@ -104,6 +104,14 @@ const sidebars = {
         { type: 'doc', id: 'Advanced Usage/Early-Boot-Script', label: 'Early Boot Script' },
       ],
     },
+    {
+      type: 'category',
+      label: '📋 Release Notes',
+      items: [
+        { type: 'doc', id: 'release-notes/index', label: 'Overview' },
+        { type: 'doc', id: 'release-notes/0.2.3-beta', label: '0.2.3-beta' },
+      ],
+    },
   ],
 };
 export default sidebars;
