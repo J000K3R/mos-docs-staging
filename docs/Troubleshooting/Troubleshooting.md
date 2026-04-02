@@ -1,6 +1,6 @@
 ---
 title: Troubleshooting
-sidebar_label: Troubleshooting 🛠️
+sidebar_label: 🛠️ Troubleshooting
 sidebar_position: 1
 ---
 
