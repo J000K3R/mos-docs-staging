@@ -37,7 +37,24 @@ html[data-theme='dark'] {
   --docusaurus-highlighted-code-line-bg: rgba(255, 255, 255, 0.1);
 }
 
-/* Hero-Header Hintergründe */
+/* ── Navbar: Logo links, Titel zentriert ── */
+.navbar__inner {
+  position: relative;
+}
+
+/* Titel aus dem normalen Flow rausnehmen und zur Navbar-Mitte zentrieren */
+/* .navbar__brand hat kein position gesetzt → .navbar__title wird relativ zu .navbar__inner positioniert */
+.navbar__title {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.8rem;
+  font-weight: 600;
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+/* ── Hero-Header Hintergründe ── */
 .heroBanner {
   background: linear-gradient(135deg, #ffffff 0%, #f3f4f6 100%);
 }
@@ -46,7 +63,7 @@ html[data-theme='dark'] .heroBanner {
   background: linear-gradient(135deg, #111827 0%, #1f2937 100%);
 }
 
-/* Footer */
+/* ── Footer ── */
 .footer a {
   color: #f3f4f6 !important;
 }
@@ -59,7 +76,7 @@ html[data-theme='dark'] .footer {
   border-top: 1px solid var(--ifm-color-gray-600);
 }
 
-/* Links */
+/* ── Links ── */
 a {
   color: var(--ifm-color-primary);
   text-decoration: none;
@@ -70,7 +87,7 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Buttons */
+/* ── Buttons ── */
 .button--primary {
   background-color: var(--ifm-color-primary);
   border-color: var(--ifm-color-primary);
@@ -94,7 +111,7 @@ a:hover {
   color: white;
 }
 
-/* Code-Blöcke */
+/* ── Code-Blöcke ── */
 .codeBlockContainer {
   border-radius: 8px;
   overflow: hidden;
