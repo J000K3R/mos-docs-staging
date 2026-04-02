@@ -33,9 +33,9 @@ Enter and confirm the desired root password in the two input fields:
 
 Click **Next** to proceed to the next step.
 
----
-
-> 💡 **Note:** The root password is required for direct system access via SSH or the physical console. The WebUI uses a separate login covered in the next step.
+:::note
+The root password is required for direct system access via SSH or the physical console. The WebUI uses a separate login covered in the next step.
+:::
 
 ---
 
@@ -121,9 +121,7 @@ The Network Interfaces page allows you to configure:
 - **IPv4 DHCP** — Toggle automatic IP assignment via DHCP
 - **Enable IPv6** — Toggle IPv6 support
 
----
-
-## ⚠️ Network Configuration Safety
+:::warning ⚠️ Network Configuration Safety
 
 When applying network changes, MOS protects you from accidental lockouts.
 
@@ -139,6 +137,8 @@ If the configuration is **not confirmed within 60 seconds**:
 This prevents losing access to the WebUI due to incorrect network settings.
 
 For detailed network configuration options, including static IP assignment, VLANs, and advanced settings, refer to the [Network Configuration](../Network/Network-Configuration.md) documentation.
+
+:::
 
 ---
 
@@ -252,7 +252,9 @@ If you installed MOS from a USB stick and want to permanently install it to an i
 
 Click **Install to Disk** to install the system bootloader and copy the `/boot` contents to a selected disk.
 
-> ⚠️ **WARNING:** After the installation finishes, shutdown or reboot your server immediately. All further changes after "Install to Disk" will not be saved.
+:::warning
+After the installation finishes, shutdown or reboot your server immediately. All further changes after "Install to Disk" will not be saved.
+:::
 
 The recommended procedure:
 1. Click **Install to Disk** and select your target device
@@ -298,8 +300,9 @@ Select your target firmware:
 
 Click **Ok** to start the update process, or **Cancel** to close the dialog without updating.
 
-> [!NOTE]
-> 💡 **Note:** It is recommended to check for updates regularly to ensure your system has the latest security patches and features.
+:::tip
+It is recommended to check for updates regularly to ensure your system has the latest security patches and features.
+:::
 
 ---
 

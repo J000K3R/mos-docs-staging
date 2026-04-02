@@ -8,8 +8,9 @@ sidebar_position: 2
 MOS can be tested easily inside a virtual machine.
 This is useful for evaluation, development, or getting familiar with the WebUI before installing MOS on physical hardware.
 
-> [!NOTE]
-> 💡 **Note:** MOS supports **UEFI boot only** by default. Legacy BIOS / CSM boot is **not supported**.
+:::note
+MOS supports **UEFI boot only** by default. Legacy BIOS / CSM boot is **not supported**.
+:::
 
 ---
 
@@ -70,7 +71,9 @@ The extracted image must be attached as a **USB device** — not as a regular vi
 | **KVM / QEMU** | Attach the image as a USB storage device |
 | **VMware / VirtualBox** | Use USB passthrough or raw image support with UEFI enabled |
 
-> The image already contains everything needed to boot MOS.
+:::note
+The image already contains everything needed to boot MOS.
+:::
 
 ---
 
@@ -78,8 +81,9 @@ The extracted image must be attached as a **USB device** — not as a regular vi
 
 The following steps describe how to run the MOS test image inside Proxmox VE.
 
-> [!WARNING]
-> ⚠️ MOS requires UEFI boot and Secure Boot must be **disabled**.
+:::warning
+MOS requires UEFI boot and Secure Boot must be **disabled**.
+:::
 
 ---
 
@@ -151,7 +155,9 @@ usb0: spice,usb3=1
 args: -drive file=/var/lib/vz/images/mos_amd64.img,format=raw,if=none,id=usbdisk -device usb-storage,drive=usbdisk
 ```
 
-> This attaches the MOS image as a USB storage device.
+:::note
+This attaches the MOS image as a USB storage device.
+:::
 
 ---
 

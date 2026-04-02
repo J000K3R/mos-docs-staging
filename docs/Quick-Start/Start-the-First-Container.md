@@ -50,9 +50,10 @@ Defines where Docker stores internal data such as images and layers.
 
 This directory should be located on a **fast and reliable** storage pool.
 
-> [!WARNING]
-> If you plan to put this directory on a **mergerfs pool**, you **must** select the real path to a disk from your mergerfs pool, for example:
-> `/var/mergerfs/main/system/docker`
+:::warning
+If you plan to put this directory on a **mergerfs pool**, you **must** select the real path to a disk from your mergerfs pool, for example:
+`/var/mergerfs/main/system/docker`
+:::
 
 ---
 
@@ -66,8 +67,9 @@ Defines the base path for persistent container configuration data.
 /mnt/main/appdata
 ```
 
-> [!TIP]
-> This location is critical for container persistence and **should be backed up regularly**.
+:::tip
+This location is critical for container persistence and **should be backed up regularly**.
+:::
 
 ---
 
@@ -79,12 +81,13 @@ Defines the Docker storage driver filesystem.
 - `overlay2` *(default, recommended)*
 - `btrfs` *(if your storage uses btrfs)*
 
-> [!WARNING]
-> Changing the storage driver requires **recreating all containers**. To do so safely:
-> 1. Stop the Docker service
-> 2. Delete the Docker directory (usually inside your `system` folder)
-> 3. Change the storage driver
-> 4. Re-enable the Docker service
+:::warning
+Changing the storage driver requires **recreating all containers**. To do so safely:
+1. Stop the Docker service
+2. Delete the Docker directory (usually inside your `system` folder)
+3. Change the storage driver
+4. Re-enable the Docker service
+:::
 
 ---
 
@@ -107,8 +110,9 @@ Defines the delay (in seconds) before Docker starts during system boot.
 
 **Example:** `30`
 
-> [!NOTE]
-> Useful when storage pools or network interfaces need additional time to become available.
+:::note
+Useful when storage pools or network interfaces need additional time to become available.
+:::
 
 ![Docker Wait Times](/img/docker/Docker_Wait_Times.png)
 
@@ -124,8 +128,9 @@ Enables automatic checks for container image updates.
 
 Automatically updates containers based on the configured schedule.
 
-> [!CAUTION]
-> Use with caution in **production environments**.
+:::danger
+Use with caution in **production environments**.
+:::
 
 ---
 
@@ -166,8 +171,9 @@ This allows deploying one or multiple containers using a Docker Compose YAML def
 | **Icon URL** | Icon displayed in the UI |
 | **Web UI URL** | Shortcut to the web interface |
 
-> [!TIP]
-> Docker Compose is recommended for **complex multi-container applications**.
+:::tip
+Docker Compose is recommended for **complex multi-container applications**.
+:::
 
 ---
 
@@ -216,8 +222,9 @@ Clicking the stack menu provides the following actions:
 | **Remove Stack** | Removes the entire stack and all associated containers |
 | **Pull Stack Images** | Pulls the latest images for all containers in the stack |
 
-> [!NOTE]
-> Stack actions always apply to **all containers within the stack**.
+:::note
+Stack actions always apply to **all containers within the stack**.
+:::
 
 ---
 
@@ -255,8 +262,9 @@ Each individual container provides a context menu with management actions.
 | ⚡ **Force Update** | Pulls the latest image and recreates the container |
 | 🗑️ **Delete** | Removes the container and its configuration |
 
-> [!NOTE]
-> These actions apply only to the **selected container**.
+:::note
+These actions apply only to the **selected container**.
+:::
 
 ![Docker Container Context Menu](/img/docker/Docker_Container_Context_Menu.png)
 
@@ -339,8 +347,9 @@ Autostart behavior differs depending on how containers are deployed.
 ### 🐳 Single Containers
 - Autostart can be enabled or disabled **per container**
 
-> [!TIP]
-> Use **stack-level autostart** for multi-container applications to ensure proper startup order.
+:::tip
+Use **stack-level autostart** for multi-container applications to ensure proper startup order.
+:::
 
 ---
 
@@ -353,8 +362,9 @@ The **MOS Hub** provides a template-based container deployment experience simila
 - Simplified setup process
 - Automatic path, port, and variable configuration
 
-> [!TIP]
-> MOS Hub is the **recommended starting point** for new users.
+:::tip
+MOS Hub is the **recommended starting point** for new users.
+:::
 
 ![MOS Hub](/img/MOS_Hub.png)
 

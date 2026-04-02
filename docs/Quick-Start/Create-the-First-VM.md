@@ -48,8 +48,9 @@ Defines how much RAM is allocated to the VM.
 
 Use the slider to set the desired memory size in GB.
 
-> [!NOTE]
-> Only allocate as much memory as the VM actually needs to avoid starving the host system.
+:::note
+Only allocate as much memory as the VM actually needs to avoid starving the host system.
+:::
 
 ---
 
@@ -57,8 +58,9 @@ Use the slider to set the desired memory size in GB.
 
 Allows pinning vCPUs to specific physical CPU cores.
 
-> [!TIP]
-> Useful for performance-critical VMs to reduce CPU scheduling overhead.
+:::tip
+Useful for performance-critical VMs to reduce CPU scheduling overhead.
+:::
 
 ---
 
@@ -90,8 +92,9 @@ Defines the firmware used to boot the VM.
 | `ovmf` | UEFI firmware *(recommended for modern OS)* |
 | `seabios` | Legacy BIOS |
 
-> [!NOTE]
-> Use `ovmf` for Windows 11 and modern Linux distributions that require UEFI.
+:::note
+Use `ovmf` for Windows 11 and modern Linux distributions that require UEFI.
+:::
 
 ---
 
@@ -158,8 +161,9 @@ Click **+ Add CD-ROM** to attach an ISO image as a virtual optical drive.
 
 Available options: `virtio`, `sata` *(default)*, `usb`, `scsi`, `ide`
 
-> [!TIP]
-> Use `sata` for best OS installer compatibility.
+:::tip
+Use `sata` for best OS installer compatibility.
+:::
 
 ---
 
@@ -169,8 +173,9 @@ For Windows VMs, VirtIO drivers are required to use `virtio` disks and network a
 
 Select the **VirtIO ISO** from the dropdown to attach the driver disk.
 
-> [!NOTE]
-> The VirtIO ISO must be downloaded and placed on the system beforehand. It provides drivers for disk controllers, network adapters, and more inside Windows VMs.
+:::note
+The VirtIO ISO must be downloaded and placed on the system beforehand. It provides drivers for disk controllers, network adapters, and more inside Windows VMs.
+:::
 
 ![VirtIO Drivers](/img/vm/VirtIO_Drivers.png)
 
@@ -261,8 +266,9 @@ Click **+ Add Host Device** to pass through a physical PCI device directly to th
 
 ![Create Host Device](/img/vm/Create_Host_Device.png)
 
-> [!WARNING]
-> PCI passthrough gives the VM **exclusive access** to the device. The host will no longer be able to use it while the VM is running.
+:::warning
+PCI passthrough gives the VM **exclusive access** to the device. The host will no longer be able to use it while the VM is running.
+:::
 
 **Common use cases:**
 - GPU passthrough for gaming VMs
@@ -284,8 +290,9 @@ Select the USB device from the dropdown — all currently connected USB devices 
 - USB flash drives
 - Input devices
 
-> [!NOTE]
-> USB passthrough requires the device to be physically connected to the host at VM start time.
+:::note
+USB passthrough requires the device to be physically connected to the host at VM start time.
+:::
 
 ---
 

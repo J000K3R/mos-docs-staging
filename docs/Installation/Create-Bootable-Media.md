@@ -14,7 +14,9 @@ Follow these steps to prepare a bootable USB drive:
 
 Format a USB stick as FAT32 and set the label/name to `MOS`.
 
-> Minimum recommended size: **8 GB** (16 GB recommended to be on the safe side).
+:::note
+Minimum recommended size: **8 GB** (16 GB recommended to be on the safe side).
+:::
 
 ---
 
@@ -28,7 +30,9 @@ Download the latest version of the system (`.zip` archive) from the [Releases](h
 
 Extract the downloaded archive directly onto the USB stick.
 
-> No additional imaging tools or software are required.
+:::note
+No additional imaging tools or software are required.
+:::
 
 ---
 
@@ -50,8 +54,9 @@ http://MOS-IP/
 
 ---
 
-> [!NOTE]
-> 💡 **Note:** While a USB stick is recommended, you can also use an external hard drive or card reader as long as it is formatted as FAT32.
+:::note
+While a USB stick is recommended, you can also use an external hard drive or card reader as long as it is formatted as FAT32.
+:::
 
 ---
 

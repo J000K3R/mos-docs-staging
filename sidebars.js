@@ -28,19 +28,11 @@ const sidebars = {
     },
     {
       type: 'category',
-      label: '🚀 System Startup',
-      items: [
-        { type: 'doc', id: 'System-Startup/Pre-Start-Script', label: 'Pre-Start Script' },
-        { type: 'doc', id: 'System-Startup/Post-Start-Script', label: 'Post-Start Script' },
-        { type: 'doc', id: 'System-Startup/Pool-Mount-Scripts', label: 'Pool Mount Scripts' },
-      ],
-    },
-    {
-      type: 'category',
       label: '⚙️ System Management',
       items: [
         { type: 'doc', id: 'System-Management/Boot', label: 'Boot' },
         { type: 'doc', id: 'System-Management/Drivers', label: 'Drivers' },
+        { type: 'doc', id: 'System-Management/ZFS', label: 'ZFS' },
         {
           type: 'category',
           label: '💻 System Configuration',

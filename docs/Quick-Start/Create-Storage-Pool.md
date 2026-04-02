@@ -15,7 +15,9 @@ Pools are required for:
 - Virtual machines
 - Media and backup data
 
-If you want to use ZFS, please take a look at the following section: [ZFS](https://github.com/ich777/mos-docs/blob/master/System_Management/ZFS.md)
+:::tip
+If you want to use ZFS, please take a look at the following section: [ZFS](/System-Management/ZFS)
+:::
 
 Example:
 
@@ -74,8 +76,9 @@ Uses a single disk without redundancy.
 - Downloads
 - Media with external backups
 
-**Note:**
+:::warning
 If the disk fails, data is lost. Backups are mandatory.
+:::
 
 ---
 
@@ -163,23 +166,19 @@ Uses multiple independent disks without traditional RAID.
 - Optional parity disk
 - Flexible and simple disk management
 
-> [!WARNING]
-> ⚠️ **Important:**
-> The **nonraid driver is not installed by default, after installing the driver you have to reboot**.
-
-#### Installation (via MOS Hub)
-
-The NonRAID driver is not installed by default.
+:::tip
+The nonraid driver is **not installed by default**.
+After installing the driver you have to reboot.
+For installation instructions, refer to the [MOS Hub](../System-Management/System-Configuration/MOS-Hub.md) documentation.
+:::
 
 It must be installed as a plugin via the MOS Hub.
 
 To install:
 
-- Open MOS Hub
-
-- Search for NonRAID Driver
-
-- Select the desired release
+1. Open MOS Hub
+2. Search for NonRAID Driver
+3. Select the desired release
 
 - Click Install
 
@@ -196,9 +195,10 @@ To install:
 
 Select the physical disks that will be assigned to the pool.
 
-**Notes:**
+:::note
 - Selected disks may be formatted
 - Existing data can be lost if formatting is enabled
+:::
 
 Always verify disk selection carefully.
 
@@ -221,7 +221,9 @@ Available options:
 - **btrfs** – Required for advanced features like snapshots  
 - **vfat** – Only for removable or temporary storage
 
-If you want to use ZFS, please take a look at the following section: [ZFS](https://github.com/ich777/mos-docs/blob/master/System_Management/ZFS.md)
+:::tip
+If you want to use ZFS, please take a look at the following section: [ZFS](/System-Management/ZFS)
+:::
 
 ---
 
@@ -239,9 +241,9 @@ Automatically mounts the pool during system startup.
 
 Formats the selected disks during pool creation.
 
-> [!WARNING]
-> ⚠️ **Warning:**  
-> Enabling this option will permanently delete all data on the selected disks.
+:::warning
+Enabling this option will permanently delete all data on the selected disks.
+:::
 
 ---
 
@@ -249,10 +251,11 @@ Formats the selected disks during pool creation.
 
 Enables disk encryption for the pool.
 
-**Notes:**
+:::warning
 - Increases data security
 - Slight performance overhead
 - Encryption key must be stored securely
+:::
 
 ---
 
