@@ -58,7 +58,7 @@ const config = {
       id: 'release-0.2.3-beta',
       content: '🚀 <strong>MOS 0.2.3-beta is out!</strong> — PWA support, file operations & Docker 29.3.1 &nbsp;<a href="/Release-Notes/0.2.3-beta" style="color:#bbf7d0;">Release Notes →</a>',
       backgroundColor: '#fa9725',
-      textColor: '#30000000',
+      textColor: '#ffffff',
       isCloseable: true,
     },
     image: 'img/mos-social-card.jpg',
