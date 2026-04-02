@@ -108,8 +108,8 @@ const sidebars = {
       type: 'category',
       label: '📋 Release Notes',
       items: [
-        { type: 'doc', id: 'release-notes/index', label: 'Overview' },
-        { type: 'doc', id: 'release-notes/0.2.3-beta', label: '0.2.3-beta' },
+        { type: 'doc', id: 'Release-Notes/index', label: 'Overview' },
+        { type: 'doc', id: 'Release-Notes/0.2.3-beta', label: '0.2.3-beta' },
       ],
     },
   ],
