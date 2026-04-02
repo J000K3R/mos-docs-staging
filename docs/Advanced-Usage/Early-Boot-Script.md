@@ -126,4 +126,4 @@ Use this script **only if you fully understand the MOS boot process and Linux sy
 - Only rootfs is available
 - Requires full paths to all commands
 - Intended for deep system-level customization
-- Located under **Advanced Usage** for a reason
+- Located under **Advanced-Usage** for a reason

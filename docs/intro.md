@@ -86,16 +86,16 @@ Explore MOS by topic:
 
 | 📁 Category | 🔍 Topics |
 |-------------|-----------|
-| 🚀 **Installation** | [Boot media, VM testing, first setup](/docs/Installation/) |
-| ⚡ **Quick Start** | [WebUI, network, storage, containers, VMs](/docs/Quick-Start/) |
-| ⚙️ **System Management** | [Settings, cron, logs, MOS Hub, notify](/docs/System-Management/) |
-| 🖧 **Network** | [Interfaces, bonds, routing, firewall](/docs/Network/) |
-| 💾 **Storage** | [Pools, filesystems, shares, snapshots](/docs/category/storage) |
-| 🖥️ **Virtualization** | [Docker, LXC, VM management](/docs/Virtualization/) |
-| 👤 **Users & Access** | [User creation, permissions, roles](/docs/User-Management/) |
-| 🔌 **API** | [REST API, WebSocket, authentication](/docs/API/) |
-| 🛠️ **Advanced Usage** | [Docker host access, boot scripts](/docs/Advanced%20Usage/) |
-| 📋 **Release Notes** | [Version history, changelog](/docs/Release-Notes/) |
+| [🚀 **Installation**](/docs/Installation/) | Boot media, VM testing, first setup |
+| [⚡ **Quick Start**](/docs/Quick-Start/) | WebUI, network, storage, containers, VMs |
+| [⚙️ **System Management**](/docs/System-Management/) | Settings, cron, logs, MOS Hub, notify |
+| [🖧 **Network**](/docs/Network/) | Interfaces, bonds, routing, firewall |
+| [💾 **Storage**](/docs/category/storage) | Pools, filesystems, shares, snapshots |
+| [🖥️ **Virtualization**](/docs/Virtualization/) | Docker, LXC, VM management |
+| [👤 **Users & Access**](/docs/User-Management/) | User creation, permissions, roles |
+| [🔌 **API**](/docs/API/) | REST API, WebSocket, authentication |
+| [🛠️ **Advanced Usage**](/docs/Advanced-Usage/) | Docker host access, boot scripts |
+| [📋 **Release Notes**](/docs/Release-Notes/) | Version history, changelog |
 
 ---
 

@@ -89,7 +89,7 @@ const sidebars = {
     },
     {
       type: 'category',
-      label: '🏬 MOS Hub',
+      label: '🛍️ MOS Hub',
       items: [
         { type: 'doc', id: 'MOS-Hub/Creating-Your-Own-MOS-Hub-Repository', label: 'Creating Your Own MOS Hub Repository' },
         { type: 'doc', id: 'MOS-Hub/MOS-Plugin-Development-Guide', label: 'MOS Plugin Development Guide' },
@@ -99,9 +99,16 @@ const sidebars = {
       type: 'category',
       label: '📖 Advanced Usage',
       items: [
-        { type: 'doc', id: 'Advanced Usage/Docker-Local-Host-Access-Shim', label: 'Docker Local Host Access' },
-        { type: 'doc', id: 'Advanced Usage/Disable-MD5-Verification', label: 'Disable MD5 Verification' },
-        { type: 'doc', id: 'Advanced Usage/Early-Boot-Script', label: 'Early Boot Script' },
+        { type: 'doc', id: 'Advanced-Usage/Docker-Local-Host-Access-Shim', label: 'Docker Local Host Access' },
+        { type: 'doc', id: 'Advanced-Usage/Disable-MD5-Verification', label: 'Disable MD5 Verification' },
+        { type: 'doc', id: 'Advanced-Usage/Early-Boot-Script', label: 'Early Boot Script' },
+      ],
+    },
+    {
+      type: 'category',
+      label: '🛠️ Troubleshooting',
+      items: [
+        { type: 'doc', id: 'Troubleshooting/Troubleshooting', label: 'Troubleshooting' },
       ],
     },
     {
