@@ -42,12 +42,8 @@ html[data-theme='dark'] {
   position: relative;
 }
 
-.navbar__brand {
-  position: absolute;
-  left: 0;
-  z-index: 1;
-}
-
+/* Titel aus dem normalen Flow rausnehmen und zur Navbar-Mitte zentrieren */
+/* .navbar__brand hat kein position gesetzt → .navbar__title wird relativ zu .navbar__inner positioniert */
 .navbar__title {
   position: absolute;
   left: 50%;
@@ -55,6 +51,7 @@ html[data-theme='dark'] {
   font-size: 1.3rem;
   font-weight: 600;
   white-space: nowrap;
+  pointer-events: none;
 }
 
 /* ── Hero-Header Hintergründe ── */
