@@ -1,5 +1,5 @@
 /**
- * Custom CSS for MOS-Docs (MOS-Branding mit korrekten Kontrasten)
+ * Custom CSS for MOS-Docs (MOS branding with correct contrast ratios)
  */
 
 :root {
@@ -37,24 +37,24 @@ html[data-theme='dark'] {
   --docusaurus-highlighted-code-line-bg: rgba(255, 255, 255, 0.1);
 }
 
-/* ── Navbar: Logo links, Titel zentriert ── */
+/* ── Navbar: logo left, title centered ── */
 .navbar__inner {
   position: relative;
 }
 
-/* Titel aus dem normalen Flow rausnehmen und zur Navbar-Mitte zentrieren */
-/* .navbar__brand hat kein position gesetzt → .navbar__title wird relativ zu .navbar__inner positioniert */
+/* Remove title from normal flow and center it relative to the full navbar */
+/* .navbar__brand has no position set → .navbar__title is positioned relative to .navbar__inner */
 .navbar__title {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: 600;
   white-space: nowrap;
   pointer-events: none;
 }
 
-/* ── Hero-Header Hintergründe ── */
+/* ── Hero header background ── */
 .heroBanner {
   background: linear-gradient(135deg, #ffffff 0%, #f3f4f6 100%);
 }
@@ -111,7 +111,7 @@ a:hover {
   color: white;
 }
 
-/* ── Code-Blöcke ── */
+/* ── Code blocks ── */
 .codeBlockContainer {
   border-radius: 8px;
   overflow: hidden;
@@ -119,4 +119,9 @@ a:hover {
 
 .codeBlockContent {
   border-radius: 0 0 8px 8px;
+}
+
+/* ── Hide version badge ── */
+.theme-doc-version-badge {
+  display: none;
 }

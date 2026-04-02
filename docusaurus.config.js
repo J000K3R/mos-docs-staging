@@ -22,17 +22,17 @@ const config = {
     locales: ['en'],
   },
 
-plugins: [
-  [
-    '@cmfcmf/docusaurus-search-local',
-    {
-      language: 'en',
-      indexDocs: true,
-      indexPages: true,
-      indexBlog: false,
-    },
+  plugins: [
+    [
+      '@cmfcmf/docusaurus-search-local',
+      {
+        language: 'en',
+        indexDocs: true,
+        indexPages: true,
+        indexBlog: false,
+      },
+    ],
   ],
-],
 
   presets: [
     [
@@ -44,6 +44,17 @@ plugins: [
           editUrl: 'https://github.com/J000K3R/mos-docs-staging/edit/main/',
           showLastUpdateTime: true,
           showLastUpdateAuthor: true,
+          lastVersion: '0.2.3-beta',
+          versions: {
+            current: {
+              label: 'Next (Unreleased)',
+              badge: false,
+            },
+            '0.2.3-beta': {
+              label: '0.2.3-beta',
+              badge: false,
+            },
+          },
         },
         blog: false,
         theme: {
@@ -68,6 +79,10 @@ plugins: [
         srcDark: 'img/mos_white.png',
       },
       items: [
+        {
+          type: 'docsVersionDropdown',
+          position: 'right',
+        },
         {
           href: 'https://github.com/ich777/mos-releases',
           label: 'GitHub',
