@@ -8,7 +8,8 @@ sidebar_position: 2
 MOS can be tested easily inside a virtual machine.
 This is useful for evaluation, development, or getting familiar with the WebUI before installing MOS on physical hardware.
 
-> ⚠️ **Note:** MOS supports **UEFI boot only** by default. Legacy BIOS / CSM boot is **not supported**.
+> [!NOTE]
+> 💡 **Note:** MOS supports **UEFI boot only** by default. Legacy BIOS / CSM boot is **not supported**.
 
 ---
 
@@ -77,6 +78,7 @@ The extracted image must be attached as a **USB device** — not as a regular vi
 
 The following steps describe how to run the MOS test image inside Proxmox VE.
 
+> [!WARNING]
 > ⚠️ MOS requires UEFI boot and Secure Boot must be **disabled**.
 
 ---

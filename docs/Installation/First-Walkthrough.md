@@ -298,6 +298,7 @@ Select your target firmware:
 
 Click **Ok** to start the update process, or **Cancel** to close the dialog without updating.
 
+> [!NOTE]
 > 💡 **Note:** It is recommended to check for updates regularly to ensure your system has the latest security patches and features.
 
 ---

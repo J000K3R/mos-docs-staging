@@ -70,8 +70,9 @@ Selects the storage pool where the share will be created.
 
 **Example:** `main`
 
-> [!NOTE]
+:::noteS
 > The share directory will always be created **inside the selected pool**.
+:::
 
 ---
 
@@ -97,8 +98,9 @@ Defines which users are allowed to write to the share.
 
 Optional description for the share.
 
-> [!TIP]
+:::tip
 > Useful for documenting the purpose of the share, especially in larger setups.
+:::
 
 ---
 
@@ -139,8 +141,9 @@ Forces the share into read-only mode.
 
 Allows access without authentication.
 
-> [!WARNING]
-> Enable this option **only in trusted networks**.
+:::warning
+> ⚠️ Enable this option **only in trusted networks**.
+:::
 
 ---
 
@@ -174,8 +177,9 @@ When deleting a share, an additional option is available:
 |--------|-------------|
 | 🗑️ **Delete directory** | Permanently removes the share directory and **all its contents** |
 
-> [!CAUTION]
-> **This action cannot be undone.** All data in the share directory will be permanently lost.
+:::danger
+> ❗️ **This action cannot be undone.** All data in the share directory will be permanently lost.
+:::
 
 ![Share Delete](/img/share/Share_Delete.png)
 

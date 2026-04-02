@@ -239,8 +239,9 @@ Automatically mounts the pool during system startup.
 
 Formats the selected disks during pool creation.
 
-⚠️ **Warning:**  
-Enabling this option will permanently delete all data on the selected disks.
+> [!WARNING]
+> ⚠️ **Warning:**  
+> Enabling this option will permanently delete all data on the selected disks.
 
 ---
 

@@ -50,6 +50,7 @@ http://MOS-IP/
 
 ---
 
+> [!NOTE]
 > 💡 **Note:** While a USB stick is recommended, you can also use an external hard drive or card reader as long as it is formatted as FAT32.
 
 ---
