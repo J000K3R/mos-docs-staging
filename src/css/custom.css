@@ -42,8 +42,6 @@ html[data-theme='dark'] {
   position: relative;
 }
 
-/* Remove title from normal flow and center it relative to the full navbar */
-/* .navbar__brand has no position set → .navbar__title is positioned relative to .navbar__inner */
 .navbar__title {
   position: absolute;
   left: 50%;
@@ -76,22 +74,22 @@ html[data-theme='dark'] .footer {
   border-top: 1px solid var(--ifm-color-gray-600);
 }
 
-/* ── Links ── */
-a {
+/* ── Links – only inside doc content area ── */
+.markdown a {
   color: #1d4ed8;
   text-decoration: none;
 }
 
-a:hover {
+.markdown a:hover {
   color: #1e40af;
   text-decoration: underline;
 }
 
-html[data-theme='dark'] a {
+html[data-theme='dark'] .markdown a {
   color: #60a5fa;
 }
 
-html[data-theme='dark'] a:hover {
+html[data-theme='dark'] .markdown a:hover {
   color: #93c5fd;
 }
 
