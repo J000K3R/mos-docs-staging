@@ -12,22 +12,14 @@ It's designed for **small, energy-efficient home servers**, delivering a modern 
 
 ## 🚀 Getting Started
 
-Ready to try MOS? Here's how to begin:
+New to MOS? Follow these steps to get up and running:
 
-| Section | Description |
-|---------|-------------|
-| **Overview** | Learn about MOS and its core features in this guide |
-| **Quick Start** | Get up and running in minutes with our step-by-step guides |
-| **Documentation** | Deep dive into all aspects of MOS |
-
-### Quick Start Guides
-
-| Guide | Description |
-|-------|-------------|
-| [WebUI Overview](/docs/Quick-Start/WebUI-Overview) | Learn how to navigate the MOS interface |
-| [Network Configuration](/docs/Quick-Start/Start-Network-Configuration) | Set up your network interfaces (DHCP or static) |
-| [Storage Pool Setup](/docs/Quick-Start/Create-a-Storage-Pool) | Create your first storage pool with mergerfs and SnapRAID |
-| [First Container](/docs/Quick-Start/Start-the-First-Container) | Deploy your first Docker container |
+| Step | Guide | Description |
+|------|-------|-------------|
+| 1️⃣ | [Create Bootable Media](/docs/Installation/Create-Bootable-Media) | Create a USB stick or VM image to boot MOS |
+| 2️⃣ | [First Walkthrough](/docs/Installation/First-Walkthrough) | Complete initial setup (root password, network, storage) |
+| 3️⃣ | [WebUI Overview](/docs/Quick-Start/WebUI-Overview) | Learn the MOS interface and navigation |
+| 🧪 | [Test in VM](/docs/Installation/Testing-MOS-in-a-Virtual-Machine) | Try MOS in a virtual machine first (optional) |
 
 ---
 
@@ -90,23 +82,22 @@ MOS is built from multiple open-source components:
 
 ## 📚 Documentation Structure
 
-MOS documentation is organized by topic:
+Explore MOS by topic:
 
-| Category | Topics |
-|----------|--------|
-| **Installation** | [Create bootable media, VM testing, releases](/docs/Installation/) |
-| **Getting Start** | [WebUI, network, storage, containers, VMs](/docs/Quick-Start/) |
-| **System Management** | [Settings, cron, logs, MOS HUB, notify](/docs/System-Management/) |
-| **Network** | [Interfaces, bonds, routing, firewall](/docs/Network/) |
-| **Storage** | [Pools, filesystems, shares, snapshots](/docs/category/storage) |
-| **Virtualization** | [Docker, LXC, VM management](/docs/Virtualization/) |
-| **Users & Access** | [User creation, permissions, roles](/docs/User-Management/) |
-| **API** | [REST API, WebSocket, authentication](/docs/API/) |
-| **Advanced Usage** | [Docker host access, boot scripts, migration](/docs/Advanced%20Usage/) |
+| 📁 Category | 🔍 Topics |
+|-------------|-----------|
+| 🚀 **Installation** | [Boot media, VM testing, first setup](/docs/Installation/) |
+| ⚡ **Quick Start** | [WebUI, network, storage, containers, VMs](/docs/Quick-Start/) |
+| ⚙️ **System Management** | [Settings, cron, logs, MOS Hub, notify](/docs/System-Management/) |
+| 🖧 **Network** | [Interfaces, bonds, routing, firewall](/docs/Network/) |
+| 💾 **Storage** | [Pools, filesystems, shares, snapshots](/docs/category/storage) |
+| 🖥️ **Virtualization** | [Docker, LXC, VM management](/docs/Virtualization/) |
+| 👤 **Users & Access** | [User creation, permissions, roles](/docs/User-Management/) |
+| 🔌 **API** | [REST API, WebSocket, authentication](/docs/API/) |
+| 🛠️ **Advanced Usage** | [Docker host access, boot scripts](/docs/Advanced%20Usage/) |
+| 📋 **Release Notes** | [Version history, changelog](/docs/Release-Notes/) |
 
 ---
-
-## 📦 Related Repositories
 
 ### 🖥️ MOS Releases
 - **[MOS Releases](https://github.com/ich777/mos-releases)**
