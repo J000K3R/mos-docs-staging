@@ -166,8 +166,8 @@ Each share provides a context menu with the following actions:
 
 | Action | Description |
 |--------|-------------|
-| ✏️ **Edit** | Modify share configuration and permissions |
-| 🗑️ **Delete** | Remove the share |
+| **Edit** | Modify share configuration and permissions |
+| **Delete** | Remove the share |
 
 ![Share Actions](/img/share/Share_Actions.png)
 
@@ -175,7 +175,8 @@ When deleting a share, an additional option is available:
 
 | Option | Description |
 |--------|-------------|
-| 🗑️ **Delete directory** | Permanently removes the share directory and **all its contents** |
+| **Delete directory** | Permanently removes the share directory and **all its contents** |
+| **Remove Path Rule** | Removes the path rule from the configuration |
 
 :::danger This action cannot be undone!
 All data in the share directory will be permanently lost.

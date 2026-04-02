@@ -7,7 +7,7 @@ sidebar_position: 3
 
 After creating a bootable USB stick ([Create Bootable Media](./Create-Bootable-Media.md)) and starting the server for the first time, you will see the following on the screen:
 
-```
+```bash title="Terminal"
 MOS running MOS 0.2.3-beta - built on Devuan GNU/Linux
 
      IPv4: MOS-IP
