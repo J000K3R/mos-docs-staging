@@ -44,17 +44,6 @@ const config = {
           editUrl: 'https://github.com/J000K3R/mos-docs-staging/edit/main/',
           showLastUpdateTime: true,
           showLastUpdateAuthor: true,
-          lastVersion: '0.2.3-beta',
-          versions: {
-            current: {
-              label: 'Next (Unreleased)',
-              badge: false,
-            },
-            '0.2.3-beta': {
-              label: '0.2.3-beta',
-              badge: false,
-            },
-          },
         },
         blog: false,
         theme: {
