@@ -8,10 +8,10 @@ sidebar_position: 5
 Shares define how directories on a storage pool are exposed to users and services.  
 They are typically used for:
 
-- 🌐 File access over the network
-- 🐳 Application data
-- 🎬 Media libraries
-- 💾 Backups
+- File access over the network
+- Application data
+- Media libraries
+- Backups
 
 ![MOS Shares](/img/share/MOS_Shares.png)
 
@@ -149,9 +149,9 @@ Allows access without authentication.
 The Shares overview displays all configured shares.
 
 Each share shows:
-- 🏷️ Share name
-- 📁 Directory path
-- 🗄️ Associated pool
+- Share name
+- Directory path
+- Associated pool
 
 ![Managing Existing Shares](/img/share/Managing_Existing_Shares.png)
 
@@ -185,13 +185,13 @@ When deleting a share, an additional option is available:
 
 To create your first share, follow these steps:
 
-1. 🏷️ Choose a clear **share name**
-2. 🗄️ Select a **pool**
-3. 📁 Define the **directory path** *(created automatically if missing)*
-4. 👥 Assign **read and write permissions**
-5. 🔩 Adjust **advanced options** if required
+1. Choose a clear **share name**
+2. Select a **pool**
+3. Define the **directory path** *(created automatically if missing)*
+4. Assign **read and write permissions**
+5. Adjust **advanced options** if required
 
-Shares are the primary way to expose storage to users and applications. 🎉
+Shares are the primary way to expose storage to users and applications.
 
 ---
 

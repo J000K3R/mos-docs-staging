@@ -8,6 +8,9 @@ sidebar_position: 6
 MOS supports running full virtual machines (VMs) using KVM/QEMU.  
 This guide walks you through creating and configuring your first VM.
 
+> [!WARNING]
+> > ⚠️ **Prerequisite:** Before you can create a VM, you must first enable the **VM Service** in the settings. Navigate to **Settings → Virtualization → VM Service** and enable the service. For more details, refer to the [VM Service](../Virtualization/VM-Service.md) documentation.
+
 Navigate to:
 
 > **VMs**
@@ -102,11 +105,11 @@ Click **+ Add Disk** to add a virtual disk to the VM.
 
 | Field | Description |
 |-------|-------------|
-| 📁 **Source** | Path to the disk image file (e.g. `/mnt/main/vms/Test/vdisk1.qcow2`) |
-| 📏 **Size** | Size of the virtual disk |
-| 🚌 **Bus** | Controller type used for the disk |
-| 🗄️ **Format** | Disk image format |
-| 🔢 **Boot Order** | Boot priority (lower = higher priority) |
+| **Source** | Path to the disk image file (e.g. `/mnt/main/vms/Test/vdisk1.qcow2`) |
+| **Size** | Size of the virtual disk |
+| **Bus** | Controller type used for the disk |
+| **Format** | Disk image format |
+| **Boot Order** | Boot priority (lower = higher priority) |
 
 ---
 
@@ -145,11 +148,11 @@ Click **+ Add CD-ROM** to attach an ISO image as a virtual optical drive.
 
 | Field | Description |
 |-------|-------------|
-| 📁 **Source** | Path to the ISO file |
-| 🚌 **Bus** | Controller type for the CD-ROM |
-| 🔢 **Boot Order** | Boot priority |
+| **Source** | Path to the ISO file |
+| **Bus** | Controller type for the CD-ROM |
+| **Boot Order** | Boot priority |
 
-### 🚌 CD-ROM Bus Options
+### CD-ROM Bus Options
 
 ![VM CD ROM Format](/img/vm/Create_CD_ROM_Format.png)
 
@@ -183,10 +186,10 @@ Click **+ Add Adapter** to add a virtual network interface.
 
 | Field | Description |
 |-------|-------------|
-| 🔗 **Type** | Network connection type |
-| 📡 **Source** | Network bridge or interface to connect to |
-| 🖧 **Model** | Virtual NIC model |
-| 🔑 **MAC Address** | Optional static MAC address |
+| **Type** | Network connection type |
+| **Source** | Network bridge or interface to connect to |
+| **Model** | Virtual NIC model |
+| **MAC Address** | Optional static MAC address |
 
 ---
 
@@ -227,10 +230,10 @@ Defines how the VM's display is accessed remotely.
 
 | Field | Description |
 |-------|-------------|
-| 🖥️ **Type** | Remote display protocol |
-| ⌨️ **Keymap** | Keyboard layout used inside the VM |
-| 🔌 **Port** | Port for remote display connection (leave empty for auto) |
-| 👂 **Listen** | IP address to listen on (`0.0.0.0` = all interfaces) |
+| **Type** | Remote display protocol |
+| **Keymap** | Keyboard layout used inside the VM |
+| **Port** | Port for remote display connection (leave empty for auto) |
+| **Listen** | IP address to listen on (`0.0.0.0` = all interfaces) |
 
 ---
 
@@ -262,9 +265,9 @@ Click **+ Add Host Device** to pass through a physical PCI device directly to th
 > PCI passthrough gives the VM **exclusive access** to the device. The host will no longer be able to use it while the VM is running.
 
 **Common use cases:**
-- 🎮 GPU passthrough for gaming VMs
-- 🌐 Dedicated network card passthrough
-- 💾 NVMe/storage controller passthrough
+- GPU passthrough for gaming VMs
+- Dedicated network card passthrough
+- NVMe/storage controller passthrough
 
 ---
 
@@ -277,9 +280,9 @@ Select the USB device from the dropdown — all currently connected USB devices 
 ![Create USB Device](/img/vm/USB_Device.png)
 
 **Examples of passthrough devices:**
-- 🔵 Bluetooth adapters
-- 💾 USB flash drives
-- 🖱️ Input devices
+- Bluetooth adapters
+- USB flash drives
+- Input devices
 
 > [!NOTE]
 > USB passthrough requires the device to be physically connected to the host at VM start time.
@@ -300,13 +303,13 @@ The new VM will appear in the VMs overview with a **stopped** state.
 
 | Column | Description |
 |--------|-------------|
-| 🏷️ **Name** | VM name and current state |
-| 📝 **Description** | Optional description |
-| 📊 **CPU Load** | Live CPU usage while running |
-| 💾 **Disks** | Attached disk and ISO paths |
-| 🔌 **Port** | VNC/SPICE port for remote access |
-| ▶️ **Autostart** | Whether the VM starts automatically on boot |
-| ℹ️ **Info** | Additional VM information |
+| **Name** | VM name and current state |
+| **Description** | Optional description |
+| **CPU Load** | Live CPU usage while running |
+| **Disks** | Attached disk and ISO paths |
+| **Port** | VNC/SPICE port for remote access |
+| **Autostart** | Whether the VM starts automatically on boot |
+| **Info** | Additional VM information |
 
 ---
 
@@ -314,15 +317,15 @@ The new VM will appear in the VMs overview with a **stopped** state.
 
 To create your first VM, follow these steps:
 
-1. 🏷️ Set a **Name** and configure **Memory**
-2. 🖥️ Choose **Machine Type** and **BIOS Type**
-3. 💾 Add a **Disk** and select format + bus type
-4. 💿 Add a **CD-ROM** with the OS installer ISO
-5. 🪟 *(Windows only)* Attach the **VirtIO ISO**
-6. 🌐 Add a **Network Adapter**
-7. 🖼️ Configure **Graphics** for remote access
-8. 🔌 *(Optional)* Add **Host Devices** or **USB Devices**
-9. 🚀 Click **Create** — your VM is ready!
+1. Set a **Name** and configure **Memory**
+2. Choose **Machine Type** and **BIOS Type**
+3. Add a **Disk** and select format + bus type
+4. Add a **CD-ROM** with the OS installer ISO
+5. *(Windows only)* Attach the **VirtIO ISO**
+6. Add a **Network Adapter**
+7. Configure **Graphics** for remote access
+8. *(Optional)* Add **Host Devices** or **USB Devices**
+9. Click **Create** — your VM is ready!
 
 ---
 

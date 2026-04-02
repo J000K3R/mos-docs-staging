@@ -9,11 +9,11 @@ Storage pools are the foundation of all data storage in MOS.
 They define how disks are grouped, how data is protected, and which filesystems are used.
 
 Pools are required for:
-- 📁 Shares
-- 🐳 Docker storage
-- 📦 LXC containers
-- 💻 Virtual machines
-- 📹Media and backup data
+- Shares
+- Docker storage
+- LXC containers
+- Virtual machines
+- Media and backup data
 
 If you want to use ZFS, please take a look at the following section: [ZFS](https://github.com/ich777/mos-docs/blob/master/System_Management/ZFS.md)
 
@@ -163,8 +163,9 @@ Uses multiple independent disks without traditional RAID.
 - Optional parity disk
 - Flexible and simple disk management
 
-⚠️ **Important:**
-The **nonraid driver is not installed by default, after installing the driver you have to reboot**.
+> [!WARNING]
+> ⚠️ **Important:**
+> The **nonraid driver is not installed by default, after installing the driver you have to reboot**.
 
 #### Installation (via MOS Hub)
 

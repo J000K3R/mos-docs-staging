@@ -12,8 +12,8 @@ MOS provides **two different ways** to start containers:
 
 | Method | Description |
 |--------|-------------|
-| 🐳 **Docker** | Manual container configuration |
-| 🏪 **MOS Hub** | Template-based container deployment (app store style) |
+| **Docker** | Manual container configuration |
+| **MOS Hub** | Template-based container deployment (app store style) |
 
 ---
 
@@ -137,12 +137,12 @@ Navigate to:
 
 This page lists all configured containers and provides an overview of:
 
-- 📛 Container name and state
-- 🖼️ Image
-- 🔌 Exposed ports
-- 🌐 IP address
-- 🔗 Network mode
-- ▶️ Autostart status
+- Container name and state
+- Image
+- Exposed ports
+- IP address
+- Network mode
+- Autostart status
 
 ![Docker Overview](/img/docker/Docker_Overview.png)
 
@@ -160,11 +160,11 @@ This allows deploying one or multiple containers using a Docker Compose YAML def
 
 | Field | Description |
 |-------|-------------|
-| 📝 **Stack Name** | Name of your compose stack |
-| 📄 **Compose YAML** | Your compose file content |
-| 🔐 **Environment Variables** | Variables passed to the containers |
-| 🖼️ **Icon URL** | Icon displayed in the UI |
-| 🌍 **Web UI URL** | Shortcut to the web interface |
+| **Stack Name** | Name of your compose stack |
+| **Compose YAML** | Your compose file content |
+| **Environment Variables** | Variables passed to the containers |
+| **Icon URL** | Icon displayed in the UI |
+| **Web UI URL** | Shortcut to the web interface |
 
 > [!TIP]
 > Docker Compose is recommended for **complex multi-container applications**.
@@ -182,9 +182,9 @@ A stack represents a group of containers that belong together and are managed as
 ![Docker Compose Stack](/img/docker/Docker_Compose_Stack.png)
 
 The stack header shows:
-- 🏷️ Stack name
-- 🔢 Number of running containers
-- ✅ Overall stack state
+- Stack name
+- Number of running containers
+- Overall stack state
 
 ---
 
@@ -209,12 +209,12 @@ Clicking the stack menu provides the following actions:
 
 | Action | Description |
 |--------|-------------|
-| ▶️ **Start Stack** | Starts all containers in the stack |
-| ⏹️ **Stop Stack** | Stops all containers in the stack |
-| 🔄 **Restart Stack** | Restarts all containers in the stack |
-| ✏️ **Edit Stack** | Opens the Docker Compose configuration for editing |
-| 🗑️ **Remove Stack** | Removes the entire stack and all associated containers |
-| ⬇️ **Pull Stack Images** | Pulls the latest images for all containers in the stack |
+| **Start Stack** | Starts all containers in the stack |
+| **Stop Stack** | Stops all containers in the stack |
+| **Restart Stack** | Restarts all containers in the stack |
+| **Edit Stack** | Opens the Docker Compose configuration for editing |
+| **Remove Stack** | Removes the entire stack and all associated containers |
+| **Pull Stack Images** | Pulls the latest images for all containers in the stack |
 
 > [!NOTE]
 > Stack actions always apply to **all containers within the stack**.
@@ -274,14 +274,14 @@ Navigate to:
 
 | Field | Description |
 |-------|-------------|
-| 📋 **Template** | Optional predefined template |
-| 🏷️ **Name** | Unique container name |
-| 📦 **Repository** | Docker image (e.g. `lscr.io/linuxserver/code-server`) |
-| 🌐 **Network** | Docker network to attach the container to |
-| 🔒 **Custom IP** | Optional static IP *(depending on network mode)* |
-| 💻 **Default Shell** | Shell used for interactive container access |
-| 🎮 **GPU** | Assign GPU resources if supported |
-| 🔓 **Privileged** | Grants extended system permissions — use only if required |
+| **Template** | Optional predefined template |
+| **Name** | Unique container name |
+| **Repository** | Docker image (e.g. `lscr.io/linuxserver/code-server`) |
+| **Network** | Docker network to attach the container to |
+| **Custom IP** | Optional static IP *(depending on network mode)* |
+| **Default Shell** | Shell used for interactive container access |
+| **GPU** | Assign GPU resources if supported |
+| **Privileged** | Grants extended system permissions — use only if required |
 
 ---
 
@@ -289,10 +289,10 @@ Navigate to:
 
 | Field | Description |
 |-------|-------------|
-| 📁 **Paths** | Map host directories to container paths |
-| 🔌 **Ports** | Expose container ports to the host |
-| 🖥️ **Devices** | Pass through host devices |
-| 🔐 **Variables** | Environment variables used by the container |
+| **Paths** | Map host directories to container paths |
+| **Ports** | Expose container ports to the host |
+| **Devices** | Pass through host devices |
+| **Variables** | Environment variables used by the container |
 
 ---
 
@@ -322,9 +322,9 @@ Navigate to:
 Docker groups allow logical grouping of containers for better organization.
 
 **Configuration options:**
-- 🏷️ **Group Name**
-- 🎨 **Icon** *(MDI identifier)*
-- ☑️ **Select Containers**
+| **Group Name**
+| **Icon** *(MDI identifier)*
+| **Select Containers**
 
 ---
 
@@ -349,9 +349,9 @@ Autostart behavior differs depending on how containers are deployed.
 The **MOS Hub** provides a template-based container deployment experience similar to an app store.
 
 **Features:**
-- ✅ Preconfigured Docker templates
-- ⚡ Simplified setup process
-- 🔧 Automatic path, port, and variable configuration
+- Preconfigured Docker templates
+- Simplified setup process
+- Automatic path, port, and variable configuration
 
 > [!TIP]
 > MOS Hub is the **recommended starting point** for new users.
@@ -364,14 +364,14 @@ The **MOS Hub** provides a template-based container deployment experience simila
 
 To start your first container in MOS, follow these steps:
 
-1. ⚙️ Configure and enable the **Docker Service**
-2. 🤔 Choose your deployment method:
-   - 🏪 **MOS Hub** — easy template-based deployment *(recommended for beginners)*
-   - 🐳 **Docker** — manual or advanced configuration
-3. 🔍 Verify storage paths and network settings
-4. 🚀 Start and manage containers from the Docker overview
+1. Configure and enable the **Docker Service**
+2. Choose your deployment method:
+   - **MOS Hub** — easy template-based deployment *(recommended for beginners)*
+   - **Docker** — manual or advanced configuration
+3. Verify storage paths and network settings
+4. Start and manage containers from the Docker overview
 
-Once Docker is configured, MOS becomes a **powerful platform** for running applications and services. 🎉
+Once Docker is configured, MOS becomes a **powerful platform** for running applications and services.
 
 ---
 
