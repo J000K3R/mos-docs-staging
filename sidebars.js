@@ -3,7 +3,7 @@ const sidebars = {
     {
       type: 'doc',
       id: 'intro',
-      label: 'Welcome to MOS',
+      label: '📚 Welcome to MOS-Docs',
     },
     {
       type: 'category',
