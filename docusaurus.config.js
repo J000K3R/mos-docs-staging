@@ -81,7 +81,7 @@ const config = {
       items: [
         {
           type: 'docsVersionDropdown',
-          position: 'right',
+          position: 'left',
         },
         {
           href: 'https://github.com/ich777/mos-releases',
