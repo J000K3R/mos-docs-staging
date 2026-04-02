@@ -1,9 +1,9 @@
 ---
-sidebar_label: 🏬 Creating Your Own MOS Hub Repository
+sidebar_label: 🛍️ Creating Your Own MOS Hub Repository
 sidebar_position: 1
 ---
 
-# 🏬 Creating Your Own MOS Hub Repository
+# 🛍️ Creating Your Own MOS Hub Repository
 
 The MOS Hub allows users to contribute and share Docker templates with the community.  
 By creating your own MOS Hub repository on GitHub, you can provide custom application templates that integrate seamlessly into the MOS interface.
@@ -12,7 +12,7 @@ This guide explains how to structure your repository, create templates, and make
 
 ---
 
-## Repository Structure
+## 📁 Repository Structure
 
 A MOS Hub repository follows a specific structure that the MOS Hub can recognize and process.
 
@@ -53,9 +53,10 @@ Contains individual Docker container templates in JSON format.
 
 Each file represents a single container configuration that can be deployed directly from the MOS Hub.
 
-**Use this folder for:**
+:::tip Use this folder for:
 - Single-container applications
 - Simple services
+:::
 
 ---
 
@@ -70,9 +71,10 @@ Each subfolder represents a complete application stack with multiple containers.
 - `.env` – Environment variables (optional)
 - `template.json` – Metadata for MOS Hub display
 
-**Use this folder for:**
+:::tip Use this folder for:
 - Multi-container applications
 - Complex service stacks
+:::
 
 ---
 
@@ -82,11 +84,12 @@ Contains system plugins, drivers, and utilities in JSON format.
 
 Each file represents a system component that can be installed from the MOS Hub.
 
-**Use this folder for:**
+:::tip Use this folder for:
 - Hardware drivers (Nvidia, AMD, Coral)
 - System utilities
 - Kernel modules
 - Special-purpose tools
+:::
 
 ---
 
@@ -100,8 +103,9 @@ Contains icon files for your templates and plugins.
 
 Icons are displayed in the MOS Hub interface.
 
-**Recommended:**  
+:::tip Recommended:
 Use consistent icon sizes for a professional appearance.
+:::
 
 ---
 
@@ -126,11 +130,12 @@ This file is required for the MOS Hub to recognize your repository.
 
 Provides documentation about your template collection.
 
-**Recommended contents:**
+:::tip Recommended contents:
 - Repository overview
 - List of included templates
 - Installation instructions
 - Known issues or limitations
+:::
 
 ---
 
@@ -200,11 +205,12 @@ If the container supports user/group IDs, configure them:
 "PGID": "500"
 ```
 
-**Recommended values:**  
+:::tip Recommended values:
 `PUID=500` and `PGID=500`
 
-**Why:**  
+Why:
 These values are widely supported and avoid permission conflicts.
+:::
 
 ---
 
@@ -220,7 +226,7 @@ Add corresponding icons to the `images/` folder.
 
 ---
 
-## Adding Your Repository to the MOS Hub
+## ➕ Adding Your Repository to the MOS Hub
 
 Once your repository is published on GitHub, it can be added to any MOS instance.
 
@@ -244,14 +250,15 @@ After adding the repository:
 2. Navigate to **Docker → MOS Hub**
 3. Your templates should now appear in the list
 
+:::warning
 If your templates do not appear, verify:
 - Repository structure is correct
 - `maintainer.json` exists and is valid
 - Template JSON files are properly formatted
-
+:::
 ---
 
-## Template JSON Validation
+## ✅ Template JSON Validation
 
 Templates must follow the MOS template schema.
 
@@ -260,8 +267,9 @@ Templates must follow the MOS template schema.
 - Invalid JSON syntax
 - Incorrect path formats
 
-**Recommendation:**  
+:::tip Recommendation:
 Test your templates locally in MOS before publishing them to GitHub.
+:::
 
 ---
 
@@ -303,7 +311,7 @@ Users can adjust these values when deploying the stack.
 
 ---
 
-## Best Practices
+## 📚 Best Practices
 
 ### Use Descriptive Names
 
@@ -341,7 +349,7 @@ Regularly update templates to reflect:
 
 ---
 
-## Community Repositories
+## 🌍 Community Repositories
 
 The MOS ecosystem benefits from community-contributed repositories.
 
@@ -356,7 +364,7 @@ The MOS ecosystem benefits from community-contributed repositories.
 
 ---
 
-## Troubleshooting
+## 🔧 Troubleshooting
 
 ### Templates Not Appearing
 
@@ -366,8 +374,9 @@ The MOS ecosystem benefits from community-contributed repositories.
 - Invalid JSON syntax
 - Hub not refreshed
 
-**Solution:**  
+:::tip Solution:
 Verify repository structure and refresh the MOS Hub.
+:::
 
 ---
 
@@ -378,8 +387,9 @@ Verify repository structure and refresh the MOS Hub.
 - Missing required environment variables
 - Network configuration conflicts
 
-**Solution:**  
+:::tip Solution:
 Review the template JSON and compare it to a working MOS container configuration.
+:::
 
 ---
 
@@ -390,12 +400,13 @@ Review the template JSON and compare it to a working MOS container configuration
 - Incorrect icon path in template
 - Unsupported image format
 
-**Solution:**  
+:::tip Solution:
 Ensure icons are in PNG or JPG format and correctly referenced in the template.
+:::
 
 ---
 
-## Creating Plugin Templates
+## 🧩 Creating Plugin Templates
 
 Plugins differ from Docker containers — they install system-level components like drivers and utilities.
 
@@ -484,8 +495,9 @@ When a user installs a plugin from the MOS Hub:
 3. MOS executes the installation routine provided by the repository
 4. The plugin integrates into the system
 
-**Important:**  
+:::warning Important:
 The `repository` field should point to a repository that provides installation scripts compatible with MOS.
+:::
 
 ---
 
@@ -514,7 +526,7 @@ The `repository` field should point to a repository that provides installation s
 
 ---
 
-## Summary
+## ✅ Summary
 
 Creating a MOS Hub repository allows you to:
 - Share Docker templates with the community
@@ -536,7 +548,7 @@ Proper documentation and testing ensure a high-quality contribution to the MOS e
 
 ---
 
-## Example Repositories
+## 📖 Example Repositories
 
 The following repositories provide excellent examples of MOS Hub structure:
 

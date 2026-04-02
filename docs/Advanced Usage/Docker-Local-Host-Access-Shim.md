@@ -1,5 +1,5 @@
 ---
-sidebar_label: Docker Local Host Access
+sidebar_label: 🐳 Docker Local Host Access
 sidebar_position: 1
 ---
 
@@ -58,7 +58,7 @@ After installation, the plugin is active automatically.
 
 The plugin will appear under:
 
-**Plugins**
+> **Plugins**
 
 From there you can see that it is installed and open the plugin page.
 

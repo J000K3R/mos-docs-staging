@@ -1,9 +1,9 @@
 ---
-sidebar_label: Docker Service
+sidebar_label: 🐳 Docker Service
 sidebar_position: 1
 ---
 
-# Docker Service
+# 🐳 Docker Service
 
 The **Docker Service** menu controls the global Docker configuration and runtime behavior.  
 It allows you to enable or disable the Docker daemon, define storage locations, configure networking, and manage automated update checks.
@@ -20,7 +20,7 @@ Example:
 
 ---
 
-## Docker Service Configuration
+## ⚙️ Docker Service Configuration
 
 ### Enable Docker Service
 
@@ -34,8 +34,9 @@ Enables or disables the Docker daemon.
 - All Docker containers are stopped
 - No container-related services are running
 
-**Note:**  
+:::note
 Disabling the Docker service will stop all running containers.
+:::
 
 ---
 
@@ -48,9 +49,10 @@ Defines the main Docker data directory.
 - Image data
 - Volumes and metadata
 
-**Recommendation:**
+:::tip
 - Place on fast and reliable storage
 - Prefer SSD-based pools
+:::
 
 ---
 
@@ -62,9 +64,10 @@ Defines the directory used for persistent application data.
 - Stores container configuration
 - Application-specific persistent data
 
-**Best practice:**
+:::tip
 - Place on a persistent storage pool
 - Ensure regular backups
+:::
 
 ---
 
@@ -75,9 +78,10 @@ Defines the filesystem driver used by Docker.
 **Default:**  
 - `overlay2`
 
-**Notes:**
+:::note
 - `overlay2` is recommended for most setups
 - Requires a compatible underlying filesystem (e.g. xfs with ftype enabled, ext4)
+:::
 
 ---
 
@@ -92,9 +96,10 @@ Defines the Docker network driver used for container networking.
 - `ipvlan` – Lightweight, high-performance networking with reduced broadcast traffic
 - `macvlan` – Assigns unique MAC addresses to containers
 
-**Notes:**
+:::note
 - `macvlan` may require additional switch or router configuration
 - Choose the mode based on your network environment
+:::
 
 ---
 
@@ -107,8 +112,9 @@ Allows defining additional parameters passed to the Docker daemon at startup.
 - Advanced tuning
 - Debugging
 
-**Note:**  
+:::note
 Only define parameters if you are familiar with Docker daemon options.
+:::
 
 ---
 
@@ -120,12 +126,13 @@ Defines how long the system waits before starting Docker after boot.
 - Ensure network and storage availability
 - Avoid race conditions during startup
 
-**Optional:**  
+:::tip
 Can be left unset if not required.
+:::
 
 ---
 
-## Docker Update Schedule
+## 🔄 Docker Update Schedule
 
 Controls automated Docker update behavior.
 
@@ -165,12 +172,13 @@ Controls automatic updates of Docker components or containers.
 - Enable
 - Disable
 
-**Note:**  
+:::warning
 Automatic updates may restart containers.
+:::
 
 ---
 
-## Best Practices
+## 📚 Best Practices
 
 - Backup appdata before enabling auto updates
 - Schedule updates during low-usage hours
@@ -179,7 +187,7 @@ Automatic updates may restart containers.
 
 ---
 
-## Summary
+## ✅ Summary
 
 The Docker Service settings define how Docker operates system-wide.
 

@@ -1,9 +1,9 @@
 ---
-sidebar_label: Boot
+sidebar_label: 💾 Boot
 sidebar_position: 1
 ---
 
-# Boot
+# 💾 Boot
 
 The **Boot** menu provides options for installing the system bootloader and managing boot configuration files.  
 This section directly affects system startup behavior and should be used with caution.
@@ -24,7 +24,9 @@ Example:
 
 Installs the system bootloader to a selected disk which will basically copies the contents from your `/boot` folder to the new drive.
 
-**WARNING:** After the installation finished, please shutdown or reboot your server immediately since all further changes after Install to disk __will not__ be saved.  
+:::warning
+After the installation finished, please shutdown or reboot your server immediately since all further changes after Install to disk **will not** be saved.
+:::  
   
 The recommended way is:
 1. Shutdown your server
@@ -36,29 +38,31 @@ When clicking **Install to Disk**, an input form is displayed with the following
 
 ---
 
-#### Device
+#### 📁 Device 
 
 Defines the target device where the bootloader and files from your existing `/boot` directory will be installed.
 
-**Notes:**
+:::note
 - Select the correct disk carefully
 - Installing the bootloader may overwrite existing boot data
 - After the installation finished, please shutdown/reboot your Server immediately and boot from the new disk
+:::
 
 ---
 
-#### Filesystem
+#### 💻 Filesystem
 
 Defines the filesystem used for the boot installation.
 
-**Notes:**
+:::note
 - Must be compatible with the selected device (for installation to a HDD/SSD/NVME ext4 is the recommended filesystem)
 - Existing data on the selected filesystem may be affected
 - Please note that if you format a disk in a Linux filesystem type like ext4, btrfs, xfs your drive won't be readable anymore on Windows (there are tools out there which allow you to view/edit such filesystems on Windows)
+:::
 
 ---
 
-#### Extra Partition
+#### 📈 Extra Partition
 
 Optionally enables the creation or use of an additional partition for usage as a Pool device.
 
@@ -93,16 +97,18 @@ Opens an editor for the GRUB configuration file:
 - Adjust kernel options
 - Change boot behavior
 
-**Important Warning:**
-- This file is critical for system startup
-- Incorrect changes can prevent the system from booting
+:::danger
+This file is critical for system startup
+Incorrect changes can prevent the system from booting
+:::
 
-**Recommendation:**
+:::tip
 Only edit `grub.cfg` if you fully understand GRUB configuration and recovery procedures.
+:::
 
 ---
 
-## Best Practices
+## 📚 Best Practices 
 
 - Verify the target device before installing the bootloader
 - Backup important data before making boot-related changes
@@ -111,7 +117,7 @@ Only edit `grub.cfg` if you fully understand GRUB configuration and recovery pro
 
 ---
 
-## Summary
+## ✅ Summary
 
 The Boot menu allows low-level control over system startup configuration.
 

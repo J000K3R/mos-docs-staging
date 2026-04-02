@@ -63,7 +63,9 @@ Used to create and manage storage pools. From this section you can:
 - Assign disks to pools
 - Monitor pool usage and status
 
-> 💡 Pools are the foundation for shares, containers and virtual machines.
+:::tip
+Pools are the foundation for shares, containers and virtual machines.
+:::
 
 ### 📂 Shares
 
@@ -73,9 +75,11 @@ Manages shared folders provided by the system. Typical use cases:
 - Media storage
 - Backup destinations
 
-> Shares are always backed by a storage pool.
+:::note
+Shares are always backed by a storage pool.
+:::
 
-### 🛒 MOS Hub
+### 🛍️ MOS Hub
 
 Central place for Docker Templates, Docker Compose Templates and MOS Plugins.
 
@@ -97,7 +101,9 @@ Manages Linux Containers (LXC). Used for:
 - Isolated service environments
 - Advanced Linux-based workloads
 
-> LXC containers behave more like small virtual systems compared to Docker containers.
+:::tip
+LXC containers behave more like small virtual systems compared to Docker containers.
+:::
 
 ### 🖥️ VMs
 

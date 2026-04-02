@@ -1,9 +1,9 @@
 ---
-sidebar_label: VM Service
+sidebar_label: 🖥️ VM Service
 sidebar_position: 3
 ---
 
-# VM Service
+# 🖥️ VM Service
 
 The **VM Service** menu controls the global configuration for virtual machines.  
 It allows you to enable or disable the VM service and define storage locations for virtual machine data.
@@ -20,7 +20,7 @@ Example:
 
 ---
 
-## VM Service Configuration
+## ⚙️ VM Service Configuration
 
 ### Enable VM Service
 
@@ -34,8 +34,9 @@ Enables or disables the virtual machine service.
 - All virtual machines are stopped
 - No VM-related services are running
 
-**Note:**  
+:::note
 Disabling the VM service will stop all running virtual machines.
+:::
 
 ---
 
@@ -68,7 +69,7 @@ Defines the directory used to store virtual disk images.
 
 ---
 
-## VirtIO ISOs
+## 💿 VirtIO ISOs
 
 Provides access to VirtIO driver ISO images used by virtual machines.
 
@@ -82,7 +83,7 @@ This section is currently **under development**.
 
 ---
 
-## Summary
+## ✅ Summary
 
 The VM Service settings define how virtual machines are managed on the system.
 

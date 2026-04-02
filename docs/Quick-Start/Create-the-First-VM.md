@@ -8,8 +8,9 @@ sidebar_position: 6
 MOS supports running full virtual machines (VMs) using KVM/QEMU.  
 This guide walks you through creating and configuring your first VM.
 
-> [!WARNING]
-> > ⚠️ **Prerequisite:** Before you can create a VM, you must first enable the **VM Service** in the settings. Navigate to **Settings → Virtualization → VM Service** and enable the service. For more details, refer to the [VM Service](../Virtualization/VM-Service.md) documentation.
+:::warning **Prerequisite:**
+Before you can create a VM, you must first enable the **VM Service** in the settings. Navigate to **Settings → Virtualization → VM Service** and enable the service. For more details, refer to the [VM Service](../Virtualization/VM-Service.md) documentation.
+:::
 
 Navigate to:
 

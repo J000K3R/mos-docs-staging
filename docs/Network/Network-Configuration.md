@@ -23,9 +23,7 @@ Example:
 
 ![Network Interfaces](/img/network/Network_Interfaces.png)
 
----
-
-# ⚠️ Network Configuration Safety
+:::warning Network Configuration Safety
 
 When applying network changes, MOS protects you from accidental lockouts.
 
@@ -39,6 +37,7 @@ If the configuration is **not confirmed within 60 seconds**:
 - The previous network configuration will be **automatically restored**
 
 This prevents losing access to the WebUI due to incorrect network settings.
+:::
 
 ---
 
@@ -64,11 +63,11 @@ If the network configuration changes the IP address of the MOS system:
 
 3. Click **Accept** within **60 seconds**
 
+:::warning
 You must access the WebUI using the **new address** before the 60 second timer expires.
+:::
 
----
-
-## ⏱ What Happens If You Don't Confirm?
+:::info ⏱ What Happens If You Don't Confirm?
 
 If the configuration is **not confirmed within 60 seconds**:
 
@@ -76,10 +75,11 @@ If the configuration is **not confirmed within 60 seconds**:
 - The system becomes reachable again via the **old IP address**
 
 This mechanism ensures you cannot permanently lock yourself out of the system.
+:::
 
 ---
 
-## Network Interfaces
+## 🖧 Network Interfaces
 
 Each detected network interface can be configured individually.
 
@@ -171,8 +171,9 @@ Creates a Linux bridge and attaches the physical interface to it.
 - Virtual machines
 - Most server setups
 
-**Recommendation:**
+:::tip Recommendation
 This is the **default and recommended mode** for most installations.
+:::
 
 ---
 
@@ -190,9 +191,10 @@ Combines multiple physical network interfaces into a single logical interface.
 - Increased network bandwidth
 - Multi-NIC servers
 
-**Notes:**
+:::note
 - Switch-side configuration may be required (LACP or static bonding)
 - Misconfiguration can lead to loss of network connectivity
+:::
 
 ---
 
@@ -214,8 +216,9 @@ Enables or disables automatic IPv4 configuration via DHCP.
 - **Disabled:**  
   Static IPv4 configuration is required.
 
-**Recommended:**  
+:::tip **Recommended:**  
 Disable DHCP for servers and use a static IP address.
+:::
 
 ---
 
@@ -261,8 +264,9 @@ Enables or disables IPv6 support for the interface.
 - **Disabled:**  
   IPv6 traffic is ignored.
 
-**Note:**  
+:::note
 Only enable IPv6 if your network infrastructure fully supports it.
+:::
 
 ---
 

@@ -1,9 +1,9 @@
 ---
-sidebar_label: LXC Service
+sidebar_label: 📦 LXC Service
 sidebar_position: 2
 ---
 
-# LXC Service
+# 📦 LXC Service
 
 The **LXC Service** menu controls the global configuration of Linux Containers (LXC).  
 It allows you to enable or disable the LXC service, configure container networking, and define storage locations for LXC containers.
@@ -20,7 +20,7 @@ Example:
 
 ---
 
-## LXC Service Configuration
+## ⚙️ LXC Service Configuration
 
 ### Enable LXC Service
 
@@ -34,8 +34,9 @@ Enables or disables the LXC service.
 - All LXC containers are stopped
 - No LXC-related services are running
 
-**Note:**  
+:::note
 Disabling the LXC service will stop all running LXC containers.
+:::
 
 ---
 
@@ -56,8 +57,9 @@ Controls whether the LXC network bridge is enabled.
 - No bridge-based networking for LXC containers
 - Containers may require alternative networking configuration
 
-**Note:**  
+:::tip
 Bridge mode is recommended for most setups.
+:::
 
 ---
 
@@ -70,14 +72,15 @@ Defines the directory used to store LXC container data.
 - Configuration files
 - Snapshots and metadata
 
-**Best practices:**
+:::tip
 - Use a fast and reliable storage pool
 - Ensure sufficient disk space
 - Include this directory in regular backups
+:::
 
 ---
 
-## Operational Notes
+## 📝 Operational Notes
 
 - Network connectivity depends on bridge configuration
 - Changes to the LXC directory may require restarting the LXC service
@@ -85,7 +88,7 @@ Defines the directory used to store LXC container data.
 
 ---
 
-## Summary
+## ✅ Summary
 
 The LXC Service settings define how Linux Containers operate on the system.
 

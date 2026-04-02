@@ -8,7 +8,9 @@ sidebar_position: 3
 MOS provides optional support for ZFS via a plugin.
 ZFS is ***currently available CLI only*** and is intended for users who are already familiar with managing ZFS pools manually.
 
+:::info
 ZFS support is provided as an optional feature, while further integration remains planned for the future and is not a high priority item.
+:::
 
 ---
 

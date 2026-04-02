@@ -1,16 +1,16 @@
 ---
-sidebar_label: Pre-Start Script
+sidebar_label: 🚀 Pre-Start Script
 sidebar_position: 1
 ---
 
-# System Startup
+# 🚀 System Startup
 
 MOS provides dedicated hooks that are executed during system startup.
 These hooks allow controlled customization of the boot process.
 
 ---
 
-## Pre-Start Script (pre-start.sh)
+## 📝 Pre-Start Script (pre-start.sh)
 
 The **Pre-Start Script** is executed **very early during system startup**.
 
@@ -61,7 +61,9 @@ Cron jobs:
 - Reduce the risk of boot-time failures
 - Are suitable for most automation tasks
 
+:::warning
 Startup scripts should only be used when actions **must** run before pools are mounted or services are started.
+:::
 
 ---
 
@@ -82,7 +84,9 @@ As long as the script file exists at the correct path, MOS will execute it autom
 - Logging and output are limited
 - Errors in this script can affect system startup
 
+:::warning
 Use this script carefully and keep it as minimal as possible.
+:::
 
 ---
 

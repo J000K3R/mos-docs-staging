@@ -1,9 +1,9 @@
 ---
-sidebar_label: Drivers
+sidebar_label: 🧩 Drivers
 sidebar_position: 2
 ---
 
-# Drivers
+# 🧩 Drivers
 
 MOS manages hardware drivers through **Driver Plugins**.
 Drivers are installed, updated, and managed using the **MOS Hub**, providing a unified and modular approach to hardware support.
@@ -88,7 +88,7 @@ From there, you can:
 
 - Configure settings (if provided by the plugin)
 
-- Rremove the plugin
+- Remove the plugin
 
 ![Plugin](/img/system/Plugin.png)
 

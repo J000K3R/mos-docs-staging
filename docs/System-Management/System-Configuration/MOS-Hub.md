@@ -1,9 +1,9 @@
 ---
-sidebar_label: MOS Hub
+sidebar_label: 🛍️ MOS Hub
 sidebar_position: 4
 ---
 
-# MOS Hub
+# 🛍️ MOS Hub
 
 The MOS Hub is an integrated application hub that provides preconfigured Docker templates which can be deployed directly from the system interface.  
 It functions as an internal app store, simplifying the installation and management of containerized applications.
@@ -20,7 +20,7 @@ Example:
 
 ---
 
-## MOS Hub Configuration Options
+## ⚙️ MOS Hub Configuration Options
 
 ### Enable MOS Hub
 
@@ -49,7 +49,9 @@ A new session includes events such as:
 - Enable for frequently changing repositories
 - Disable for bandwidth-restricted or offline environments
 
+:::tip
 **Recommended:** Enabled
+:::
 
 ---
 
@@ -78,7 +80,7 @@ This means:
 
 ---
 
-## Operational Notes
+## 📝 Operational Notes
 
 - Updates only run if the MOS Hub is enabled
 - Scheduled updates do not interrupt running containers
@@ -86,7 +88,7 @@ This means:
 
 ---
 
-## Summary
+## ✅ Summary
 
 The MOS Hub Settings allow you to control how and when the integrated application hub operates.
 

@@ -1,9 +1,9 @@
 ---
-sidebar_label: Sensors
+sidebar_label: 🌡️ Sensors
 sidebar_position: 3
 ---
 
-# Sensors
+# 🌡️ Sensors
 
 MOS supports hardware and system sensors that can be displayed on the Dashboard.
 Sensors allow you to monitor values such as temperatures, voltages, fan speeds, or custom metrics collected from the system.
@@ -20,7 +20,7 @@ Navigate to:
 
 This view shows all detected and configured sensors.
 
-![Settings Sensors](/img/system/Settings_Sensors.png)
+![Settings Sensors](/img/MOS_Settings.png)
 
 
 ---

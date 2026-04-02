@@ -1,9 +1,9 @@
 ---
-sidebar_label: Logs
+sidebar_label: 📋 Logs
 sidebar_position: 3
 ---
 
-# Logs
+# 📋 Logs
 
 The **Logs** menu provides direct access to system log files stored on the server.  
 It allows you to inspect log output for troubleshooting, monitoring, and auditing purposes without using the command line.
@@ -20,7 +20,7 @@ Example:
 
 ---
 
-## Log Viewer Overview
+## 📊 Log Viewer Overview
 
 The log viewer lists all available log files found in:
 
@@ -41,16 +41,17 @@ including files located in nested subdirectories.
 
 ---
 
-## Log Viewer Options
+## ⚙️ Log Viewer Options
 
 ### Log File Selection
 
 Select the log file you want to inspect from the list.
 
-**Notes:**
+:::note
 - Only files within `/var/log` are accessible
 - Permissions are handled by the system
 - Large log files may take longer to load
+:::
 
 ---
 
@@ -65,13 +66,14 @@ Defines how many lines of the selected log file are displayed.
 - Limit output for better readability
 - Improve performance when viewing large files
 
-**Best practice:**
+:::tip Best practice:
 - Start with a lower number of lines when troubleshooting
 - Increase the value only if more context is required
+:::
 
 ---
 
-## Use Cases
+## 🎯 Use Cases
 
 - Diagnosing system or service startup issues
 - Inspecting cron job output
@@ -80,14 +82,14 @@ Defines how many lines of the selected log file are displayed.
 
 ---
 
-## Notes and Limitations
+## 📝 Notes and Limitations
 
 - Log files are read-only in this view
 - Editing or deleting logs is not supported
 
 ---
 
-## Summary
+## ✅ Summary
 
 The Logs menu offers a convenient and safe way to inspect system log files.
 

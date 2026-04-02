@@ -79,7 +79,9 @@ The main Vue component must be named exactly **`Plugin.vue`**.
 
 This file contains the UI and frontend logic of the plugin.
 
-> ⚠️ `Plugin.vue` is mandatory and must not be renamed.
+:::warning
+`Plugin.vue` is mandatory and must not be renamed.
+:::
 
 ---
 
@@ -185,7 +187,9 @@ Plugins can execute binaries using the MOS API endpoint:
 | `timeout` | Maximum execution time in seconds before the command is terminated |
 | `parse_json` | `true` → MOS tries to parse the output as JSON / `false` → raw output is returned |
 
-> 💡 Always set a proper `timeout` value to avoid blocking behavior. Output is returned directly by the API.
+:::tip
+Always set a proper `timeout` value to avoid blocking behavior. Output is returned directly by the API.
+:::
 
 ---
 
@@ -193,7 +197,9 @@ Plugins can execute binaries using the MOS API endpoint:
 
 Plugins that provide kernel drivers can query driver-related information using the following endpoint.
 
-> ⚠️ This endpoint is **only available** if the plugin template is configured with `driver: true`.
+:::warning
+This endpoint is **only available** if the plugin template is configured with `driver: true`.
+:::
 
 **Endpoint:** `GET /mos/plugins/driver/{pluginName}`
 
@@ -234,7 +240,9 @@ To allow the workflow to create releases:
 3. Under **Workflow permissions**, select **Read and write permissions**
 4. Click **Save**
 
-> ⚠️ This step is required — the workflow will fail without it.
+:::warning
+This step is required — the workflow will fail without it.
+:::
 
 ---
 

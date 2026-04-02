@@ -18,7 +18,7 @@ Example:
 
 ---
 
-## Token Types
+## 🔑 Token Types
 
 ### MOS Admin API Token
 
@@ -40,7 +40,7 @@ Once created, the token can be used for API access and automation.
 
 ---
 
-## External Service Tokens
+## 🌐 External Service Tokens
 
 External service tokens increase API limits and prevent download throttling when interacting with public repositories.
 
@@ -50,9 +50,10 @@ External service tokens increase API limits and prevent download throttling when
 
 A GitHub token allows MOS to access GitHub repositories with higher API limits.
 
-**Benefits:**
+:::tip Benefits:
 - Avoids GitHub API rate limits
 - Improves reliability of template and container downloads
+:::
 
 #### GitHub Token Setup
 
@@ -64,9 +65,10 @@ A GitHub token allows MOS to access GitHub repositories with higher API limits.
 6. Select **Fine-grained tokens**
 7. Click **Generate new token**
 
-**Recommended settings:**
+:::tip Recommended settings:
 - **Expiration:** No expiration
 - **Repository access:** Public repositories (Read-only access to public repositories)
+:::
 
 #### Token Usage in MOS
 
@@ -79,9 +81,10 @@ A GitHub token allows MOS to access GitHub repositories with higher API limits.
 
 A Docker Hub token allows MOS to authenticate against Docker Hub and increases image pull rate limits.
 
-**Benefits:**
+:::tip Benefits:
 - Higher Docker image pull limits
 - Reduced risk of rate limiting during deployments and updates
+:::
 
 #### Docker Hub Token Setup
 
@@ -91,10 +94,11 @@ A Docker Hub token allows MOS to authenticate against Docker Hub and increases i
 4. Open **Personal Access Tokens**
 5. Click **Generate New Token**
 
-**Recommended settings:**
+:::tip Recommended settings:
 - **Description:** `MOS`
 - **Expiration date:** None
 - **Access permissions:** Read-only
+:::
 
 #### Token Format for MOS
 
@@ -106,7 +110,7 @@ Replace `USERNAME` with your Docker Hub username and `TOKEN` with the generated 
 
 ---
 
-## Security Notes
+## 🔒 Security Notes
 
 - All tokens are stored securely
 - Tokens are used in read-only mode for both public and private repositories
@@ -115,7 +119,7 @@ Replace `USERNAME` with your Docker Hub username and `TOKEN` with the generated 
 
 ---
 
-## Summary
+## ✅ Summary
 
 The Token menu centralizes authentication credentials for MOS and external services.
 

@@ -1,9 +1,9 @@
 ---
-sidebar_label: Cron Jobs
+sidebar_label: ⏰ Cron Jobs
 sidebar_position: 2
 ---
 
-# Cron Jobs
+# ⏰ Cron Jobs
 
 Cron Jobs allow you to schedule commands or scripts to run automatically at defined intervals.  
 They are a core part of system automation and maintenance in the OS.
@@ -27,22 +27,23 @@ Example:
 
 ---
 
-## Creating a New Cron Job
+## ➕ Creating a New Cron Job
 
 To create a new cron job, click the Plus Icon and fill in the required fields.
 
 ---
 
-## Cron Job Configuration Fields
+## ⚙️ Cron Job Configuration Fields
 
 ### Name
 
 Defines the name of the cron job.
 
-**Best practice:**
-- Use clear and descriptive names
-- Avoid spaces and special characters
-- Reflect the purpose of the job
+:::tip Best practice:
+Use clear and descriptive names
+Avoid spaces and special characters
+Reflect the purpose of the job
+:::
 
 **Examples:**
 - `daily_backup`
@@ -67,8 +68,9 @@ minute hour day month weekday
 - `*/5 * * * *` → Every 5 minutes
 - `0 0 * * 0` → Every Sunday at midnight
 
-**Tip:**  
+:::tip
 Use fixed schedules for system tasks to avoid unnecessary load.
+:::
 
 ---
 
@@ -76,10 +78,11 @@ Use fixed schedules for system tasks to avoid unnecessary load.
 
 Defines the command that will be executed.
 
-**Notes:**
+:::note
 - Commands are executed with system privileges
 - Absolute paths are recommended
 - If no command is provided and only a script path is defined, the command is created automatically
+:::
 
 **Example:**
 
@@ -105,13 +108,14 @@ Allows you to select or define a script to be executed instead of a single comma
 - Multi-step operations
 - Reusable automation tasks
 
-**Notes:**
+:::note
 - Scripts must be executable
 - Ensure proper shebang (`#!/bin/sh`, `#!/bin/bash`, etc.)
+:::
 
 ---
 
-## Managing Existing Cron Jobs
+## 📋 Managing Existing Cron Jobs
 
 All created cron jobs are listed in the overview table.
 
@@ -147,8 +151,9 @@ Allows you to modify:
 - Schedule
 - Command
 
-**Note:**  
+:::note
 Changes take effect immediately after saving.
+:::
 
 ---
 
@@ -175,19 +180,20 @@ Ensure the target script exists and is executable.
 
 Permanently removes the cron job.
 
-**Warning:**  
+:::danger
 This action cannot be undone.
+:::
 
 ---
 
-## Best Practices
+## 📚 Best Practices
 
 - Test commands and scripts manually before scheduling
 - Avoid overly frequent schedules unless required
 - Log output for debugging and auditing
 - Disable unused cron jobs instead of deleting them
 
-## Logging and Output Handling
+## 📝 Logging and Output Handling
 
 By default, cron job output can be suppressed or discarded.  
 Optionally, you can redirect stdout and stderr to a dedicated log file by defining it directly in the **Command** field.
@@ -201,14 +207,15 @@ Optionally, you can redirect stdout and stderr to a dedicated log file by defini
 
 `bash /boot/optional/scripts/cron/test_script.sh >> /var/log/cron/test_script.log 2>&1`
 
-**Notes:**
+:::note
 - Ensure the log directory exists
 - Verify proper file permissions
 - Consider log rotation for frequently running jobs
+:::
 
 ---
 
-## Summary
+## ✅ Summary
 
 Cron Jobs provide a powerful and flexible way to automate system tasks.
 

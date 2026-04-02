@@ -353,7 +353,7 @@ Use **stack-level autostart** for multi-container applications to ensure proper 
 
 ---
 
-## 🏪 MOS Hub
+## 🛍️ MOS Hub
 
 The **MOS Hub** provides a template-based container deployment experience similar to an app store.
 

@@ -1,5 +1,5 @@
 ---
-sidebar_label: System Settings
+sidebar_label: ⚙️ System Settings
 sidebar_position: 2
 ---
 
@@ -28,9 +28,10 @@ Defines the system hostname.
 **Default:**  
 - `MOS`
 
-**Notes:**
+:::note
 - Used for network identification
 - Changes may require reconnecting to the system UI
+:::
 
 ---
 
@@ -54,9 +55,10 @@ Defines the system timezone.
 **Default:**  
 - `Europe/Vienna`
 
-**Notes:**
+:::note
 - Affects logs, cron jobs, and scheduled tasks
 - Should match the physical system location
+:::
 
 ---
 
@@ -73,8 +75,9 @@ Defines the CPU frequency scaling policy.
 - `powersave` – Forces minimum CPU frequency to reduce power consumption
 - `conservative` – Gradual frequency scaling with slower ramp-up, optimized for power efficiency
 
-**Recommendation:**  
+:::tip Recommendation
 Use `ondemand` for balanced performance and efficiency.
+:::
 
 ---
 
@@ -85,9 +88,10 @@ Defines the idle time before disks are spun down.
 **Default:**  
 - `20` minutes
 
-**Notes:**
+:::note
 - Reduces power consumption and noise
 - Excessively low values may increase disk wear
+:::
 
 ---
 
@@ -144,9 +148,10 @@ Controls system notification sounds.
 ### Sound on Startup
 - Enable / Disable
 
-**Notes:**
+:::note
 - Useful for local systems
 - Can be disabled for headless or silent environments
+:::
 
 ---
 
@@ -166,8 +171,9 @@ Defines the NTP synchronization mode.
 **Default:**  
 - `iburst`
 
-**Note:**  
+:::note
 `iburst` allows faster initial synchronization.
+:::
 
 ---
 
@@ -179,9 +185,10 @@ Defines the NTP servers used for time synchronization.
 - `0.pool.ntp.org`
 - `1.pool.ntp.org`
 
-**Notes:**
+:::note
 - Additional servers can be added
 - Custom or local NTP servers are supported
+:::
 
 ---
 
@@ -224,9 +231,10 @@ Defines addresses or domains that bypass the proxy.
 
 Controls whether the system uses a swap file for additional virtual memory.
 
-**Notes:**
+:::note
 - Provides additional memory when physical RAM is exhausted
 - Useful for systems with limited RAM
+:::
 
 ### Swapfile Path
 
@@ -251,9 +259,10 @@ Defines the priority of the swap file relative to other swap devices.
 
 Enables or disables the zswap compressed caching feature.
 
-**Notes:**
+:::note
 - Compresses memory pages before swapping to disk
 - Can improve performance on systems with swap
+:::
 
 ### Shrinker Enabled
 
@@ -288,9 +297,10 @@ Defines the threshold percentage for accepting pages into zswap.
 
 Enables or disables support for additional binary formats through binfmt_misc.
 
-**Notes:**
+:::note
 - Allows execution of non-native binary formats
 - Used for compatibility layers and emulation
+:::
 
 ### Binfmt Architectures
 

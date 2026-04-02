@@ -1,9 +1,9 @@
 ---
-sidebar_label: Early Boot Script
+sidebar_label: 🚀 Early Boot Script
 sidebar_position: 3
 ---
 
-# Early Boot Script (boot.sh)
+# 🚀 Early Boot Script (boot.sh)
 
 MOS provides an **Early Boot Script** that is executed at the **very beginning of the boot process**.
 
@@ -113,7 +113,9 @@ The mere existence of the file at the defined path is sufficient.
 - Logging is extremely limited
 - Incorrect commands may require recovery access
 
+:::warning
 Use this script **only if you fully understand the MOS boot process and Linux system initialization**.
+:::
 
 ---
 

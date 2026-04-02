@@ -1,16 +1,16 @@
 ---
-sidebar_label: Pool Mount Scripts
+sidebar_label: 💾 Pool Mount Scripts
 sidebar_position: 3
 ---
 
-# System Startup
+# 💾 System Startup
 
 MOS provides dedicated hooks that are executed during system startup.
 These hooks allow controlled customization of the boot process.
 
 ---
 
-## Pool Mount Scripts
+## 📝 Pool Mount Scripts
 
 MOS provides **Pool Mount Scripts** that are executed automatically **after a specific storage pool has been mounted**.
 

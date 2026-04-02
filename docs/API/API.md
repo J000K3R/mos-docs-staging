@@ -1,9 +1,9 @@
 ---
-sidebar_label: API
+sidebar_label: 🔌 API
 sidebar_position: 1
 ---
 
-# MOS API Overview
+# 🔌 MOS API Overview
 
 MOS provides a fully documented REST API that is used internally by the web interface.
 The WebUI does not perform direct system actions on its own — it communicates exclusively through the MOS API.
@@ -15,7 +15,7 @@ This makes the system:
 
 ---
 
-## API Documentation
+## 📖 API Documentation
 
 The API documentation is available via the built-in Swagger UI.
 
@@ -35,7 +35,7 @@ Example:
 
 ---
 
-## API Structure
+## 🏗️ API Structure
 
 The API is organized into logical sections, such as:
 - Authentication
@@ -51,7 +51,7 @@ Each section groups all related endpoints for that subsystem.
 
 ---
 
-## Authentication & Authorization
+## 🔐 Authentication & Authorization
 
 Most API endpoints require authentication.
 
@@ -59,7 +59,7 @@ The MOS API uses **Bearer Token authentication**.
 
 ---
 
-### Creating an API Token
+### 🔑 Creating an API Token
 
 API tokens can be created in the WebUI.
 
@@ -72,8 +72,9 @@ From there you can:
 - Copy the token value
 - Delete existing tokens
 
-**Important:**  
+:::warning
 Store API tokens securely. Tokens provide administrative access depending on user permissions.
+:::
 
 Example:
 
@@ -81,7 +82,7 @@ Example:
 
 ---
 
-### Authorizing in the API Docs
+### 🔓 Authorizing in the API Docs
 
 The API documentation UI includes an **Authorize** button.
 
@@ -105,7 +106,7 @@ Once authorized:
 
 ---
 
-## Executing API Calls
+## ▶️ Executing API Calls
 
 After authorization, API endpoints can be executed directly using the **Try it out** feature.
 
@@ -122,7 +123,7 @@ Some endpoints support optional parameters, such as:
 
 ---
 
-## Example: Disk Listing
+## 💾 Example: Disk Listing
 
 The `GET /disks` endpoint returns a live overview of all detected disks, including:
 - Device path
@@ -136,7 +137,7 @@ Optional parameters allow controlling:
 
 ---
 
-## Important Notes
+:::warning Important Notes
 
 - The API uses **live system data** (no caching)
 - Actions performed via the WebUI are equivalent to API calls
@@ -146,10 +147,11 @@ This ensures consistent behavior between:
 - Web interface
 - API usage
 - Automation scripts
+:::
 
 ---
 
-## Summary
+## ✅ Summary
 
 The MOS API is the central control layer of the system.
 

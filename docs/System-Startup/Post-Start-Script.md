@@ -1,16 +1,16 @@
 ---
-sidebar_label: Post-Start Script
+sidebar_label: 🏁 Post-Start Script
 sidebar_position: 2
 ---
 
-# System Startup
+# 🏁 System Startup
 
 MOS provides dedicated hooks that are executed during system startup.
 These hooks allow controlled customization of the boot process.
 
 ---
 
-## Post-Start Script (post-start.sh)
+## 📝 Post-Start Script (post-start.sh)
 
 The **Post-Start Script** is executed **after system startup has completed**.
 
@@ -62,7 +62,9 @@ Cron jobs:
 - Can be scheduled or delayed
 - Reduce the risk of startup-related issues
 
+:::warning
 Use the Post-Start Script only when an action **must** run immediately after system startup.
+:::
 
 ---
 

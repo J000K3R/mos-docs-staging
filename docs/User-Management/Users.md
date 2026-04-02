@@ -1,16 +1,16 @@
 ---
-sidebar_label: Users
+sidebar_label: 👤 Users
 sidebar_position: 1
 ---
 
-# Create Users
+# 👤 Create Users
 
 Users define who can access the MOS web interface and system resources.
 Each user is assigned a role that determines their permissions.
 
 Navigate to:
 
-**Users → Add User**
+> **Users → Add User**
 
 Example:
 
@@ -18,22 +18,23 @@ Example:
 
 ---
 
-## User Configuration Fields
+## ⚙️ User Configuration Fields
 
 ![Users Configuration](/img/users/User_Configuration.png)
 
-### Username
+### 👤 Username
 
 Defines the login name of the user.
 
-**Notes:**
+:::note
 - Must be unique
 - Used for WebUI login and permissions
 - Also used for share access if Samba is enabled
+:::
 
 ---
 
-### Password
+### 🔒 Password
 
 Defines the login password for the user.
 
@@ -85,7 +86,7 @@ Enables or disables Samba access for the user.
 
 ---
 
-## Managing Existing Users
+## 📋 Managing Existing Users
 
 The Users overview lists all configured users.
 
@@ -95,7 +96,7 @@ For each user you can:
 
 ---
 
-## Summary
+## ✅ Summary
 
 To create a user:
 
