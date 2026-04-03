@@ -3,6 +3,9 @@ sidebar_label: 🔧 Create Bootable Media
 sidebar_position: 1
 ---
 
+import Terminal, { TerminalMuted, TerminalCursor, TerminalSuccess } from '@site/src/components/Terminal';
+import CMD, { CMDCursor } from '@site/src/components/CMD';
+
 # 🔧 Create Bootable Media
 
 The installation process is intentionally kept simple.
@@ -35,30 +38,70 @@ The macOS Finder format option does **not** set the bootable flag correctly. Use
 1. Insert the USB stick
 2. Open **Terminal**
 3. Find your USB device identifier:
-   ```bash
-   diskutil list
-   ```
-   (Look for your USB stick, e.g., `/dev/disk5`)
-4. Format with MBR and FAT32:
-   ```bash
-   diskutil partitionDisk /dev/diskX MBR fat32 "MOS" 100%
-   ```
-   Replace `/dev/diskX` with your actual device identifier.
+
+<Terminal title="user@Mac:~">
+$ diskutil list
+/dev/disk0 (internal):
+   #:  TYPE NAME          SIZE       IDENTIFIER
+   0:  GUID_partition...  500.1 GB   disk0
+
+/dev/disk5 (external, physical):
+   #:  TYPE NAME          SIZE       IDENTIFIER
+   0:  FDisk_partition...  14.9 GB   disk5
+   1:  DOS_FAT_32 NO NAME  14.9 GB   disk5s1
+
+<TerminalMuted>← your USB stick is /dev/disk5</TerminalMuted>
+</Terminal>
+
+4. Format with MBR and FAT32 — replace `/dev/diskX` with your actual device identifier:
+
+<Terminal title="user@Mac:~">
+$ diskutil partitionDisk /dev/disk5 MBR fat32 "MOS" 100%
+Started partitioning on disk5
+Unmounting disk
+Creating the partition map
+Waiting for partitions to activate
+Formatting disk5s1 as MS-DOS (FAT32) with name MOS
+512 bytes per physical sector
+/dev/rdisk5s1: 29337600 sectors in 917425 FAT32 clusters
+Initialized /dev/rdisk5s1 as a 512 MB volume
+Mounting disk
+Finished partitioning on disk5
+/dev/disk5 (external, physical):
+   #:  TYPE NAME          SIZE       IDENTIFIER
+   0:  FDisk_partition...  14.9 GB   disk5
+   1:  DOS_FAT_32 MOS      14.9 GB   disk5s1
+<TerminalCursor />
+</Terminal>
 
 #### Linux
 
 1. Insert the USB stick
-2. Find your USB device (e.g., `/dev/sdb`):
-   ```bash
-   lsblk
-   ```
-3. Format with FAT32:
-   ```bash
-   sudo mkfs.vfat -F 32 -n "MOS" /dev/sdX1
-   ```
-   Replace `/dev/sdX1` with your actual device partition.
+2. Find your USB device:
 
-   Or use `parted`/`gparted` GUI to create a partition table with MBR and format as FAT32.
+<Terminal title="user@linux:~">
+$ lsblk
+NAME   MAJ:MIN RM   SIZE RO TYPE MOUNTPOINTS
+sda      8:0    0 500.1G  0 disk
+├─sda1   8:1    0   512M  0 part /boot
+└─sda2   8:2    0 499.6G  0 part /
+sdb      8:16   1  14.9G  0 disk
+└─sdb1   8:17   1  14.9G  0 part
+<TerminalMuted>← your USB stick is /dev/sdb</TerminalMuted>
+</Terminal>
+
+3. Format with FAT32:
+
+<Terminal title="user@linux:~">
+$ sudo mkfs.vfat -F 32 -n "MOS" /dev/sdb1
+mkfs.fat 4.2 (2021-01-31)
+<TerminalSuccess>mkfs.vfat: success</TerminalSuccess>
+<TerminalCursor />
+</Terminal>
+
+:::tip
+You can also use `parted` or the `gparted` GUI to create an MBR partition table and format as FAT32.
+:::
 
 ---
 
