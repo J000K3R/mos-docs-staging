@@ -139,8 +139,7 @@ sda      8:0    0 500.1G  0 disk
 ├─sda1   8:1    0   512M  0 part /boot
 └─sda2   8:2    0 499.6G  0 part /
 sdb      8:16   1  14.9G  0 disk
-└─sdb1   8:17   1  14.9G  0 part
-<LinuxMuted>← your USB stick is /dev/sdb</LinuxMuted>
+└─sdb1   8:17   1  14.9G  0 part <LinuxMuted>← your USB stick is /dev/sdb</LinuxMuted>
 </TerminalLinux>
 
 3. Format with FAT32:
