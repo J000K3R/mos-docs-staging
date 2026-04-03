@@ -89,9 +89,11 @@ Create a GitHub personal access token and add it to MOS:
 
 **Symptoms:** The same application (e.g. Jellyfin) appears multiple times in MOS Hub.
 
-**Explanation:** This is expected behavior. MOS Hub is **not curated** — anyone can create and publish their own repositories. If multiple repository maintainers publish the same application, it will appear multiple times. You can identify the source by the repository name shown on each entry.
+:::tip Explanation
+This is expected behavior. MOS Hub is **not curated** — anyone can create and publish their own repositories. If multiple repository maintainers publish the same application, it will appear multiple times. You can identify the source by the repository name shown on each entry.
 
 You can manage which repositories are active by navigating to **MOS Hub → Three-dots menu (bottom right) → Repositories**. There you can add or remove repositories. By default, repositories from MOS Team Members are included.
+:::
 
 ---
 
@@ -101,7 +103,7 @@ You can manage which repositories are active by navigating to **MOS Hub → Thre
 
 **Symptoms:** After changing network settings, the WebUI is no longer reachable.
 
-**Explanation:** MOS has a built-in **60-second rollback mechanism**. After applying network changes, you must confirm the new configuration within 60 seconds by navigating to **Settings → Network Interfaces** and clicking **Accept**.
+:::tip Explanation: MOS has a built-in **60-second rollback mechanism**. After applying network changes, you must confirm the new configuration within 60 seconds by navigating to **Settings → Network Interfaces** and clicking **Accept**.
 
 **If you did not confirm in time:**
 - MOS automatically restored the previous configuration
@@ -109,6 +111,7 @@ You can manage which repositories are active by navigating to **MOS Hub → Thre
 
 **If the IP address changed and you confirmed:**
 - Make sure you are accessing the WebUI via the **new IP address**
+:::
 
 :::warning
 Always have console (physical or SSH) access available when making network changes remotely.
@@ -118,11 +121,12 @@ Always have console (physical or SSH) access available when making network chang
 
 ### No internet access despite network being configured
 
-**Checklist:**
+:::tip Checklist:
 - Make sure the **IPv4 Gateway** is correctly set to your router's IP address
 - Make sure at least one **DNS server** is configured (e.g. `1.1.1.1`)
 - If using a static IP, verify there is no IP conflict with another device on your network
 - If using `bond` mode, verify your switch supports the bonding configuration
+:::
 
 ---
 
@@ -132,9 +136,10 @@ Always have console (physical or SSH) access available when making network chang
 
 **Symptoms:** After first boot the Pools section is empty.
 
-**Explanation:** This is expected on a fresh installation. Pools need to be created manually.
+:::tip Explanation: This is expected on a fresh installation. Pools need to be created manually.
 
 Refer to the [Create a Storage Pool](/Quick-Start/Create-Storage-Pool) guide to get started.
+:::
 
 ---
 
@@ -142,10 +147,11 @@ Refer to the [Create a Storage Pool](/Quick-Start/Create-Storage-Pool) guide to 
 
 ### Container fails to start
 
-**Checklist:**
+:::tip Checklist:
 - Check the container logs in the WebUI for specific error messages
 - Make sure the required ports are not already in use by another container or service
 - Verify that all required paths and volumes exist on the system
+:::
 
 ---
 
@@ -171,10 +177,11 @@ Navigate to **Settings → Hardware → LXC service** and make sure LXC is enabl
 
 ### VM does not start
 
-**Checklist:**
+:::tip Checklist:
 - Make sure the VM has sufficient CPU and memory allocated
 - Verify the disk image path is correct and accessible
 - Check that the VM service is running via **Settings → Hardware**
+:::
 
 ---
 
