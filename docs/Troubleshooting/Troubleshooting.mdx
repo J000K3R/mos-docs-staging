@@ -30,6 +30,58 @@ Minimum recommended USB size is **8 GB**, 16 GB recommended.
 
 ---
 
+### USB stick not detected as bootable (Windows)
+
+**Symptoms:** After formatting with Windows Explorer, the USB stick is not recognized as bootable by the BIOS/UEFI.
+
+:::tip Solution
+Use `diskpart` to create a bootable partition. Open **CMD as Administrator** and run the following commands:
+
+import CMD, { CMDCursor } from '@site/src/components/CMD';
+
+<CMD title="C:\Windows\System32\cmd.exe">
+C:\Windows\system32> diskpart
+
+Microsoft DiskPart version 10.0.26100
+
+DISKPART> list disk
+
+  Disk ###  Status         Size     Free
+  --------  -------------  -------  -------
+  Disk 0    Online          500 GB      0 B
+  Disk 1    Online           14 GB      0 B   ← your USB stick
+
+DISKPART> select disk 1
+Disk 1 is now the selected disk.
+
+DISKPART> clean
+DiskPart succeeded in cleaning the disk.
+
+DISKPART> create partition primary
+DiskPart succeeded in creating the specified partition.
+
+DISKPART> active
+DiskPart marked the current partition as active.
+
+DISKPART> format fs=fat32 label="MOS" quick
+  100 percent completed
+
+DiskPart successfully formatted the volume.
+
+DISKPART> assign
+DiskPart successfully assigned the drive letter or mount point.
+
+DISKPART> exit
+<CMDCursor />
+</CMD>
+:::
+
+:::warning
+Make sure to select the correct disk number from `list disk`. The `clean` command will erase all data on the selected drive.
+:::
+
+---
+
 ### WebUI is not accessible after first boot
 
 **Symptoms:** Browsing to `http://MOS-IP/` shows nothing or times out.
