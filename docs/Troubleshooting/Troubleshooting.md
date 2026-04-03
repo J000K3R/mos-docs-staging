@@ -83,7 +83,7 @@ Create a GitHub personal access token and add it to MOS:
 
 ---
 
-## 🏬 MOS Hub
+## 🛍️ MOS Hub
 
 ### Duplicate entries in MOS Hub
 

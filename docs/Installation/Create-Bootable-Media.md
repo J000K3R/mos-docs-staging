@@ -12,11 +12,53 @@ Follow these steps to prepare a bootable USB drive:
 
 ### 1. 🖴 Prepare the USB Stick
 
-Format a USB stick as FAT32 and set the label/name to `MOS`.
+Format a USB stick as **FAT32** and set the label/name to `MOS`.
 
 :::note
 Minimum recommended size: **8 GB** (16 GB recommended to be on the safe side).
 :::
+
+#### Windows
+
+1. Insert the USB stick
+2. Open **File Explorer** → right-click the USB drive → **Format...**
+3. Set **File system** to `FAT32`
+4. Set **Volume label** to `MOS`
+5. Click **Start**
+
+#### macOS
+
+:::warning
+The macOS Finder format option does **not** set the bootable flag correctly. Use the Terminal method below.
+:::
+
+1. Insert the USB stick
+2. Open **Terminal**
+3. Find your USB device identifier:
+   ```bash
+   diskutil list
+   ```
+   (Look for your USB stick, e.g., `/dev/disk5`)
+4. Format with MBR and FAT32:
+   ```bash
+   diskutil partitionDisk /dev/diskX MBR fat32 "MOS" 100%
+   ```
+   Replace `/dev/diskX` with your actual device identifier.
+
+#### Linux
+
+1. Insert the USB stick
+2. Find your USB device (e.g., `/dev/sdb`):
+   ```bash
+   lsblk
+   ```
+3. Format with FAT32:
+   ```bash
+   sudo mkfs.vfat -F 32 -n "MOS" /dev/sdX1
+   ```
+   Replace `/dev/sdX1` with your actual device partition.
+
+   Or use `parted`/`gparted` GUI to create a partition table with MBR and format as FAT32.
 
 ---
 
