@@ -91,7 +91,7 @@ Create a GitHub personal access token and add it to MOS:
 
 **Explanation:** This is expected behavior. MOS Hub is **not curated** — anyone can create and publish their own repositories. If multiple repository maintainers publish the same application, it will appear multiple times. You can identify the source by the repository name shown on each entry.
 
-You can manage which repositories are active via **Settings → System Configuration → MOS Hub**.
+You can manage which repositories are active by navigating to **MOS Hub → Three-dots menu (bottom right) → Repositories**. There you can add or remove repositories. By default, repositories from MOS Team Members are included.
 
 ---
 
