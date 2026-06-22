@@ -102,3 +102,8 @@ Custom modprobe configurations are commonly needed on ARM boards to:
 - Files must have the **`.conf`** extension
 - **Reboot** to apply configurations
 - Configs are loaded **during early boot** before drivers initialize
+
+
+---
+
+_Parts of this documentation were created with the assistance of AI tools. All AI-generated content has undergone review, but it may still contain inaccuracies, omissions, or outdated information._
