@@ -15,7 +15,7 @@ MOS provides a flexible network configuration system supporting:
 
 The network configuration can be managed through the MOS WebUI.
 
-**Settings → Network Interfaces**
+**Settings → Network → Network Interfaces**
 
 This section defines how the system connects to the network and how services such as Docker, LXC, VMs, and Shares are exposed.
 
@@ -59,7 +59,7 @@ If the network configuration changes the IP address of the MOS system:
 1. Open the WebUI using the **new IP address**
 2. Navigate again to:
 
-**Settings → Network Interfaces**
+**Settings → Network → Network Interfaces**
 
 3. Click **Accept** within **60 seconds**
 

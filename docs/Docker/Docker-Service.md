@@ -10,7 +10,7 @@ It allows you to enable or disable the Docker daemon, define storage locations, 
 
 The **Docker Service** menu is located under:
 
-**Settings → Virtualization → Docker Service**
+**Settings → Virtualization → Docker service**
 
 Changes in this section affect all Docker containers running on the system.
 

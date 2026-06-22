@@ -129,7 +129,7 @@ This only affects the physical console keyboard layout. The WebUI is not affecte
 Create a GitHub personal access token and add it to MOS:
 
 1. Follow the [Token documentation](/docs/Settings/Token) to create a GitHub token
-2. Add the token to MOS via **Settings → System Configuration → Token**
+2. Add the token to MOS via **Settings → Network → Token**
 3. Try the update again
 :::
 
@@ -155,7 +155,7 @@ You can manage which repositories are active by navigating to **MOS Hub → Thre
 
 **Symptoms:** After changing network settings, the WebUI is no longer reachable.
 
-:::tip Explanation: MOS has a built-in **60-second rollback mechanism**. After applying network changes, you must confirm the new configuration within 60 seconds by navigating to **Settings → Network Interfaces** and clicking **Accept**.
+:::tip Explanation: MOS has a built-in **60-second rollback mechanism**. After applying network changes, you must confirm the new configuration within 60 seconds by navigating to **Settings → Network → Network Interfaces** and clicking **Accept**.
 
 **If you did not confirm in time:**
 - MOS automatically restored the previous configuration
@@ -210,7 +210,7 @@ Refer to the [Create a Storage Pool](/docs/Pools/Create-Storage-Pool) guide to g
 ### Docker service is not running
 
 :::tip Solution:
-Navigate to **Settings → Hardware → Docker service** and make sure Docker is enabled and started. You can also restart the Docker service from there.
+Navigate to **Settings → Virtualization → Docker service** and make sure Docker is enabled and started. You can also restart the Docker service from there.
 :::
 
 ---
@@ -220,7 +220,7 @@ Navigate to **Settings → Hardware → Docker service** and make sure Docker is
 ### LXC service is not running
 
 :::tip Solution:
-Navigate to **Settings → Hardware → LXC service** and make sure LXC is enabled and started.
+Navigate to **Settings → Virtualization → LXC service** and make sure LXC is enabled and started.
 :::
 
 ---
@@ -232,7 +232,7 @@ Navigate to **Settings → Hardware → LXC service** and make sure LXC is enabl
 :::tip Checklist:
 - Make sure the VM has sufficient CPU and memory allocated
 - Verify the disk image path is correct and accessible
-- Check that the VM service is running via **Settings → Hardware**
+- Check that the VM service is running via **Settings → Virtualization → VM service**
 :::
 
 ---

@@ -10,7 +10,7 @@ It functions as an internal app store, simplifying the installation and manageme
 
 The **MOS Hub Settings** menu is located under:
 
-**Settings → System Configuration → MOS Hub Settings**
+**Settings → System Configuration → MOS Hub**
 
 Here you can enable or disable the MOS Hub, control update behavior, and define the update schedule.
 

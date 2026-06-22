@@ -10,7 +10,7 @@ It allows you to enable or disable the LXC service, configure container networki
 
 The **LXC Service** menu is located under:
 
-**Settings → Virtualization → LXC Service**
+**Settings → Virtualization → LXC service**
 
 Changes in this section affect all LXC containers on the system.
 

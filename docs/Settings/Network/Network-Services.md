@@ -7,7 +7,7 @@ sidebar_position: 3
 
 MOS provides various network services for remote access, file sharing, and VPN connectivity. These can be managed through:
 
-**Settings → Network → Network Services**
+**Settings → Network → Network services**
 
 ![Network Services](/img/network/Network_Services.png)
 
@@ -44,7 +44,7 @@ Enable Dnsmasq for local DNS resolution and DHCP services.
 
 Monitor and manage UPS (Uninterruptible Power Supply) devices connected via USB or serial port.
 
-Enable NUT in **Settings → Network → Network Services** to integrate with local UPS devices for power management and automatic shutdown.
+Enable NUT in **Settings → Network → Network services** to integrate with local UPS devices for power management and automatic shutdown.
 
 ### Configuration Files
 
@@ -234,7 +234,7 @@ Configure the workgroup name for your network (default: `WORKGROUP`).
 
 ### Enabling Tailscale
 
-1. Go to **Settings → Network → Network Services**
+1. Go to **Settings → Network → Network services**
 2. Toggle **Tailscale** to enable the service
 
 ### Setup
@@ -268,7 +268,7 @@ Add custom command-line arguments for the Tailscale daemon (`tailscaled`) if nee
 
 ### Enabling Netbird
 
-1. Go to **Settings → Network → Network Services**
+1. Go to **Settings → Network → Network services**
 2. Toggle **Netbird** to enable the service
 
 ### Setup

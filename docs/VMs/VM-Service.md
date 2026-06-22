@@ -10,7 +10,7 @@ It allows you to enable or disable the VM service and define storage locations f
 
 The **VM Service** menu is located under:
 
-**Settings → Virtualization → VM Service**
+**Settings → Virtualization → VM service**
 
 All settings in this section affect virtual machine operation system-wide.
 

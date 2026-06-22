@@ -39,7 +39,7 @@ After changing any provider configuration, the service must be restarted:
 /etc/init.d/notify restart
 ```
 
-Logs are available at: `/var/log/notify` or via the MOS Frontend under **Settings → Logs**
+Logs are available at: `/var/log/notify` or via the MOS Frontend under **Settings → System Configuration → Logs**
 
 ### 🧩 Custom Providers
 

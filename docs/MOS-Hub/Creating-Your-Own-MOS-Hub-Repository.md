@@ -232,7 +232,7 @@ Once your repository is published on GitHub, it can be added to any MOS instance
 
 Navigate to:
 
-**Settings → System Configuration → MOS Hub Settings**
+**Settings → System Configuration → MOS Hub**
 
 In the **MOS Hub** section, add your repository URL:
 
