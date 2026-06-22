@@ -14,7 +14,7 @@ It explains how to create and configure your own MOS plugin, including the requi
 
 A typical MOS plugin repository is structured as follows:
 
-```
+```text
 .
 ├── page/
 │   ├── plugin.config.js
@@ -40,6 +40,7 @@ Every MOS plugin must provide a Vue-based configuration page, or at minimum a ba
 This file defines the plugin metadata and **must be configured**:
 
 ```js
+```
 export default {
   name: "pluginname",              // Folder name used by MOS (no spaces!)
   displayName: "Plugin Name",      // Human-readable plugin name
@@ -48,7 +49,7 @@ export default {
   author: "Author Name or GitHub",
   homepage: "https://example.com"
 }
-```
+```text
 
 | Field | Description |
 |---|---|
@@ -66,8 +67,9 @@ export default {
 Set the browser page title for your plugin:
 
 ```html
-<title>DVB Driver Plugin</title>
 ```
+<title>DVB Driver Plugin</title>
+```text
 
 This title is displayed as the page title in the browser.
 
@@ -92,16 +94,17 @@ Plugins can optionally provide a `settings.json` file in the root of the reposit
 **Example:**
 
 ```json
+```
 {
   "driver": "libreelec"
 }
-```
+```bash
 
 ### Settings API
 
 Settings can be accessed via the MOS API:
 
-```
+```text
 /mos/plugins/settings/{pluginName}
 ```
 
@@ -138,11 +141,12 @@ These can be executed using the MOS API.
 **Endpoint:** `POST /mos/plugins/executefunction`
 
 ```json
+```
 {
   "plugin": "string",
   "function": "string"
 }
-```
+```text
 
 | Field | Description |
 |---|---|
@@ -155,7 +159,7 @@ These can be executed using the MOS API.
 
 Plugins can execute binaries using the MOS API endpoint:
 
-```
+```text
 /mos/plugins/query
 ```
 
@@ -169,6 +173,7 @@ Plugins can execute binaries using the MOS API endpoint:
 ### API Request
 
 ```json
+```
 {
   "command": "nvidia-smi",
   "args": [
@@ -178,7 +183,7 @@ Plugins can execute binaries using the MOS API endpoint:
   "timeout": 5,
   "parse_json": false
 }
-```
+```bash
 
 | Field | Description |
 |---|---|
@@ -210,6 +215,7 @@ This endpoint returns information about the currently available or installed dri
 **Response Example:**
 
 ```json
+```
 {
   "plugin": "dvb-drivers",
   "kernel": "6.18.5-mos",
@@ -217,7 +223,7 @@ This endpoint returns information about the currently available or installed dri
   "path": "/boot/optional/drivers/dvb-drivers/6.18.5-mos/dvb-digital-devices_20251201-1+mos_amd64.deb",
   "directory": "/boot/optional/drivers/dvb-drivers/6.18.5-mos"
 }
-```
+```text
 
 ---
 
@@ -225,7 +231,7 @@ This endpoint returns information about the currently available or installed dri
 
 An example GitHub Actions workflow is provided at:
 
-```
+```text
 .github/workflows/build-plugin.yml
 ```
 

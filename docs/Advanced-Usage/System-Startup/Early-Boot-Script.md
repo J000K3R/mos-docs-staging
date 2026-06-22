@@ -16,7 +16,7 @@ This script is intended for **deep system-level modifications** and should be us
 
 ## 📍 Script Location
 
-```
+```text
 /boot/optional/scripts/boot.sh
 ```
 
@@ -62,7 +62,7 @@ Because the environment is extremely limited:
 
 Examples:
 
-```
+```bash
 /usr/bin/echo "Early boot"
 /bin/mount
 /sbin/modprobe
