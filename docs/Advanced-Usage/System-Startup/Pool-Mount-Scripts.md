@@ -20,7 +20,7 @@ These scripts allow you to run custom logic that depends on a particular pool be
 
 ## 📍 Script Location
 
-```text
+```
 /boot/optional/scripts/pools/mounted/POOLNAME.sh
 ```
 
@@ -28,7 +28,7 @@ Replace `POOLNAME` with the exact name of the storage pool.
 
 Example:
 
-```text
+```
 /boot/optional/scripts/pools/mounted/media.sh
 ```
 

@@ -16,7 +16,7 @@ MOS supports **UEFI boot only** by default. Legacy BIOS / CSM boot is **not supp
 
 ## 📦 VM Image
 
-```text
+```
 mos_amd64.img.xz
 ```
 
@@ -31,13 +31,12 @@ mos_amd64.img.xz
 Extract the image on Linux:
 
 ```bash
-```
 unxz --decompress mos_amd64.img.xz
-```text
+```
 
 This will produce:
 
-```text
+```
 mos_amd64.img
 ```
 
@@ -125,7 +124,7 @@ If Secure Boot is still active after creation:
 
 Upload `mos_amd64.img` to the Proxmox ISO storage:
 
-```text
+```
 /var/lib/vz/template/iso/
 ```
 
@@ -136,9 +135,8 @@ Upload `mos_amd64.img` to the Proxmox ISO storage:
 From the Proxmox host shell:
 
 ```bash
-```
 cp /var/lib/vz/template/iso/mos_amd64.img /var/lib/vz/images/mos_amd64.img
-```text
+```
 
 ---
 
@@ -147,13 +145,12 @@ cp /var/lib/vz/template/iso/mos_amd64.img /var/lib/vz/images/mos_amd64.img
 Edit the VM config file:
 
 ```bash
-```
 nano /etc/pve/qemu-server/<vmid>.conf
-```text
+```
 
 Add the following lines:
 
-```text
+```
 usb0: spice,usb3=1
 args: -drive file=/var/lib/vz/images/mos_amd64.img,format=raw,if=none,id=usbdisk -device usb-storage,drive=usbdisk
 ```
@@ -177,7 +174,7 @@ Start the VM — MOS will boot automatically.
 3. Obtain the IP address from the VM console or your DHCP server
 4. Open the MOS WebUI in your browser:
 
-```text
+```
 http://<mos-ip-address>
 ```
 
@@ -200,9 +197,8 @@ After testing MOS in the VM, you can install it to a virtual disk for persistent
 
 1. **Shutdown** the VM from the Proxmox WebUI or via CLI:
    ```bash
-   ```
    qm shutdown <vmid>
-```text
+   ```
 
 ---
 
@@ -211,16 +207,14 @@ After testing MOS in the VM, you can install it to a virtual disk for persistent
 Remove or comment out the USB configuration lines from the VM config file:
 
 ```bash
-```
 nano /etc/pve/qemu-server/<vmid>.conf
-```text
+```
 
 Comment out or delete these lines:
 ```bash
-```
 # usb0: spice,usb3=1
 # args: -drive file=/var/lib/vz/images/mos_amd64.img,format=raw,if=none,id=usbdisk -device usb-storage,drive=usbdisk
-```text
+```
 
 ---
 
@@ -232,10 +226,43 @@ Edit the VM configuration to prioritize the boot disk:
 2. Click **Hard Disk** and ensure the boot order is set correctly
 3. Or edit the config file directly:
    ```bash
-```
    nano /etc/pve/qemu-server/<vmid>.conf
-```text
+   ```
    Add or modify the `boot` line:
    ```bash
-```
    boot: order=scsi0;ide2;net0
+   ```
+
+---
+
+### 5️⃣ Ready to Use
+
+1. Start the VM again
+2. MOS will now boot from the installed disk
+3. All configurations and data will persist across reboots
+
+---
+
+## ✅ What to Expect
+
+- Full MOS WebUI available
+- Pools, Docker, LXC, and VM features can be explored
+
+---
+
+## ⚠️ Limitations in Virtual Machines
+
+- Hardware-specific features may be unavailable
+- GPU or PCI passthrough depends on the hypervisor
+
+---
+
+## 🧪 Summary
+
+- Use `mos_amd64.img.xz` to test MOS in a VM
+- Extract the image and attach it as a **USB device**
+- **UEFI boot is mandatory** — Secure Boot must be disabled
+
+---
+
+_Parts of this documentation were created with the assistance of AI tools. All AI-generated content has undergone review, but it may still contain inaccuracies, omissions, or outdated information._
