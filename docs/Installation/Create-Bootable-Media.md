@@ -1,8 +1,3 @@
----
-sidebar_label: 🔧 Create Bootable Media
-sidebar_position: 1
----
-
 import Terminal, { TerminalMuted, TerminalCursor, TerminalSuccess } from '@site/src/components/Terminal';
 import CMD, { CMDCursor, CMDMuted } from '@site/src/components/CMD';
 import TerminalLinux, { LinuxCursor, LinuxPrompt, LinuxPath, LinuxMuted, LinuxSuccess } from '@site/src/components/TerminalLinux';

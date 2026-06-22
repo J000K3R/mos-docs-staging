@@ -1,8 +1,3 @@
----
-sidebar_label: 🔌 MOS API Overview
-sidebar_position: 1
----
-
 # 🔌 MOS API Overview
 
 MOS provides a fully documented REST API that is used internally by the web interface.

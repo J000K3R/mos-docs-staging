@@ -1,8 +1,3 @@
----
-sidebar_label: 👤 Users
-sidebar_position: 1
----
-
 # 👤 Create Users
 
 Users define who can access the MOS web interface and system resources.

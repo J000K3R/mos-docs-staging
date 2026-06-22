@@ -1,8 +1,3 @@
----
-sidebar_label: 💾 Boot
-sidebar_position: 1
----
-
 # 💾 Boot
 
 The **Boot** menu provides options for installing the system bootloader and managing boot configuration files.  

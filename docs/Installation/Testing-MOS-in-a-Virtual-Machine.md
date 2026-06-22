@@ -1,8 +1,3 @@
----
-sidebar_label: 🧪 Testing MOS in a Virtual Machine
-sidebar_position: 2
----
-
 # 🧪 Testing MOS in a Virtual Machine
 
 MOS can be tested easily inside a virtual machine.

@@ -1,8 +1,3 @@
----
-sidebar_label: 🛍️ MOS Hub
-sidebar_position: 3
----
-
 # 🛍️ MOS Hub
 
 The MOS Hub is an integrated application hub that provides preconfigured Docker templates which can be deployed directly from the system interface.  

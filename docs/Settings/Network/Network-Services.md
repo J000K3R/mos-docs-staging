@@ -1,8 +1,3 @@
----
-sidebar_label: 🔌 Network Services
-sidebar_position: 3
----
-
 # 🔌 Network Services
 
 MOS provides various network services for remote access, file sharing, and VPN connectivity. These can be managed through:

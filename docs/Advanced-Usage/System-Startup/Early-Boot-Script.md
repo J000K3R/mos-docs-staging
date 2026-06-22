@@ -1,8 +1,3 @@
----
-sidebar_label: 🚀 Early Boot Script
-sidebar_position: 3
----
-
 # 🚀 Early Boot Script (boot.sh)
 
 MOS provides an **Early Boot Script** that is executed at the **very beginning of the boot process**.

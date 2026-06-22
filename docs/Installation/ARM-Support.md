@@ -1,8 +1,3 @@
----
-sidebar_label: 🔧 ARM Support (Experimental)
-sidebar_position: 4
----
-
 # 🔧 ARM Support (Experimental)
 
 :::warning[Experimental Feature]

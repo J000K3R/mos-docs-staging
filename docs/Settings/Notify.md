@@ -1,8 +1,3 @@
----
-sidebar_label: 🔔 Notify
-sidebar_position: 5
----
-
 # 🔔 Notify
 
 **Notify** is a small **Go-based notification service** used by MOS to deliver system and service notifications.

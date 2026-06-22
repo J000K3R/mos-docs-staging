@@ -1,8 +1,3 @@
----
-sidebar_label: 🔑 Token
-sidebar_position: 4
----
-
 # 🔑 Token
 
 The **Token** menu allows you to store and manage authentication tokens used by MOS for API access and external services.  

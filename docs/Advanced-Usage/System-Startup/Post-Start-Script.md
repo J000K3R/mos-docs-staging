@@ -1,8 +1,3 @@
----
-sidebar_label: 🏁 Post-Start Script
-sidebar_position: 3
----
-
 # 🏁 System Startup
 
 MOS provides dedicated hooks that are executed during system startup.

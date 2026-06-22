@@ -1,8 +1,3 @@
----
-sidebar_label: 💾 ZFS
-sidebar_position: 3
----
-
 # 💾 ZFS
 
 MOS provides optional support for ZFS via a plugin.

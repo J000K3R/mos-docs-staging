@@ -1,8 +1,3 @@
----
-sidebar_label: ⏰ Cron Jobs
-sidebar_position: 5
----
-
 # ⏰ Cron Jobs
 
 Cron Jobs allow you to schedule commands or scripts to run automatically at defined intervals.  

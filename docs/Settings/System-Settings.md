@@ -1,8 +1,3 @@
----
-sidebar_label: ⚙️ System Settings
-sidebar_position: 1
----
-
 # ⚙️ System
 
 The **System** menu provides core configuration options that control system identity, localization, power behavior, notifications, time synchronization, and network proxy settings.

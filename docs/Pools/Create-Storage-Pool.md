@@ -1,8 +1,3 @@
----
-sidebar_label: 🗄️ Create a Storage Pool
-sidebar_position: 3
----
-
 # 🗄️ Create a Storage Pool
 
 Storage pools are the foundation of all data storage in MOS.  

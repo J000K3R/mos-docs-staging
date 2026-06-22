@@ -1,8 +1,3 @@
----
-sidebar_label: 🐳 Docker Local Host Access
-sidebar_position: 1
----
-
 # Docker Local Host Access (Host Shim)
 
 When using Docker containers in **LAN network modes** (e.g. `br0` / `eth0` with `macvlan` or `ipvlan`), containers may not be able to reach the host system directly.

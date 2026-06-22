@@ -1,8 +1,3 @@
----
-sidebar_label: ⏱️ Rate Limits
-sidebar_position: 2
----
-
 # ⏱️ API Rate Limits
 
 The MOS API implements rate limits to protect the system from overload and abuse.

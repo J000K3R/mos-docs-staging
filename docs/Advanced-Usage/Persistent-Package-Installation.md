@@ -1,8 +1,3 @@
----
-sidebar_label: 📦 Persistent Package Installation
-sidebar_position: 4
----
-
 # 📦 Persistent Package Installation
 
 MOS is designed to run from a compressed, read-only root filesystem (rootfs). Any changes made to the system via `apt install` or similar commands will be lost after a reboot, as the root filesystem is rebuilt from the compressed image on every startup.

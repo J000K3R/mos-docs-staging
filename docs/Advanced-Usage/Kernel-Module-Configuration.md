@@ -1,8 +1,3 @@
----
-sidebar_label: 🔧 Kernel Module Configuration
-sidebar_position: 5
----
-
 # 🔧 Kernel Module Configuration (modprobe.d)
 
 MOS supports persistent kernel module configurations via custom `modprobe.d` files. This allows you to apply specific module parameters that survive reboots.

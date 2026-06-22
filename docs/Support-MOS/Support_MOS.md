@@ -1,8 +1,3 @@
----
-sidebar_label: 🌟 Support MOS
-sidebar_position: 1
----
-
 # 🌟 Support MOS
 
 ## 🎁 Donation - Supporter Badge

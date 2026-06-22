@@ -1,8 +1,3 @@
----
-sidebar_label: 🌐 Network Configuration
-sidebar_position: 2
----
-
 # 🌐 Network Configuration
 
 MOS provides a flexible network configuration system supporting:

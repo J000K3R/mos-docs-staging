@@ -1,8 +1,3 @@
----
-sidebar_label: 🌡️ Sensors
-sidebar_position: 3
----
-
 # 🌡️ Sensors
 
 MOS supports hardware and system sensors that can be displayed on the Dashboard.

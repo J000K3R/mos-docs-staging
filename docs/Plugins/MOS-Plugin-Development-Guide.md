@@ -1,8 +1,3 @@
----
-sidebar_label: 📦 MOS Plugin Development Guide
-sidebar_position: 2
----
-
 # 📦 MOS Plugin Development Guide
 
 This repository contains a plugin for **MOS**.

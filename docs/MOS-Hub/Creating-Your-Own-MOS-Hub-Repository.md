@@ -1,8 +1,3 @@
----
-sidebar_label: 🛍️ Creating Your Own MOS Hub Repository
-sidebar_position: 1
----
-
 # 🛍️ Creating Your Own MOS Hub Repository
 
 The MOS Hub allows users to contribute and share Docker templates with the community.  

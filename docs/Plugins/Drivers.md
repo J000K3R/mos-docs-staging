@@ -1,8 +1,3 @@
----
-sidebar_label: 🧩 Drivers
-sidebar_position: 2
----
-
 # 🧩 Drivers
 
 MOS manages hardware drivers through **Driver Plugins**.

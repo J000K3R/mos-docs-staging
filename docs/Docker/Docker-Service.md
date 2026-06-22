@@ -1,8 +1,3 @@
----
-sidebar_label: 🐳 Docker Service
-sidebar_position: 1
----
-
 # 🐳 Docker Service
 
 The **Docker Service** menu controls the global Docker configuration and runtime behavior.  

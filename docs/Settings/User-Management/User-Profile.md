@@ -1,8 +1,3 @@
----
-sidebar_label: ⚙️ User Profile
-sidebar_position: 2
----
-
 # ⚙️ User Profile
 
 The User Profile menu allows you to customize your personal WebUI experience and interface preferences.

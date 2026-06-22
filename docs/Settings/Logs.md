@@ -1,8 +1,3 @@
----
-sidebar_label: 📋 Logs
-sidebar_position: 6
----
-
 # 📋 Logs
 
 The **Logs** menu provides direct access to system log files stored on the server.  

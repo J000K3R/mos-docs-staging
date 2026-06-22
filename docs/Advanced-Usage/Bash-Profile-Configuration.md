@@ -1,8 +1,3 @@
----
-sidebar_label: 📝 Bash Profile Configuration
-sidebar_position: 6
----
-
 # 📝 Bash Profile Configuration
 
 MOS supports a custom `.bash_profile` configuration file that allows you to customize your SSH session environment.

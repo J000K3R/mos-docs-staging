@@ -1,8 +1,3 @@
----
-sidebar_label: 📦 LXC Service
-sidebar_position: 2
----
-
 # 📦 LXC Service
 
 The **LXC Service** menu controls the global configuration of Linux Containers (LXC).  

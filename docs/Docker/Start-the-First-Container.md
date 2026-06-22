@@ -1,8 +1,3 @@
----
-sidebar_label: 🚀 Start the First Container
-sidebar_position: 4
----
-
 # 🚀 Start the First Container
 
 Before running applications in MOS, the Docker service must be configured and enabled.  

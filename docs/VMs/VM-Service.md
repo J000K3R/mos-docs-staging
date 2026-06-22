@@ -1,8 +1,3 @@
----
-sidebar_label: 🖥️ VM Service
-sidebar_position: 3
----
-
 # 🖥️ VM Service
 
 The **VM Service** menu controls the global configuration for virtual machines.  

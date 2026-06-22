@@ -1,8 +1,3 @@
----
-sidebar_label: 💾 Pool Mount Scripts
-sidebar_position: 4
----
-
 # 💾 System Startup
 
 MOS provides dedicated hooks that are executed during system startup.

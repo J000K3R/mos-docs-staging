@@ -1,8 +1,3 @@
----
-sidebar_label: 📁 Mounted Script
-sidebar_position: 2
----
-
 # 📁 System Startup
 
 MOS provides dedicated hooks that are executed during system startup.
