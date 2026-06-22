@@ -165,6 +165,62 @@ The Dashboard displays multiple information panels providing a real-time system 
 | **Network Panel** | Displays real-time network traffic for active interfaces |
 | **Pools Panel** | Shows storage pool usage and capacity |
 | **Disks Panel** | Displays disk activity and temperature for active devices |
+| **Plugin Widgets** | Additional dashboard panels provided by installed plugins (e.g. DVB drivers, Nvidia GPU, Sensors) |
+
+---
+
+## 🧩 Plugin Widgets
+
+Plugins can provide additional dashboard widgets that display relevant information directly on the Dashboard.
+
+![Plugin Driver Widgets Dashboard](/img/system/Plugin_Driver_Widgets_Dashboard.png)
+
+Examples shown above include DVB adapter info, GPU stats (Nvidia), temperature, voltage and other sensor data.
+
+### Visibility Control
+
+Each plugin widget can be toggled on or off individually using the **visibility menu** in the bottom right corner of the Dashboard.
+
+![Sensors Visibility](/img/system/Sensors_Visibility.png)
+
+:::tip
+Not all plugins support dashboard widgets. Only plugins that provide widget support will appear in the visibility menu.
+:::
+
+---
+
+## 🔐 Login Rate Limits {#login-rate-limits}
+
+The WebUI implements rate limits for the login area to protect the system from brute-force attacks.
+
+### Configuration
+
+Login rate limits are configured via environment variables in the file `/boot/config/api/env`.
+
+| Variable | Default Value | Description |
+|----------|---------------|-------------|
+| `RATE_LIMIT_MAX_LOGIN` | 5 | Maximum number of failed login attempts |
+| `RATE_LIMIT_LOGIN_WINDOW` | 15 | Time window in minutes during which the maximum attempts are allowed |
+| `RATE_LIMIT_LOGIN_BLOCK` | 30 | Block duration in minutes after exceeding the limits |
+
+### How It Works
+
+1. A user has `RATE_LIMIT_MAX_LOGIN` (default: 5) login attempts within `RATE_LIMIT_LOGIN_WINDOW` (default: 15 minutes)
+2. After exceeding the limit, the account is blocked for `RATE_LIMIT_LOGIN_BLOCK` (default: 30 minutes)
+3. The counter is reset in the following cases:
+   - API restart
+   - Server restart
+   - Successful login
+
+### Example
+
+Default configuration:
+- Maximum of 5 failed login attempts in 15 minutes
+- After 5 failed attempts: 30 minutes block
+
+:::warning Important
+Changes to the configuration require a restart of the API or the server to take effect.
+:::
 
 ---
 

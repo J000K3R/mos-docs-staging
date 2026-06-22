@@ -11,11 +11,11 @@ const config = {
     v4: true,
   },
 
-  url: 'https://J000K3R.github.io',
+  url: 'https://j000k3r.github.io',
   baseUrl: '/mos-docs-staging/',
-  organizationName: 'ich777',
-  projectName: 'mos-docs',
-  onBrokenLinks: 'warn',
+  organizationName: 'J000K3R',
+  projectName: 'mos-docs-staging',
+  onBrokenLinks: 'throw',
 
   i18n: {
     defaultLocale: 'en',
@@ -40,7 +40,7 @@ const config = {
       {
         docs: {
           sidebarPath: './sidebars.js',
-          routeBasePath: '/',
+          routeBasePath: '/docs/',
           editUrl: 'https://github.com/J000K3R/mos-docs-staging/edit/main/',
           showLastUpdateTime: true,
           showLastUpdateAuthor: true,
@@ -55,9 +55,9 @@ const config = {
 
   themeConfig: {
     announcementBar: {
-      id: 'release-0.2.4-beta',
-      content: '🚀 <strong>MOS 0.2.4-beta is out!</strong> — SnapRAID 14.1, Filebrowser operations & login security &nbsp;<a href="https://j000k3r.github.io/mos-docs-staging/Release-Notes/Beta/0.2.4-beta" style="color:#ffffff;">Release Notes →</a>',
-      backgroundColor: '#fa9725',
+      id: 'staging-banner',
+      content: '🧪 <strong>STAGING / TEST</strong> — This is a test environment for documentation restructuring. Not production.'
+      backgroundColor: '#e74c3c',
       textColor: '#ffffff',
       isCloseable: true,
     },
@@ -73,12 +73,9 @@ const config = {
         alt: 'MOS Logo',
         src: 'img/mos_black.png',
         srcDark: 'img/mos_white.png',
+        href: '/docs/',
       },
       items: [
-        {
-          type: 'docsVersionDropdown',
-          position: 'left',
-        },
         {
           href: 'https://github.com/ich777/mos-releases',
           label: 'GitHub',
@@ -94,7 +91,7 @@ const config = {
           items: [
             {
               label: 'Overview',
-              href: '/',
+              href: '/docs/',
             },
             {
               label: 'MOS Website',
@@ -140,36 +137,6 @@ const config = {
       darkTheme: prismThemes.dracula,
     },
   },
-
-  scripts: [
-    {
-      src: 'data:text/css;base64,' + btoa(`
-        .heroBanner {
-          padding: 4rem 0 !important;
-          text-align: center !important;
-          background: linear-gradient(135deg, #ffffff 0%, #f3f4f6 100%) !important;
-        }
-        .hero__title {
-          color: #1f2937 !important;
-          font-size: 3rem !important;
-        }
-        .hero__subtitle {
-          color: #374151 !important;
-          font-size: 1.25rem !important;
-        }
-        html[data-theme='dark'] .heroBanner {
-          background: linear-gradient(135deg, #111827 0%, #1f2937 100%) !important;
-        }
-        html[data-theme='dark'] .hero__title {
-          color: #ffffff !important;
-        }
-        html[data-theme='dark'] .hero__subtitle {
-          color: #e5e7eb !important;
-        }
-      `),
-      defer: false,
-    },
-  ],
 };
 
 export default config;

@@ -12,6 +12,7 @@ const sidebars = {
         { type: 'doc', id: 'Installation/Create-Bootable-Media', label: 'Create Bootable Media' },
         { type: 'doc', id: 'Installation/Testing-MOS-in-a-Virtual-Machine', label: 'Testing MOS in a Virtual Machine' },
         { type: 'doc', id: 'Installation/First-Walkthrough', label: 'First Walkthrough' },
+        { type: 'doc', id: 'Installation/ARM-Support', label: 'ARM Support (Experimental)' },
       ],
     },
     {
@@ -33,11 +34,13 @@ const sidebars = {
         { type: 'doc', id: 'System-Management/Boot', label: 'Boot' },
         { type: 'doc', id: 'System-Management/Drivers', label: 'Drivers' },
         { type: 'doc', id: 'System-Management/ZFS', label: 'ZFS' },
+        { type: 'doc', id: 'System-Management/SMART', label: 'S.M.A.R.T.' },
         {
           type: 'category',
           label: '💻 System Configuration',
           items: [
             { type: 'doc', id: 'System-Management/System-Configuration/System-Settings', label: 'System Settings' },
+            { type: 'doc', id: 'System-Management/System-Configuration/Update-System', label: 'Update System' },
             { type: 'doc', id: 'System-Management/System-Configuration/Cron-Jobs', label: 'Cron Jobs' },
             { type: 'doc', id: 'System-Management/System-Configuration/Logs', label: 'Logs' },
             { type: 'doc', id: 'System-Management/System-Configuration/MOS-Hub', label: 'MOS-Hub' },
@@ -53,17 +56,19 @@ const sidebars = {
       label: '👤 User Management',
       items: [
         { type: 'doc', id: 'User-Management/Users', label: 'Users' },
+        { type: 'doc', id: 'User-Management/User-Profile', label: 'User Profile' },
       ],
     },
-    {
-      type: 'category',
-      label: '🚀 System Startup',
-      items: [
-        { type: 'doc', id: 'System-Startup/Pre-Start-Script', label: 'Pre-Start Script' },
-        { type: 'doc', id: 'System-Startup/Post-Start-Script', label: 'Post-Start Script' },
-        { type: 'doc', id: 'System-Startup/Pool-Mount-Scripts', label: 'Pool Mount Scripts' },
-      ],
-    },
+      {
+        type: 'category',
+        label: '🚀 System Startup',
+        items: [
+          { type: 'doc', id: 'System-Startup/Pre-Start-Script', label: 'Pre-Start Script' },
+          { type: 'doc', id: 'System-Startup/Mounted-Script', label: 'Mounted Script' },
+          { type: 'doc', id: 'System-Startup/Post-Start-Script', label: 'Post-Start Script' },
+          { type: 'doc', id: 'System-Startup/Pool-Mount-Scripts', label: 'Pool Mount Scripts' },
+        ],
+      },
     {
       type: 'category',
       label: '🗂️ Virtualization',
@@ -78,13 +83,15 @@ const sidebars = {
       label: '🌐 Network',
       items: [
         { type: 'doc', id: 'Network/Network-Configuration', label: 'Network Configuration' },
+        { type: 'doc', id: 'Network/Network-Services', label: 'Network Services' },
       ],
     },
     {
       type: 'category',
       label: '🔌 API',
       items: [
-        { type: 'doc', id: 'API/API', label: 'API' },
+        { type: 'doc', id: 'API/MOS-API-Overview', label: 'MOS API Overview' },
+        { type: 'doc', id: 'API/Rate-Limits', label: 'Rate Limits' },
       ],
     },
     {
@@ -102,24 +109,48 @@ const sidebars = {
         { type: 'doc', id: 'Advanced-Usage/Docker-Local-Host-Access-Shim', label: 'Docker Local Host Access' },
         { type: 'doc', id: 'Advanced-Usage/Disable-MD5-Verification', label: 'Disable MD5 Verification' },
         { type: 'doc', id: 'Advanced-Usage/Early-Boot-Script', label: 'Early Boot Script' },
+        { type: 'doc', id: 'Advanced-Usage/Persistent-Package-Installation', label: 'Persistent Package Installation' },
+         { type: 'doc', id: 'Advanced-Usage/Kernel-Module-Configuration', label: 'Kernel Module Configuration' },
+         { type: 'doc', id: 'Advanced-Usage/Bash-Profile-Configuration', label: 'Bash Profile Configuration' },
       ],
     },
-    {
-      type: 'category',
-      label: '🛠️ Troubleshooting',
-      items: [
-        { type: 'doc', id: 'Troubleshooting/Troubleshooting', label: 'Troubleshooting' },
-      ],
-    },
-    {
-      type: 'category',
-      label: '📋 Release Notes',
+     {
+       type: 'category',
+       label: '🛠️ Troubleshooting',
+       items: [
+         { type: 'doc', id: 'Troubleshooting/Troubleshooting', label: 'Troubleshooting' },
+         { type: 'doc', id: 'Troubleshooting/Diagnostics', label: 'Diagnostics' },
+       ],
+     },
+     {
+       type: 'category',
+       label: '🌟 Support MOS',
+       items: [
+         { type: 'doc', id: 'Support-MOS/Support_MOS', label: 'Support MOS' },
+       ],
+     },
+     {
+       type: 'category',
+       label: '📋 Release Notes',
       items: [
         { type: 'doc', id: 'Release-Notes/Overview', label: 'Overview' },
-        {
-          type: 'category',
-          label: '🧪 Beta',
-          items: [
+          {
+            type: 'category',
+            label: '🧪 Beta',
+            items: [
+            { type: 'doc', id: 'Release-Notes/Beta/0.4.10-beta', label: '0.4.10-beta' },
+            { type: 'doc', id: 'Release-Notes/Beta/0.4.9-beta', label: '0.4.9-beta' },
+            { type: 'doc', id: 'Release-Notes/Beta/0.4.8-beta', label: '0.4.8-beta' },
+            { type: 'doc', id: 'Release-Notes/Beta/0.4.7-beta', label: '0.4.7-beta' },
+            { type: 'doc', id: 'Release-Notes/Beta/0.4.6-beta', label: '0.4.6-beta' },
+            { type: 'doc', id: 'Release-Notes/Beta/0.4.5-beta', label: '0.4.5-beta' },
+            { type: 'doc', id: 'Release-Notes/Beta/0.4.4-beta', label: '0.4.4-beta' },
+            { type: 'doc', id: 'Release-Notes/Beta/0.4.3-beta', label: '0.4.3-beta' },
+            { type: 'doc', id: 'Release-Notes/Beta/0.4.2-beta', label: '0.4.2-beta' },
+            { type: 'doc', id: 'Release-Notes/Beta/0.4.1-beta', label: '0.4.1-beta' },
+            { type: 'doc', id: 'Release-Notes/Beta/0.4.0-beta', label: '0.4.0-beta' },
+            { type: 'doc', id: 'Release-Notes/Beta/0.3.0-beta', label: '0.3.0-beta' },
+            { type: 'doc', id: 'Release-Notes/Beta/0.2.4-beta', label: '0.2.4-beta' },
             { type: 'doc', id: 'Release-Notes/Beta/0.2.3-beta', label: '0.2.3-beta' },
           ],
         },

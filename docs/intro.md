@@ -20,6 +20,7 @@ New to MOS? Follow these steps to get up and running:
 | 2️⃣ | [First Walkthrough](/docs/Installation/First-Walkthrough) | Complete initial setup (root password, network, storage) |
 | 3️⃣ | [WebUI Overview](/docs/Quick-Start/WebUI-Overview) | Learn the MOS interface and navigation |
 | 🧪 | [Test in VM](/docs/Installation/Testing-MOS-in-a-Virtual-Machine) | Try MOS in a virtual machine first (optional) |
+| 🔧 | [ARM Support (Experimental)](/docs/Installation/ARM-Support) | Install MOS on ARM devices (Orange Pi, Raspberry Pi, etc.) |
 
 ---
 
@@ -75,27 +76,19 @@ MOS is built from multiple open-source components:
 | Resource | Link |
 |----------|------|
 | **Discord Community** | [Join our Discord](https://discord.com/invite/fcTMbuygTV) |
-| **Report Issues** | [GitHub Issues](https://github.com/J000K3R/mos-docs-staging/issues) |
-| **Releases & Changelog** | [GitHub Releases](https://github.com/J000K3R/mos-docs-staging/releases) |
+| **Matrix Channel** | [Join our Matrix](https://matrix.to/#/#mos_official:matrix.org) |
+| **Report Issues** | [GitHub Issues](https://github.com/ich777/mos-docs/issues) |
+| **Releases & Changelog** | [GitHub Releases](https://github.com/ich777/mos-releases) |
 
 ---
 
-## 📚 Documentation Structure
+## 🌟 Support MOS
 
-Explore MOS by topic:
+MOS is and will always remain **free and open source**. If you'd like to support the project, you can make a donation to help us continue development.
 
-| 📁 Category | 🔍 Topics |
-|-------------|-----------|
-| [🚀 **Installation**](/docs/Installation/) | Boot media, VM testing, first setup |
-| [⚡ **Quick Start**](/docs/Quick-Start/) | WebUI, network, storage, containers, VMs |
-| [⚙️ **System Management**](/docs/System-Management/) | Settings, cron, logs, MOS Hub, notify |
-| [🖧 **Network**](/docs/Network/) | Interfaces, bonds, routing, firewall |
-| [💾 **Storage**](/docs/category/storage) | Pools, filesystems, shares, snapshots |
-| [🖥️ **Virtualization**](/docs/Virtualization/) | Docker, LXC, VM management |
-| [👤 **Users & Access**](/docs/User-Management/) | User creation, permissions, roles |
-| [🔌 **API**](/docs/API/) | REST API, WebSocket, authentication |
-| [🛠️ **Advanced Usage**](/docs/Advanced-Usage/) | Docker host access, boot scripts |
-| [📋 **Release Notes**](/docs/Release-Notes/) | Version history, changelog |
+| Resource | Link |
+|----------|------|
+| **Support Project** | [Support MOS](/docs/Support-MOS/Support_MOS) |
 
 ---
 
@@ -103,7 +96,7 @@ Explore MOS by topic:
 - **[MOS Releases](https://github.com/ich777/mos-releases)**
 
 ### 📚 MOS Documentation
-- **[MOS Docs](https://github.com/J000K3R/mos-docs-staging)**
+- **[MOS Docs](https://github.com/ich777/mos-docs)**
 
 ### 🎨 Frontend and API
 - **[MOS Frontend](https://github.com/ich777/mos-frontend)**

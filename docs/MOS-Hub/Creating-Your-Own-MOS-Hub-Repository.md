@@ -289,7 +289,7 @@ Defines how the compose stack appears in the MOS Hub.
   "description": "Brief description of the application",
   "icon": "https://example.com/icon.png",
   "webui": "http://{IP}:8080",
-  "category": "Media"
+  "category": [ "Media" ]
 }
 ```
 
@@ -448,9 +448,25 @@ Plugin templates use a different structure than Docker templates.
 
 - **category**  
   Array of categories. Common options:
-  - `Driver` – Hardware drivers
-  - `Utility` – System utilities
-  - `Tool` – Special-purpose tools
+
+| Category | Description |
+|---|---|
+| `AI` | Artificial Intelligence applications |
+| `Backup` | Backup and recovery tools |
+| `Crypto` | Cryptocurrency and blockchain applications |
+| `Downloader` | Download and upload tools |
+| `Driver` | Hardware drivers (GPU, TPU, TV tuners) |
+| `Game Server` | Game server applications |
+| `Home Automation` | Smart home and automation tools |
+| `Hosting` | Web hosting and server applications |
+| `Media` | Media servers and streaming applications |
+| `Monitoring` | System monitoring and logging tools |
+| `Network` | Network services and tools |
+| `Productivity` | Productivity and office applications |
+| `Security` | Security and firewall tools |
+| `System` | System utilities and tools |
+| `Utilities` | General purpose utilities |
+| `Misc` | Miscellaneous applications |
 
 - **repository**  
   GitHub repository URL for the plugin installation source.
@@ -556,6 +572,21 @@ The following repositories provide excellent examples of MOS Hub structure:
 - [s3ppo/docker_json_templates](https://github.com/s3ppo/docker_json_templates) – Community Docker templates
 
 Reviewing these repositories helps understand template best practices and structure.
+
+---
+
+## 📢 Share Your Repository
+
+Once your MOS Hub repository is created and published, consider sharing it with the community!
+
+Join the **#moshub-community-repositories** channel on the official MOS Discord server to:
+- Showcase your repository to other users
+- Get feedback and suggestions from the community
+- Help others discover your templates and plugins
+
+:::note
+Your repository will be available to all MOS users who add it to their Hub settings — sharing it in Discord helps increase visibility and engagement.
+:::
 
 ---
 

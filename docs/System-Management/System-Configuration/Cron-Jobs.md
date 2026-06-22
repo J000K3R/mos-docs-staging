@@ -1,6 +1,6 @@
 ---
 sidebar_label: ⏰ Cron Jobs
-sidebar_position: 2
+sidebar_position: 5
 ---
 
 # ⏰ Cron Jobs
@@ -57,16 +57,27 @@ Reflect the purpose of the job
 
 Defines when and how often the cron job is executed.
 
-The schedule follows standard cron syntax.
+MOS provides an intuitive visual scheduler that makes creating cron expressions easy — no need to memorize cron syntax.
 
-**Format:**
+**Schedule Dialog:**
 
-minute hour day month weekday
+![Cron Schedule Dialog](/img/system/Cron_Schedule_Dialog.png)
+
+The visual scheduler allows you to configure:
+
+- **Period** — Select from preset intervals (Year, Month, Week, Day, Hour, Minute)
+- **Month** — Choose specific months or "every month"
+- **Day** — Select specific days or "every day"
+- **Weekday** — Choose specific weekdays or "every day of the week"
+- **Time** — Set exact hour and minute
+
+The configured schedule is automatically converted to standard cron syntax and displayed in real-time at the bottom of the dialog.
 
 **Examples:**
-- `0 2 * * *` → Every day at 02:00
-- `*/5 * * * *` → Every 5 minutes
-- `0 0 * * 0` → Every Sunday at midnight
+- Every day at 02:00 → `0 2 * * *`
+- Every 5 minutes → `*/5 * * * *`
+- Every Sunday at midnight → `0 0 * * 0`
+- Every month on the 1st at 03:00 → `0 3 1 * *`
 
 :::tip
 Use fixed schedules for system tasks to avoid unnecessary load.
@@ -76,25 +87,26 @@ Use fixed schedules for system tasks to avoid unnecessary load.
 
 ### Command
 
-Defines the command that will be executed.
+Defines a single command that will be executed.
+
+:::tip
+- Use the **Command** field only for single commands
+- For scripts or multi-step operations, leave this field empty and use the **Script** field instead
+- If both fields are provided, the command takes precedence
+:::
 
 :::note
 - Commands are executed with system privileges
 - Absolute paths are recommended
-- If no command is provided and only a script path is defined, the command is created automatically
 :::
 
 **Example:**
 
-`bash /boot/optional/scripts/cron/test_script.sh > /dev/null 2>&1`
-
-This ensures:
-- The script is executed reliably
-- No stdout or stderr output is written unless explicitly handled inside the script
+`/usr/bin/nvidia-persistenced --verbose`
 
 **Examples:**
-- `/usr/bin/apt update`
-- `/usr/local/bin/backup.sh`
+- `/usr/bin/nvidia-persistenced --verbose`
+- `/usr/sbin/zpool scrub tank`
 - `/usr/bin/find /var/log -type f -mtime +7 -delete`
 
 ---
