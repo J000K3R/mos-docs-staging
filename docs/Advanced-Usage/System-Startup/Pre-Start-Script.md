@@ -3,7 +3,7 @@ sidebar_label: 🚀 Pre-Start Script
 sidebar_position: 1
 ---
 
-# 🚀 System Startup
+# 🏁 Pre-Start Script
 
 MOS provides dedicated hooks that are executed during system startup.
 These hooks allow controlled customization of the boot process.

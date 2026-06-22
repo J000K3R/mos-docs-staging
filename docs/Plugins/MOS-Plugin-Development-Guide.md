@@ -3,7 +3,7 @@ sidebar_label: 📦 MOS Plugin Development Guide
 sidebar_position: 2
 ---
 
-# 📦 MOS Plugin Repository
+# 📦 MOS Plugin Development Guide
 
 This repository contains a plugin for **MOS**.
 It explains how to create and configure your own MOS plugin, including the required project structure, configuration files, optional settings, functions, and build workflow.

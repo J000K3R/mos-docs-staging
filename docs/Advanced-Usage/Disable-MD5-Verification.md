@@ -3,7 +3,7 @@ sidebar_label: 🔓 Disable MD5 Verification
 sidebar_position: 2
 ---
 
-## 🔓 Disable MD5 Verification
+# 🔓 Disable MD5 Verification
 
 MOS performs MD5 checksum verification on boot to ensure data integrity
 from `image`, `rootfs` and `drivers` files in /boot directory during boot.
