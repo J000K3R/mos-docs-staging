@@ -143,39 +143,9 @@ For detailed network configuration options, including static IP assignment, VLAN
 
 ---
 
-## 5.1 🌐 GitHub Token Setup
-
-To improve reliability and avoid GitHub API rate limits when downloading templates and containers, configure a GitHub Personal Access Token in MOS.
-
-**Settings → Network → Token**
-
-Example:
-
-![Token](/img/system/Token.png)
-
-### GitHub Token Setup
-
-1. Log in to GitHub
-2. Click your profile picture (top right)
-3. Select **Settings**
-4. Scroll down and open **Developer settings**
-5. Go to **Personal access tokens**
-6. Select **Fine-grained tokens**
-7. Click **Generate new token**
-
-:::tip Recommended settings:
-- **Expiration:** No expiration
-- **Repository access:** Public repositories (Read-only access to public repositories)
-:::
-
-### Token Usage in MOS
-
-- Copy the generated token
-- Paste the token directly into the **GitHub Token** field in MOS (found under **Settings → Network → Token**)
-
-:::tip Benefits:
-- Avoids GitHub API rate limits
-- Improves reliability of template and container downloads
+:::tip 💡 GitHub Token
+To avoid GitHub API rate limits when downloading templates and containers, configure a GitHub Personal Access Token.
+See the [Token](../Settings/Token.md) page for detailed setup instructions.
 :::
 
 
@@ -340,6 +310,20 @@ Click **Ok** to start the update process, or **Cancel** to close the dialog with
 :::tip
 It is recommended to check for updates regularly to ensure your system has the latest security patches and features.
 :::
+
+---
+
+## 🚀 Next Steps
+
+Your MOS system is now set up and ready to go! Here's what you can do next:
+
+| Step | Guide | Description |
+|------|-------|-------------|
+| 🗄️ | [Create a Storage Pool](/docs/Pools/Create-Storage-Pool) | Set up your storage before creating shares or containers |
+| 📂 | [Create the First Shares](/docs/Shares/Create-the-First-Shares) | Share folders over the network (SMB/NFS) |
+| 🐳 | [Start the First Container](/docs/Docker/Start-the-First-Container) | Deploy your first Docker container via Docker or MOS Hub |
+| 🖥️ | [Create the First VM](/docs/VMs/Create-the-First-VM) | Set up a full virtual machine |
+| 👀 | [WebUI Overview](/docs/Dashboard/WebUI-Overview) | Learn the MOS interface and navigation in detail |
 
 ---
 

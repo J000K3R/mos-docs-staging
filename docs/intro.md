@@ -10,7 +10,7 @@ It's designed for **small, energy-efficient home servers**, delivering a modern 
 
 ---
 
-## 🚀 Getting Started
+## 🚀 Quick Start
 
 New to MOS? Follow these steps to get up and running:
 
