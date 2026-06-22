@@ -1,3 +1,7 @@
+---
+description: "MOS Mounted Script (mounted.sh): execute commands after storage pools are mounted but before services start."
+---
+
 # 📁 System Startup
 
 MOS provides dedicated hooks that are executed during system startup.

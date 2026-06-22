@@ -1,3 +1,7 @@
+---
+description: "Configure S.M.A.R.T. monitoring in MOS to track disk health, temperature thresholds, and receive warnings for HDD, SSD, and NVMe drives."
+---
+
 # 📊 S.M.A.R.T.
 
 S.M.A.R.T. (Self-Monitoring, Analysis, and Reporting Technology) is a monitoring system built into storage devices (HDD, SSD, NVMe) that detects and reports various indicators of drive reliability. MOS integrates S.M.A.R.T. monitoring directly into the WebUI, allowing you to keep an eye on your drives' health without any additional tools.

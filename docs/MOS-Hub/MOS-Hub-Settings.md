@@ -1,3 +1,7 @@
+---
+description: "Configure the MOS Hub settings: enable/disable the app store, control update behavior, and manage template repositories."
+---
+
 # 🛍️ MOS Hub
 
 The MOS Hub is an integrated application hub that provides preconfigured Docker templates which can be deployed directly from the system interface.  

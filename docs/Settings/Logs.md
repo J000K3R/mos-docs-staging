@@ -1,3 +1,7 @@
+---
+description: "View and browse system log files in MOS: access API, boot, cron, Docker, and syslog entries through the WebUI log viewer."
+---
+
 # 📋 Logs
 
 The **Logs** menu provides direct access to system log files stored on the server.  

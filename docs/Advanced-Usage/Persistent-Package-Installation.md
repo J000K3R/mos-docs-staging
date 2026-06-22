@@ -1,3 +1,7 @@
+---
+description: "Install persistent Debian packages on MOS that survive reboots. Place .deb files in /boot/optional/packages for automatic installation."
+---
+
 # 📦 Persistent Package Installation
 
 MOS is designed to run from a compressed, read-only root filesystem (rootfs). Any changes made to the system via `apt install` or similar commands will be lost after a reboot, as the root filesystem is rebuilt from the compressed image on every startup.

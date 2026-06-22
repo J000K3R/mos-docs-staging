@@ -1,3 +1,7 @@
+---
+description: "Configure the VM service in MOS: enable KVM/QEMU virtual machines and define storage locations for VM data."
+---
+
 # 🖥️ VM Service
 
 The **VM Service** menu controls the global configuration for virtual machines.  

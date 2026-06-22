@@ -1,3 +1,7 @@
+---
+description: "Create and configure storage pools in MOS using mergerfs, SnapRAID, Btrfs, or ZFS. Step-by-step guide with pool types and filesystem options."
+---
+
 # 🗄️ Create a Storage Pool
 
 Storage pools are the foundation of all data storage in MOS.  

@@ -1,3 +1,7 @@
+---
+description: "Configure network interfaces in MOS: ethernet, bridged, and bond modes, static IP, DHCP, VLAN, and IPv6 support with 60-second rollback protection."
+---
+
 # 🌐 Network Configuration
 
 MOS provides a flexible network configuration system supporting:

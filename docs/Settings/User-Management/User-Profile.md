@@ -1,3 +1,7 @@
+---
+description: "Configure user profile settings in MOS: interface preferences, language, dark mode, UI color, and MFA/TOTP two-factor authentication."
+---
+
 # ⚙️ User Profile
 
 The User Profile menu allows you to customize your personal WebUI experience and interface preferences.

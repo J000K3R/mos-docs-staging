@@ -1,3 +1,7 @@
+---
+description: "MOS Early Boot Script (boot.sh): the earliest execution point for deep system-level modifications before drivers, network, and storage are loaded."
+---
+
 # 🚀 Early Boot Script (boot.sh)
 
 MOS provides an **Early Boot Script** that is executed at the **very beginning of the boot process**.

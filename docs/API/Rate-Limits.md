@@ -1,3 +1,7 @@
+---
+description: "MOS API rate limits configuration: general request limits and login brute-force protection via environment variables."
+---
+
 # ⏱️ API Rate Limits
 
 The MOS API implements rate limits to protect the system from overload and abuse.

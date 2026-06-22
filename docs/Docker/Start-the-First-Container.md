@@ -1,3 +1,7 @@
+---
+description: "Deploy your first Docker container in MOS using the Docker service or MOS Hub templates. Complete setup guide with networking and volume configuration."
+---
+
 # 🚀 Start the First Container
 
 Before running applications in MOS, the Docker service must be configured and enabled.  

@@ -1,3 +1,7 @@
+---
+description: "Create and manage cron jobs in MOS: schedule automated tasks, backups, log rotation, and custom scripts with flexible timing."
+---
+
 # ⏰ Cron Jobs
 
 Cron Jobs allow you to schedule commands or scripts to run automatically at defined intervals.  

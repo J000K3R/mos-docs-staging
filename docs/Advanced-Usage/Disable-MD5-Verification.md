@@ -1,3 +1,7 @@
+---
+description: "Disable MD5 checksum verification on MOS boot for advanced scenarios. Marker file-based configuration."
+---
+
 # 🔓 Disable MD5 Verification
 
 MOS performs MD5 checksum verification on boot to ensure data integrity

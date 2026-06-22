@@ -1,3 +1,7 @@
+---
+description: "Configure persistent kernel module parameters in MOS via custom modprobe.d files. Useful for ARM board-specific driver settings."
+---
+
 # 🔧 Kernel Module Configuration (modprobe.d)
 
 MOS supports persistent kernel module configurations via custom `modprobe.d` files. This allows you to apply specific module parameters that survive reboots.

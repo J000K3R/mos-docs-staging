@@ -1,3 +1,7 @@
+---
+description: "Monitor hardware sensors in MOS: display temperatures, voltages, fan speeds, and custom metrics on the dashboard."
+---
+
 # 🌡️ Sensors
 
 MOS supports hardware and system sensors that can be displayed on the Dashboard.

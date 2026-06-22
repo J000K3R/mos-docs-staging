@@ -1,3 +1,7 @@
+---
+description: "Update MOS firmware and kernel: choose update channels (alpha, beta, stable), select releases, and manage kernel updates."
+---
+
 # 🔄 Update System
 
 The **Update System** menu provides comprehensive firmware and kernel management for MOS. Keep your system up-to-date with the latest features, security patches, and bug fixes.

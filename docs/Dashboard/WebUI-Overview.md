@@ -1,3 +1,7 @@
+---
+description: "Overview of the MOS web interface: dashboard, navigation menu, storage, virtualization, and system configuration panels explained."
+---
+
 # 🖥️ WebUI Overview
 
 The MOS web interface provides a centralized management dashboard for monitoring system health, managing storage, and operating services such as Docker, LXC, and virtual machines. The interface is divided into three main areas:

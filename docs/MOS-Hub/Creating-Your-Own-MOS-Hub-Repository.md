@@ -1,3 +1,7 @@
+---
+description: "Create your own MOS Hub repository on GitHub to share Docker templates, Compose templates, and plugins with the MOS community."
+---
+
 # 🛍️ Creating Your Own MOS Hub Repository
 
 The MOS Hub allows users to contribute and share Docker templates with the community.  

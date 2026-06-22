@@ -1,3 +1,7 @@
+---
+description: "Enable Docker containers on LAN networks (macvlan/ipvlan) to access the MOS host system via a shim interface plugin."
+---
+
 # Docker Local Host Access (Host Shim)
 
 When using Docker containers in **LAN network modes** (e.g. `br0` / `eth0` with `macvlan` or `ipvlan`), containers may not be able to reach the host system directly.

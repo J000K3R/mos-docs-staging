@@ -1,3 +1,7 @@
+---
+description: "Configure the LXC service in MOS: enable Linux Containers, set storage locations, and manage container networking."
+---
+
 # 📦 LXC Service
 
 The **LXC Service** menu controls the global configuration of Linux Containers (LXC).  

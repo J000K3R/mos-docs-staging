@@ -1,3 +1,7 @@
+---
+description: "Install and manage the MOS bootloader: install to disk, configure boot files, and set up extra partitions for storage pools."
+---
+
 # 💾 Boot
 
 The **Boot** menu provides options for installing the system bootloader and managing boot configuration files.  

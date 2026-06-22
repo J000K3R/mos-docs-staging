@@ -1,3 +1,7 @@
+---
+description: "Enable network services in MOS: SSH, NFS, Dnsmasq, NUT (UPS), Tailscale, Netbird, and iSCSI for remote access, file sharing, and VPN connectivity."
+---
+
 # 🔌 Network Services
 
 MOS provides various network services for remote access, file sharing, and VPN connectivity. These can be managed through:

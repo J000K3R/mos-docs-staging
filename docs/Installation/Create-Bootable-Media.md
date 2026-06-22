@@ -1,3 +1,7 @@
+---
+description: "Create a bootable USB stick or VM image to install MOS (Modular Operating System) on your server or homelab."
+---
+
 import Terminal, { TerminalMuted, TerminalCursor, TerminalSuccess } from '@site/src/components/Terminal';
 import CMD, { CMDCursor, CMDMuted } from '@site/src/components/CMD';
 import TerminalLinux, { LinuxCursor, LinuxPrompt, LinuxPath, LinuxMuted, LinuxSuccess } from '@site/src/components/TerminalLinux';

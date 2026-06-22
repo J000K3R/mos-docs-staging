@@ -1,3 +1,7 @@
+---
+description: "Configure the Docker service in MOS: enable Docker, set storage locations, configure networking, and manage update checks."
+---
+
 # 🐳 Docker Service
 
 The **Docker Service** menu controls the global Docker configuration and runtime behavior.  

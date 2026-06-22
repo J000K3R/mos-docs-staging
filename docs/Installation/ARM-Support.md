@@ -1,3 +1,7 @@
+---
+description: "Install MOS on ARM devices like Orange Pi and Raspberry Pi. Experimental ARM64 support guide with kernel and DTB configuration."
+---
+
 # 🔧 ARM Support (Experimental)
 
 :::warning[Experimental Feature]

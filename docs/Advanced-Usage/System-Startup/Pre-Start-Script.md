@@ -1,3 +1,7 @@
+---
+description: "MOS Pre-Start Script (pre-start.sh): execute commands before storage pools are mounted and services are started."
+---
+
 # 🏁 Pre-Start Script
 
 MOS provides dedicated hooks that are executed during system startup.

@@ -1,3 +1,7 @@
+---
+description: "Manage authentication tokens in MOS: create MOS Admin API tokens, GitHub tokens, and Docker Hub tokens for extended functionality."
+---
+
 # 🔑 Token
 
 The **Token** menu allows you to store and manage authentication tokens used by MOS for API access and external services.  

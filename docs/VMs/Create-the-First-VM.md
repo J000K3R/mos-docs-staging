@@ -1,3 +1,7 @@
+---
+description: "Create your first virtual machine in MOS with KVM/QEMU. Configure CPU, memory, storage, network, and boot from ISO images."
+---
+
 # 🖥️ Create the First VM
 
 MOS supports running full virtual machines (VMs) using KVM/QEMU.  

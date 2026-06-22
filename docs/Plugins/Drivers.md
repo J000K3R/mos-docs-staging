@@ -1,3 +1,7 @@
+---
+description: "Manage hardware drivers in MOS via Driver Plugins from the MOS Hub. Install NVIDIA, DVB, and other kernel module drivers."
+---
+
 # 🧩 Drivers
 
 MOS manages hardware drivers through **Driver Plugins**.

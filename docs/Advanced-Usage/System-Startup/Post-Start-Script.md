@@ -1,3 +1,7 @@
+---
+description: "MOS Post-Start Script (post-start.sh): execute commands after all services are fully started."
+---
+
 # 🏁 System Startup
 
 MOS provides dedicated hooks that are executed during system startup.

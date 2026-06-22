@@ -1,3 +1,7 @@
+---
+description: "Create network shares in MOS with SMB and NFS. Configure share permissions, access control, and storage pool assignment."
+---
+
 # 📂 Create the First Shares
 
 Shares define how directories on a storage pool are exposed to users and services.  

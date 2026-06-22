@@ -1,3 +1,7 @@
+---
+description: "MOS Pool Mount Scripts: execute custom scripts when specific storage pools are mounted during boot."
+---
+
 # 💾 System Startup
 
 MOS provides dedicated hooks that are executed during system startup.

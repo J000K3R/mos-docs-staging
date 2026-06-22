@@ -1,3 +1,7 @@
+---
+description: "Customize your MOS SSH session with a persistent .bash_profile: aliases, environment variables, prompt colors, and custom functions."
+---
+
 # 📝 Bash Profile Configuration
 
 MOS supports a custom `.bash_profile` configuration file that allows you to customize your SSH session environment.

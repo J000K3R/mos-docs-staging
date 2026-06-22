@@ -1,3 +1,7 @@
+---
+description: "MOS REST API overview: fully documented API used by the WebUI. Automate, script, and integrate MOS with external tools via Bearer Token authentication."
+---
+
 # 🔌 MOS API Overview
 
 MOS provides a fully documented REST API that is used internally by the web interface.

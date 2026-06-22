@@ -1,3 +1,7 @@
+---
+description: "Create and manage user accounts in MOS: assign roles, configure Samba access, and control permissions for shares and services."
+---
+
 # 👤 Create Users
 
 Users define who can access the MOS web interface and system resources.

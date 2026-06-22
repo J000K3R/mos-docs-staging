@@ -1,5 +1,6 @@
 ---
 slug: /
+description: "MOS (Modular Operating System) is a lightweight, web-based management system for servers and homelabs. Built on Devuan Linux with Docker, LXC, VM, and ZFS support."
 ---
 
 # 📚 Welcome to MOS-Docs

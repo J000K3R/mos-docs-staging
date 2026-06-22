@@ -1,3 +1,7 @@
+---
+description: "Enable ZFS support in MOS via the OpenZFS Driver plugin. CLI-only ZFS pool management with automatic import on boot."
+---
+
 # 💾 ZFS
 
 MOS provides optional support for ZFS via a plugin.

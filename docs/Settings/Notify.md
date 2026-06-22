@@ -1,3 +1,7 @@
+---
+description: "Configure MOS notifications: forward system alerts to Discord, Gotify, Pushover, or PushBits. Go-based notification service setup."
+---
+
 # 🔔 Notify
 
 **Notify** is a small **Go-based notification service** used by MOS to deliver system and service notifications.
