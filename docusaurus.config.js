@@ -56,7 +56,7 @@ const config = {
   themeConfig: {
     announcementBar: {
       id: 'staging-banner',
-      content: '🧪 <strong>STAGING / TEST</strong> — This is a test environment for documentation restructuring. Not production.'
+      content: '🧪 <strong>STAGING / TEST</strong> — This is a test environment for documentation restructuring. Not production.',
       backgroundColor: '#e74c3c',
       textColor: '#ffffff',
       isCloseable: true,
