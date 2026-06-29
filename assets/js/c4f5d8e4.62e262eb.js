@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmos_docs=self.webpackChunkmos_docs||[]).push([["4823"],{7701(s,o,c){c.r(o),c.d(o,{default:()=>t});var d=c(4848),e=c(6347);function t(){return(0,d.jsx)(e.rd,{to:"/mos-docs-staging/docs/"})}}}]);
