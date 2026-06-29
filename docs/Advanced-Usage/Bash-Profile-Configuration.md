@@ -1,5 +1,6 @@
 ---
-description: "Customize your MOS SSH session with a persistent .bash_profile: aliases, environment variables, prompt colors, and custom functions."
+sidebar_label: 📝 Bash Profile Configuration
+sidebar_position: 6
 ---
 
 # 📝 Bash Profile Configuration

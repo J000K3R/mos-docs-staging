@@ -1,5 +1,6 @@
 ---
-description: "MOS REST API overview: fully documented API used by the WebUI. Automate, script, and integrate MOS with external tools via Bearer Token authentication."
+sidebar_label: 🔌 MOS API Overview
+sidebar_position: 1
 ---
 
 # 🔌 MOS API Overview

@@ -1,6 +1,5 @@
 ---
 slug: /
-description: "MOS is a lightweight, Devuan-based OS for server and homelab management with Docker, LXC, VMs, storage pools, shares, monitoring, notifications, REST API, and plugins. Open source, no telemetry."
 ---
 
 # 📚 Welcome to MOS-Docs
@@ -11,7 +10,7 @@ It's designed for **small, energy-efficient home servers**, delivering a modern 
 
 ---
 
-## 🚀 Quick Start
+## 🚀 Getting Started
 
 New to MOS? Follow these steps to get up and running:
 
@@ -19,7 +18,7 @@ New to MOS? Follow these steps to get up and running:
 |------|-------|-------------|
 | 1️⃣ | [Create Bootable Media](/docs/Installation/Create-Bootable-Media) | Create a USB stick or VM image to boot MOS |
 | 2️⃣ | [First Walkthrough](/docs/Installation/First-Walkthrough) | Complete initial setup (root password, network, storage) |
-| 3️⃣ | [WebUI Overview](/docs/Dashboard/WebUI-Overview) | Learn the MOS interface and navigation |
+| 3️⃣ | [WebUI Overview](/docs/Quick-Start/WebUI-Overview) | Learn the MOS interface and navigation |
 | 🧪 | [Test in VM](/docs/Installation/Testing-MOS-in-a-Virtual-Machine) | Try MOS in a virtual machine first (optional) |
 | 🔧 | [ARM Support (Experimental)](/docs/Installation/ARM-Support) | Install MOS on ARM devices (Orange Pi, Raspberry Pi, etc.) |
 

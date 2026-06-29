@@ -1,5 +1,6 @@
 ---
-description: "Create a bootable USB stick or VM image to install MOS (Modular Operating System) on your server or homelab."
+sidebar_label: 🔧 Create Bootable Media
+sidebar_position: 1
 ---
 
 import Terminal, { TerminalMuted, TerminalCursor, TerminalSuccess } from '@site/src/components/Terminal';
@@ -184,7 +185,7 @@ A network connection will be needed to access the WebUI to set initial account p
 
 Access the WebUI via:
 
-```text
+```
 http://MOS-IP/
 ```
 

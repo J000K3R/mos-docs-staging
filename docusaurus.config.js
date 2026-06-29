@@ -11,10 +11,10 @@ const config = {
     v4: true,
   },
 
-  url: 'https://j000k3r.github.io',
-  baseUrl: '/mos-docs-staging/',
-  organizationName: 'J000K3R',
-  projectName: 'mos-docs-staging',
+  url: 'https://docs.mos-official.net',
+  baseUrl: '/',
+  organizationName: 'ich777',
+  projectName: 'mos-docs',
   onBrokenLinks: 'throw',
 
   i18n: {
@@ -41,7 +41,7 @@ const config = {
         docs: {
           sidebarPath: './sidebars.js',
           routeBasePath: '/docs/',
-          editUrl: 'https://github.com/J000K3R/mos-docs-staging/edit/main/',
+          editUrl: 'https://github.com/ich777/mos-docs/edit/master/',
           showLastUpdateTime: true,
           showLastUpdateAuthor: true,
         },
@@ -55,9 +55,9 @@ const config = {
 
   themeConfig: {
     announcementBar: {
-      id: 'staging-banner',
-      content: '🧪 <strong>STAGING / TEST</strong> — This is a test environment for documentation restructuring. Not production.',
-      backgroundColor: '#e74c3c',
+      id: 'release-0.4.11-beta',
+      content: '🚀 <strong>MOS 0.4.11-beta is out!</strong> — 🐧 Kernel 6.18.37, 🐳 Docker v29.6.1, 📦 MergerFS Virtual Pools, Hub & Docker Group improvements &nbsp;<a href="https://docs.mos-official.net/docs/Release-Notes/Beta/0.4.11-beta" style="color:#ffffff;">Release Notes →</a>',
+      backgroundColor: '#fa9725',
       textColor: '#ffffff',
       isCloseable: true,
     },

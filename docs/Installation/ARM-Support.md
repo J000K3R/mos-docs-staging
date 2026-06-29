@@ -1,5 +1,6 @@
 ---
-description: "Install MOS on ARM devices like Orange Pi and Raspberry Pi. Experimental ARM64 support guide with kernel and DTB configuration."
+sidebar_label: 🔧 ARM Support (Experimental)
+sidebar_position: 4
 ---
 
 # 🔧 ARM Support (Experimental)
@@ -59,7 +60,7 @@ Edit the `grub/grub.cfg` file on your boot device:
 
 3. Uncomment the line and change the filename to match your device tree:
 
-```text
+```
 devicetree /rk3588-orangepi-5-plus.dtb
 ```
 
@@ -88,13 +89,13 @@ Some ARM boards require specific kernel module parameters to function correctly 
 
 MOS supports persistent `modprobe.d` configurations via:
 
-```text
+```
 /boot/optional/modprobe.d/<your-config>.conf
 ```
 
 **Example:**
 
-```text
+```
 /boot/optional/modprobe.d/ahci-mask.conf
 ```
 

@@ -1,5 +1,6 @@
 ---
-description: "Support the MOS project: donate to help continued development of the free and open-source Modular Operating System."
+sidebar_label: 🌟 Support MOS
+sidebar_position: 1
 ---
 
 # 🌟 Support MOS

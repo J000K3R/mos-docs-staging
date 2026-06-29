@@ -1,5 +1,6 @@
 ---
-description: "Install persistent Debian packages on MOS that survive reboots. Place .deb files in /boot/optional/packages for automatic installation."
+sidebar_label: 📦 Persistent Package Installation
+sidebar_position: 4
 ---
 
 # 📦 Persistent Package Installation
@@ -14,7 +15,7 @@ To install additional packages that persist across reboots, MOS provides a dedic
 
 Place your `.deb` packages in the following directory:
 
-```text
+```
 /boot/optional/packages
 ```
 

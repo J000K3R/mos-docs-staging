@@ -1,5 +1,6 @@
 ---
-description: "Complete the MOS first walkthrough: set root password, configure web login, network, storage, and system settings."
+sidebar_label: 🚀 First Walkthrough
+sidebar_position: 3
 ---
 
 # 🚀 First Walkthrough
@@ -136,15 +137,45 @@ If the configuration is **not confirmed within 60 seconds**:
 
 This prevents losing access to the WebUI due to incorrect network settings.
 
-For detailed network configuration options, including static IP assignment, VLANs, and advanced settings, refer to the [Network Configuration](../Settings/Network/Network-Configuration.md) documentation.
+For detailed network configuration options, including static IP assignment, VLANs, and advanced settings, refer to the [Network Configuration](../Network/Network-Configuration.md) documentation.
 
 :::
 
 ---
 
-:::tip 💡 GitHub Token
-To avoid GitHub API rate limits when downloading templates and containers, configure a GitHub Personal Access Token.
-See the [Token](../Settings/Token.md) page for detailed setup instructions.
+## 5.1 🌐 GitHub Token Setup
+
+To improve reliability and avoid GitHub API rate limits when downloading templates and containers, configure a GitHub Personal Access Token in MOS.
+
+**Settings → Network → Token**
+
+Example:
+
+![Token](/img/system/Token.png)
+
+### GitHub Token Setup
+
+1. Log in to GitHub
+2. Click your profile picture (top right)
+3. Select **Settings**
+4. Scroll down and open **Developer settings**
+5. Go to **Personal access tokens**
+6. Select **Fine-grained tokens**
+7. Click **Generate new token**
+
+:::tip Recommended settings:
+- **Expiration:** No expiration
+- **Repository access:** Public repositories (Read-only access to public repositories)
+:::
+
+### Token Usage in MOS
+
+- Copy the generated token
+- Paste the token directly into the **GitHub Token** field in MOS (found under **Settings → Network → Token**)
+
+:::tip Benefits:
+- Avoids GitHub API rate limits
+- Improves reliability of template and container downloads
 :::
 
 
@@ -228,7 +259,7 @@ Configure time synchronization and network proxy:
 - **FTP Proxy** — FTP proxy server address
 - **No Proxy** — Addresses/domains that bypass the proxy
 
-For detailed information about all system settings, refer to the [System Settings](../Settings/System-Settings.md) documentation.
+For detailed information about all system settings, refer to the [System Settings](../System-Management/System-Configuration/System-Settings.md) documentation.
 
 ---
 
@@ -236,7 +267,7 @@ For detailed information about all system settings, refer to the [System Setting
 
 The MOS Hub is an integrated application hub similar to an app store for MOS. It provides access to plugins, Docker templates, and Docker Compose templates that can be deployed directly from the WebUI.
 
-Navigate to **Settings → System Configuration → MOS Hub** to configure the hub.
+Navigate to **Settings → System Configuration → MOS Hub Settings** to configure the hub.
 
 ![MOS Hub Settings](/img/first-walkthrough/MOS_Hub_Settings.png)
 
@@ -246,7 +277,7 @@ Configure the MOS Hub settings:
 - **Initial Update** — Toggle automatic refresh of repositories on each new session (login or new WebUI session)
 - **Update Schedule** — Define when the MOS Hub automatically updates using cron syntax (default: `15 7 * * *` — every day at 07:15)
 
-For detailed information about the MOS Hub, including how to deploy applications, refer to the [MOS Hub](../MOS-Hub/MOS-Hub-Settings.md) documentation.
+For detailed information about the MOS Hub, including how to deploy applications, refer to the [MOS Hub](../System-Management/System-Configuration/MOS-Hub.md) documentation.
 
 ---
 
@@ -275,7 +306,7 @@ When clicking **Install to Disk**, you can configure:
 - **Filesystem** — The filesystem for the boot installation (ext4 recommended for HDD/SSD/NVME)
 - **Extra Partition** — Optionally create an additional partition for storage pools, Docker data, or shares
 
-For detailed information, refer to the [Boot](../Settings/Boot.md) documentation.
+For detailed information, refer to the [Boot](../System-Management/Boot.md) documentation.
 
 ---
 
@@ -309,20 +340,6 @@ Click **Ok** to start the update process, or **Cancel** to close the dialog with
 :::tip
 It is recommended to check for updates regularly to ensure your system has the latest security patches and features.
 :::
-
----
-
-## 🚀 Next Steps
-
-Your MOS system is now set up and ready to go! Here's what you can do next:
-
-| Step | Guide | Description |
-|------|-------|-------------|
-| 🗄️ | [Create a Storage Pool](/docs/Pools/Create-Storage-Pool) | Set up your storage before creating shares or containers |
-| 📂 | [Create the First Shares](/docs/Shares/Create-the-First-Shares) | Share folders over the network (SMB/NFS) |
-| 🐳 | [Start the First Container](/docs/Docker/Start-the-First-Container) | Deploy your first Docker container via Docker or MOS Hub |
-| 🖥️ | [Create the First VM](/docs/VMs/Create-the-First-VM) | Set up a full virtual machine |
-| 👀 | [WebUI Overview](/docs/Dashboard/WebUI-Overview) | Learn the MOS interface and navigation in detail |
 
 ---
 

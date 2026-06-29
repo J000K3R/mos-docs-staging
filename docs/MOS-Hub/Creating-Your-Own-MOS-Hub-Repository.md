@@ -1,5 +1,6 @@
 ---
-description: "Create your own MOS Hub repository on GitHub to share Docker templates, Compose templates, and plugins with the MOS community."
+sidebar_label: 🛍️ Creating Your Own MOS Hub Repository
+sidebar_position: 1
 ---
 
 # 🛍️ Creating Your Own MOS Hub Repository
@@ -17,7 +18,7 @@ A MOS Hub repository follows a specific structure that the MOS Hub can recognize
 
 **Required structure:**
 
-```text
+```
 your-repository/
 ├── docker/
 │   ├── Template1.json
@@ -168,7 +169,7 @@ Once configured, deploy the container to verify it works correctly.
 
 After the container is running, MOS automatically stores the template in:
 
-```text
+```
 /boot/config/system/docker/templates/TEMPLATE.json
 ```
 
@@ -213,6 +214,23 @@ These values are widely supported and avoid permission conflicts.
 
 ---
 
+#### Add a Documentation Link (Optional)
+
+You can add a `readme_url` field to your Docker template JSON to link to an external documentation page or README:
+
+```json
+"readme_url": "https://example.com/your-app-docs"
+```
+
+When provided, a **Docs** button will appear in the MOS Hub that opens this URL when clicked.  
+This is optional but recommended — it helps users find setup instructions, configuration guides, or usage documentation directly from the Hub.
+
+:::tip
+The `readme_url` field is supported in **Docker templates** (`docker/`), **Compose templates** (`compose/template.json`), and **Plugin templates** (`plugins/`).
+:::
+
+---
+
 ### Step 4: Upload to GitHub
 
 Create a repository on GitHub following the structure described above.
@@ -231,11 +249,11 @@ Once your repository is published on GitHub, it can be added to any MOS instance
 
 Navigate to:
 
-**Settings → System Configuration → MOS Hub**
+**Settings → System Configuration → MOS Hub Settings**
 
 In the **MOS Hub** section, add your repository URL:
 
-```text
+```
 https://github.com/your-username/your-repository
 ```
 
@@ -288,9 +306,12 @@ Defines how the compose stack appears in the MOS Hub.
   "description": "Brief description of the application",
   "icon": "https://example.com/icon.png",
   "webui": "http://{IP}:8080",
-  "category": [ "Media" ]
+  "category": [ "Media" ],
+  "readme_url": "https://example.com/your-app-docs"
 }
 ```
+
+The `readme_url` field is optional and allows you to link to an external documentation page or README for the application. When provided, a **Docs** button will appear in the MOS Hub that opens this URL when clicked.
 
 ---
 
@@ -426,6 +447,7 @@ Plugin templates use a different structure than Docker templates.
   "architecture": [ "amd64", "arm64" ],
   "driver": true,
   "icon": "https://example.com/icon.png",
+  "readme_url": "https://example.com/my-driver-docs",
   "author": "your-name",
   "homepage": "https://example.com/driver-homepage",
   "support": "https://github.com/username/my-driver-repo/issues",
@@ -447,6 +469,10 @@ Plugin templates use a different structure than Docker templates.
 
 - **category**  
   Array of categories. Common options:
+
+:::warning Case Sensitivity
+Categories are **case sensitive**. Make sure to use the exact spelling and capitalization as shown in the table below (e.g., `Game Server` with a capital `G` and `S`, not `game server` or `Game server`). Incorrect casing will cause the template to be grouped incorrectly or not appear in the expected category.
+:::
 
 | Category | Description |
 |---|---|
@@ -486,6 +512,11 @@ Plugin templates use a different structure than Docker templates.
 - **icon**  
   URL to an icon image.  
   Can be hosted on GitHub or external sources.
+
+- **readme_url**  
+  URL to a documentation page or README for the plugin/template.  
+  When provided, a **Docs** button appears in the MOS Hub that opens this URL when clicked.  
+  Can point to a GitHub README, a wiki page, or any external documentation site.
 
 - **author**  
   Plugin author name.
