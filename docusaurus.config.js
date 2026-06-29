@@ -39,7 +39,7 @@ const config = {
           // --- Section 1: Old underscore paths (Jan 2026) ---
           { to: '/docs/API/MOS-API-Overview', from: '/docs/API/API_Overview' },
           { to: '/docs/Installation/Create-Bootable-Media', from: '/docs/Installation/Create_Bootable_Media' },
-          { to: '/docs/intro', from: '/docs/Introduction/Overview_of_the_OS' },
+          { to: '/docs/', from: '/docs/Introduction/Overview_of_the_OS' },
           { to: '/docs/Quick-Start/Create-Storage-Pool', from: '/docs/Quick_Start/Create_a_Storage_Pool' },
           { to: '/docs/Quick-Start/Create-the-First-Shares', from: '/docs/Quick_Start/Create_the_First_Shares' },
           { to: '/docs/Quick-Start/Start-Network-Configuration', from: '/docs/Quick_Start/Start_Network_Configuration' },
